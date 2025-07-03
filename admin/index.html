@@ -2,10 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Admin</title>
+    <title>Admin - Luiz Brodo</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js" defer></script>
   </head>
   <body>
     <div id="nc-root"></div>
+
+    <script>
+      // Inicia Netlify Identity e lida com token de recuperação automaticamente
+      window.netlifyIdentity = window.netlifyIdentity || {};
+      netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+
+      netlifyIdentity.init();
+    </script>
   </body>
 </html>
