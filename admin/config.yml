@@ -1,0 +1,47 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "sobre"
+    label: "Sobre"
+    files:
+      - file: "content/sobre/sobre.json"
+        label: "Conteúdo Sobre"
+        name: "sobre"
+        format: "json"
+        fields:
+          - { name: "title", label: "Título", widget: "string" }
+          - { name: "description", label: "Descrição", widget: "text" }
+          - { name: "contatos", label: "Contatos", widget: "object", fields: [
+              { name: "email", label: "Email", widget: "string" },
+              { name: "linkedin", label: "LinkedIn", widget: "string" },
+              { name: "celular", label: "Celular", widget: "string" }
+            ]
+          }
+
+  - name: "projetos"
+    label: "Projetos"
+    label_singular: "Projeto"
+    folder: "content/projetos"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "titulo", label: "Título", widget: "string" }
+      - { name: "subtitulo", label: "Subtítulo", widget: "string", required: false }
+      - { name: "slug", label: "Slug", widget: "string" }
+      - { name: "thumb", label: "Thumbnail", widget: "image" }
+      - { name: "descricao", label: "Descrição", widget: "text", required: false }
+      - label: "Conteúdo"
+        name: "conteudo"
+        widget: "list"
+        fields:
+          - { name: "tipo", label: "Tipo", widget: "select", options: ["video", "imagem", "texto", "poster", "galeria"] }
+          - { name: "src", label: "Src (para vídeo/imagem)", widget: "string", required: false }
+          - { name: "valor", label: "Texto explicativo", widget: "text", required: false }
+          - { name: "imagens", label: "Lista de imagens", widget: "list", field: { label: Imagem, name: image, widget: image }, required: false }
