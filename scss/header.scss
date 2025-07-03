@@ -1,0 +1,175 @@
+// Variáveis
+$font: 'Montserrat', sans-serif;
+$color-text: #aaa;
+$color-hover: black;
+$background: white;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body.no-scroll {
+    overflow: hidden;
+  }  
+  
+// HEADER
+.header-container {
+  margin-top: 58px;
+  margin-bottom: 58px;
+  padding-left: 58px;
+  padding-right: 80px;
+  @media (min-width: 769px) {
+    padding-left: 58px;
+    padding-right: 80px;
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 15px 0;
+  }
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  position: relative;
+  @media (max-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+// LOGO
+.logo a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: $font;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  @media (max-width: 768px) {
+    font-size: 20px;
+    text-transform: none
+  }
+}
+
+// MENU TOGGLE (ÍCONES)
+.menu-toggle {
+    width: 25px;
+    height: 20px;
+    position: relative;
+    display: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    z-index: 20;
+    margin-left: auto;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  
+    .line {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: black;
+      border-radius: 2px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+  
+    .top {
+      top: 0;
+    }
+  
+    .middle {
+      top: 8px;
+    }
+  
+    .bottom {
+      top: 16px;
+    }
+  
+    &.active {
+      .top {
+        transform: translateY(8px) rotate(45deg);
+      }
+  
+      .middle {
+        opacity: 0;
+      }
+  
+      .bottom {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+    }
+  }  
+
+// MENU LINKS
+.menu-container{
+.menu-itens {
+  display: flex;
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: $font;
+    color: $color-text;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 20px;
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: $color-hover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 20px);;
+    background: $background;
+    padding: 0;
+    z-index: 10;
+    overflow: hidden;
+    &.open {
+      display: flex;
+    }
+
+    a {
+      margin: 10px 0;
+      font-size: 32px;
+    }
+  }
+}
+}
+
+@media (max-width: 768px) {
+  .menu-itens {
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

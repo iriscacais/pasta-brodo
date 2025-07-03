@@ -1,0 +1,77 @@
+const params = new URLSearchParams(window.location.search);
+const slug = params.get("slug");
+
+fetch("/content/projetos/projetos.json")
+  .then((res) => res.json())
+  .then((data) => {
+    const projeto = data.find((p) => p.slug === slug);
+    const container = document.getElementById("projeto-content");
+
+    if (!projeto) {
+      container.innerHTML = `<p>Projeto não encontrado.</p>`;
+      return;
+    }
+
+    // Título e descrição
+    container.innerHTML = `
+    <section class="hero-container">
+    <div class="title-container">
+    <h1 class="projeto-title">${projeto.titulo}</h1>
+    ${projeto.subtitulo ? `<h2 class="projeto-subtitulo">${projeto.subtitulo}</h2>` : ""}
+    </div>
+    <div class="description-container">
+    ${projeto.descricao ? `<p class="projeto-descricao">${projeto.descricao}</p>` : ""}
+    </div>
+    </section>
+  `;
+
+    // Renderizar blocos de conteudo
+    projeto.conteudo.forEach((bloco) => {
+      if (bloco.tipo === "video") {
+        container.innerHTML += `
+          <div class="projeto-video">
+            <iframe
+              src="${bloco.src}"
+              frameborder="0"
+              allowfullscreen
+              class="media-element"
+            ></iframe>
+          </div>`;
+      } else if (bloco.tipo === "imagem") {
+        const tamanhoClasse = bloco.tamanho === "pequena" ? "imagem-pequena" : "";
+        container.innerHTML += `
+          <div class="projeto-imagem ${tamanhoClasse}">
+            <img src="${bloco.src}" alt="Imagem do projeto" class="media-element" />
+          </div>`;
+      } else if (bloco.tipo === "texto") {
+        container.innerHTML += `
+          <p class="projeto-texto">${bloco.valor}</p>`;
+      } else if (bloco.tipo === "galeria") {
+        const galeriaImgs = bloco.imagens
+          .map((img) => `<img src="${img}" alt="" />`)
+          .join("");
+        container.innerHTML += `
+          <div class="galeria">${galeriaImgs}</div>`;
+      } else if (bloco.tipo === "poster") {
+        const posters = bloco.imagens
+          .map((img) => `<img src="${img}" alt="Poster" />`)
+          .join("");
+        container.innerHTML += `
+          <div class="poster-grid">${posters}</div>`;
+      }
+    });
+
+    const navSection = document.createElement("section");
+    navSection.className = "projeto-nav";
+    
+    let linksHTML = `<a href="/" class="nav-link">All</a>`;
+    
+    data.slice().reverse().forEach(p => {
+      const isActive = p.slug === projeto.slug ? "active" : "";
+      linksHTML += `<a href="/projeto.html?slug=${p.slug}" class="nav-link ${isActive}">${p.titulo}</a>`;
+    });
+    
+    navSection.innerHTML = linksHTML;
+    document.querySelector(".projeto-container").appendChild(navSection);
+    
+});

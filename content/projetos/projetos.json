@@ -1,0 +1,131 @@
+[
+    {
+      "titulo": "MIZUNO | Centésimos Decisivos",
+      "subtitulo": "",
+      "slug": "mizuno-centesimos",
+      "thumb": "/images/mizuno.jpg",
+      "descricao": "Tenho um imenso carinho por esse projeto. Fiz com o Mica assim quando cheguei em São Paulo. Nosso orientador foi o Gatti pela Escola Cuca. Ganhamos ouro na categoria estudantil do Clube de Criação. Além da estrela, ganhamos um estágio na F/Nazca.",
+      "conteudo": [
+        {
+          "tipo": "imagem",
+          "src": "/images/mizuno.jpg"
+        }
+      ]
+    },
+    {
+      "titulo": "F/NAZCA | PÁSCOA",
+      "subtitulo": "Descubra quem é o coelho e ganhe um day off.",
+      "slug": "fnazca-pascoa",
+      "thumb": "/images/fnazcapascoa.png",
+      "descricao": "Para celebrar a páscoa na F/Nazca, criamos uma dinâmica para juntar a equipe. O prêmio tinha que ser algo que todos almejassem, do diretor de criação ao estagiário de atendimento. E o único prêmio o'concur, com valor inestimável, é um dia de folga.",
+      "conteudo": [
+          {
+            "tipo": "video",
+            "src": "https://player.vimeo.com/video/353668869?h=ba2dd900f8"
+          },
+          {
+            "tipo": "texto",
+            "valor": "Além do vídeo, soltamos pôsteres charadas para ajudar a equipe a descobrir quem era o coelho."
+          },
+          {
+            "tipo": "poster",
+            "imagens": [
+                "/images/pascoa01.gif",
+                "/images/pascoa02.gif",
+                "/images/pascoa03.gif"
+              ]
+          },
+          {
+            "tipo": "video",
+            "src": "https://player.vimeo.com/video/353668839?h=8cca7032f1"
+          },
+          {
+            "tipo": "texto",
+            "valor": "Este projeto foi um dos que eu mais me diverti. Todo mundo participou. E ainda ganhamos um prêmio do Fábio Fernandes:"
+          },
+          {
+            "tipo": "imagem",
+            "src": "/images/premiofabio.png",
+            "tamanho": "pequena"
+          }
+      ]
+    },
+    {
+        "titulo": "SKOL | Skip sem ad",
+        "subtitulo": "Anúncios que não precisavam ser pulados porque não eram anúncios.",
+        "slug": "skip-sem-ad",
+        "thumb": "/images/skipsemadthumb.png",
+        "descricao": "Em 2019, a Skol gastou milhões de reais para deixar claro que a sua cerveja puro malte não tinha chegado. Sem produto para anunciar, a Skol convidou o público a não pular seus vídeos sobre assuntos aleatórios, sem nenhuma inserção da suposta Skol Puro Malte, que até hoje não chegou.",
+        "conteudo": [
+            {
+              "tipo": "video",
+              "src": "https://player.vimeo.com/video/355750002?h=468b11e223"
+            },
+            {
+              "tipo": "video",
+              "src": "https://player.vimeo.com/video/355749937?h=26b7622536"
+            },
+            {
+                "tipo": "video",
+                "src": "https://player.vimeo.com/video/355749984?h=d91f24ba81"
+            }
+        ]
+      },
+      {
+        "titulo": "APRO | CORTA!",
+        "subtitulo": "Um movimento contra o assédio na Indústria do Audiovisual.",
+        "slug": "apro-corta",
+        "thumb": "/images/aprocortathumb.jpg",
+        "descricao": "",
+        "conteudo": [
+            {
+                "tipo": "imagem",
+                "src": "/images/logo-animado-copra.gif"
+              },
+            {
+              "tipo": "texto",
+              "valor": "Ações como “Me too”, iniciada em Hollywood, chamaram atenção para escandalos de assédio na indústria do cinema."
+            },
+            {
+                "tipo": "texto",
+                "valor": "No Brasil, a APRO criou e liderou o pacto contra o assédio na Indústria Audiovisual."
+            },
+            {
+                "tipo": "texto",
+                "valor": "Desenvolvemos o nome do movimento e a comunicação de lançamento."
+            },
+            {
+              "tipo": "poster",
+              "imagens": [
+                  "/images/poster02-copra.jpg",
+                  "/images/poster04-copra.jpg",
+                  "/images/poster05-copra.jpg",
+                  "/images/poster06-copra.jpg",
+                  "/images/poster07-copra.jpg",
+                  "/images/poster08-copra.jpg",
+                  "/images/poster09-copra.jpg",
+                  "/images/poster10-copra.jpg",
+                  "/images/poster01-copra.jpg",
+                  "/images/poster03-copra.jpg"
+                ]
+            },
+            {
+                "tipo": "imagem",
+                "src": "/images/corta_imagem02.jpg"
+            },
+            {
+                "tipo": "galeria",
+                "imagens": [
+                    "/images/corta_Camisetas.jpg",
+                    "/images/corta_faixa.gif"
+                  ]
+            },
+            {
+                "tipo": "imagem",
+                "src": "/images/corta_boca.gif",
+                "tamanho": "pequena"
+            }
+        ]
+      }
+  ]
+  
