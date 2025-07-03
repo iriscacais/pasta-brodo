@@ -23,16 +23,12 @@ collections:
                 name: "type"
                 widget: "select"
                 options: ["image", "embed"]
-              - label: "Upload de Imagem"
-                name: "src"
-                widget: "image"
-                required: false
-                hint: "Será usado se o tipo for 'image'"
-              - label: "URL do Vídeo (YouTube/Vimeo)"
+              - label: "Fonte da Mídia (imagem ou vídeo)"
                 name: "src"
                 widget: "string"
-                required: false
-                hint: "Será usado se o tipo for 'embed'"
+                required: true
+                hint: "Para tipo 'image', use o seletor de imagem. Para tipo 'embed', cole a URL do vídeo."
+                media_library: true
               - label: "Descrição da Mídia"
                 name: "description"
                 widget: "string"
