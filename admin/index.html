@@ -10,14 +10,39 @@
     <div id="nc-root"></div>
 
     <script>
-      // Inicia Netlify Identity e lida com token de recuperação automaticamente
       window.netlifyIdentity = window.netlifyIdentity || {};
+
+      // Ao iniciar, redireciona se o usuário estiver logado
       netlifyIdentity.on("init", (user) => {
         if (!user) {
           netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+            window.location.href = "/admin/";
           });
         }
+      });
+
+      // 🔒 Ao fazer logout, limpa tudo e redireciona para o login
+      netlifyIdentity.on("logout", () => {
+        console.log("🔒 Logout detectado, limpando sessão...");
+
+        // Remove dados do Identity e do CMS
+        localStorage.removeItem("gotrue.user");
+        localStorage.removeItem("netlify-cms-user");
+        sessionStorage.clear();
+
+        // Limpa cookies da sessão
+        document.cookie
+          .split(";")
+          .forEach((c) => {
+            document.cookie =
+              c.trim().split("=")[0] +
+              "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+          });
+
+        // Redireciona para /admin com tudo limpo
+        setTimeout(() => {
+          window.location.href = "/admin/";
+        }, 300);
       });
 
       netlifyIdentity.init();
