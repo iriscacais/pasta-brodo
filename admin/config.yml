@@ -8,21 +8,66 @@ public_folder: "/images"
 
 collections:
   - name: "sobre"
-    label: "Sobre"
-    files:
-      - file: "content/sobre/sobre.json"
-        label: "Conteúdo Sobre"
-        name: "sobre"
-        format: "json"
-        fields:
-          - { name: "title", label: "Título", widget: "string" }
-          - { name: "description", label: "Descrição", widget: "text" }
-          - { name: "contatos", label: "Contatos", widget: "object", fields: [
-              { name: "email", label: "Email", widget: "string" },
-              { name: "linkedin", label: "LinkedIn", widget: "string" },
-              { name: "celular", label: "Celular", widget: "string" }
-            ]
-          }
+      label: "Sobre"
+      files:
+        - file: "content/sobre/sobre.json"
+          label: "Conteúdo Sobre"
+          name: "sobre"
+          format: "json"
+          fields:
+            - label: "Mídia"
+              name: "media"
+              widget: "object"
+              fields:
+                - label: "Tipo"
+                  name: "type"
+                  widget: "select"
+                  options: ["image", "embed"]
+                - label: "Upload de Imagem"
+                  name: "src"
+                  widget: "image"
+                  required: false
+                  hint: "Será usado se o tipo for 'image'"
+                - label: "URL do Vídeo (YouTube/Vimeo)"
+                  name: "src"
+                  widget: "string"
+                  required: false
+                  hint: "Será usado se o tipo for 'embed'"
+                - label: "Descrição da Mídia"
+                  name: "description"
+                  widget: "string"
+                  required: false
+
+            - { name: "title", label: "Título", widget: "string" }
+            - { name: "description", label: "Descrição principal", widget: "text" }
+
+            - name: "contatos"
+              label: "Contatos"
+              widget: "object"
+              fields:
+                - { name: "email", label: "Email", widget: "string" }
+                - { name: "linkedin", label: "LinkedIn", widget: "string" }
+                - { name: "celular", label: "Celular", widget: "string" }
+
+            - name: "experiencia"
+              label: "Experiência"
+              widget: "list"
+              field: { label: Cargo e Empresa, name: item, widget: string }
+
+            - name: "formacao"
+              label: "Formação"
+              widget: "list"
+              field: { label: Curso ou Instituição, name: item, widget: string }
+
+            - name: "premios"
+              label: "Prêmios"
+              widget: "list"
+              fields:
+                - { name: "titulo", label: "Nome da Premiação", widget: "string" }
+                - name: "itens"
+                  label: "Conquistas"
+                  widget: "list"
+                  field: { name: "premio", label: "Prêmio", widget: "string" }
 
   - name: "projetos"
     label: "Projetos"
