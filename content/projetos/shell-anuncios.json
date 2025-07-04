@@ -1,0 +1,39 @@
+{
+  "ativo": true,
+  "ordem": 2,
+  "conteudo": [
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/shellanuncios01.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/shellanuncios02.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/shellanuncios03.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Sim, existe uma competição que premia o posto mais bonito do Brasil."
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "tamanho": "normal",
+      "src": "/images/shellanuncios04.png"
+    }
+  ],
+  "titulo": "Shell | Anúncios",
+  "slug": "shell-anuncios",
+  "thumb": "/images/shellanuncios04.png",
+  "descricao": "Anúncios em revistas de bordo para promoção de milhas do Shell Box."
+}
