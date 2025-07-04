@@ -1,0 +1,23 @@
+{
+  "ativo": true,
+  "ordem": 16,
+  "titulo": "Rexona | Peri Além dos Limites",
+  "slug": "rexona-peri-alem-dos-limites",
+  "thumb": "/images/rexona-man-city-thumb.png",
+  "descricao": "Rexona + Gabriel Jesus + Man. City + Racionais MC's \nincenvitando as crias do Peri a não abandonarem seus sonhos.",
+  "conteudo": [
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://www.youtube.com/embed/X70VyowrYAE"
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/rexona01.png",
+        "/images/rexona05.png"
+      ]
+    }
+  ]
+}
