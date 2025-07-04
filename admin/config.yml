@@ -113,6 +113,11 @@ collections:
         widget: "boolean"
         default: true
         hint: "Marque se quiser que o projeto fique visível no site, desmarque para ocultar."
+      - name: "ordem"
+        label: "Ordem de exibição"
+        widget: "number"
+        default: 0
+        hint: "Projetos com número menor aparecem antes."
       - name: "slug"
         label: "Slug"
         widget: "string"
