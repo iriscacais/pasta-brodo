@@ -1,0 +1,15 @@
+{
+  "ativo": true,
+  "ordem": 12,
+  "conteudo": [
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://www.youtube.com/embed/dJCIqTXjY7Y"
+    }
+  ],
+  "descricao": "A beautiful film for Easter, Lacta tells a story about a son that surprises his mother by using chocolate to create a message",
+  "thumb": "/images/lacta-palavras.jpg",
+  "slug": "lacta-palavras",
+  "titulo": "LACTA | Palavras"
+}
