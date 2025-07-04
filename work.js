@@ -4,6 +4,7 @@ fetch("/content/projetos/projetos.json")
     const grid = document.getElementById("projects-grid");
 
     const cardsHTML = data
+    .filter(projeto => projeto.ativo !== false)
     .slice() // cria uma cópia para não modificar o original
     .reverse()
       .map(

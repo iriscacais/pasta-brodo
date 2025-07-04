@@ -108,6 +108,10 @@ collections:
         label: "Subtítulo"
         widget: "string"
         required: false
+      - name: "ativo"
+        label: "Projeto visível no site?"
+        widget: "boolean"
+        default: true
       - name: "slug"
         label: "Slug"
         widget: "string"
