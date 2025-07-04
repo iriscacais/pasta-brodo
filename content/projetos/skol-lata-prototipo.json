@@ -1,0 +1,16 @@
+{
+  "ativo": true,
+  "ordem": 11,
+  "titulo": "Skol | Lata Protótipo",
+  "subtitulo": "Afinal, Skol Puro Malte chegou ou não chego?",
+  "slug": "skol-lata-prototipo",
+  "thumb": "/images/skol-prototipo.gif",
+  "descricao": "Todo dia surge uma cerveja puro malte no planeta. \nComo chamar a atenção para o lançamento de mais uma?",
+  "conteudo": [
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://player.vimeo.com/video/354946608"
+    }
+  ]
+}
