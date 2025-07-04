@@ -8,6 +8,11 @@
   "descricao": "Campanha de Leica para o Dia Mundial da Fotografia. \nCom André Fuku & Charles Faria. <3",
   "conteudo": [
     {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://www.youtube.com/embed/rMGcRGVCvTY"
+    },
+    {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/leica01.jpg",
