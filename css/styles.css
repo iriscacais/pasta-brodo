@@ -523,7 +523,7 @@ body.no-scroll {
 .projeto-container .projeto-content .hero-container {
   display: flex;
   gap: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 @media (max-width: 768px) {
   .projeto-container .projeto-content .hero-container {
