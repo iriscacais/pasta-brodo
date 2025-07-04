@@ -47,7 +47,13 @@
       "tipo": "galeria",
       "imagens": [
         "/images/Pins_Pina.jpg",
-        "/images/Pina_Rings.jpg",
+        "/images/Pina_Rings.jpg"
+      ]
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
         "/images/Pi=ns_Antonia_Pina.jpg",
         "/images/Ring_Antonia_Pina.jpg"
       ]
