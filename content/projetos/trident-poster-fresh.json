@@ -32,7 +32,6 @@
       "tipo": "galeria",
       "imagens": [
         "/images/fresh01.jpg",
-        "/images/fresh02.jpg",
         "/images/fresh03.jpg",
         "/images/fresh04.jpg",
         "/images/fresh05.jpg"
@@ -109,10 +108,8 @@
         "/images/Posters_Phi_22.jpg",
         "/images/Posters_Phi_23.jpg",
         "/images/Posters-Daniel-2.jpg",
-        "/images/Posters_Phi_12.jpg",
         "/images/Posters-Daniel-4.jpg",
-        "/images/POSTER_06.jpg",
-        "/images/POSTER_04_f.jpg"
+        "/images/POSTER_06.jpg"
       ]
     }
   ]
