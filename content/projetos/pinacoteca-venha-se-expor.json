@@ -1,0 +1,18 @@
+{
+  "ativo": true,
+  "ordem": -20,
+  "titulo": "PINACOTECA | VENHA SE EXPOR",
+  "subtitulo": "Exposição Somos Muit+s: experimento sobre coletividade.",
+  "slug": "pinacoteca-venha-se-expor",
+  "thumb": "/images/Thumb_02.jpg",
+  "conteudo": [
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/Facade_HighRes_0005_newport.jpg",
+        "/images/Flag_outsie_Pina01_low.jpg"
+      ]
+    }
+  ]
+}
