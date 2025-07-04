@@ -10,7 +10,7 @@ const projetos = arquivos.map(file => {
   return JSON.parse(content);
 });
 
-const outputPath = path.join(__dirname, "content/projetos.json");
+const outputPath = path.join(dir, "projetos.json");
 
 fs.writeFileSync(outputPath, JSON.stringify(projetos, null, 2));
 
