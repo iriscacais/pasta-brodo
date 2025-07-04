@@ -24,7 +24,12 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "O participante podia escolher quem estaria do outro lado da linha. Desde diretor convidando pra Hollywood até mãe convidando a voltar para casa.\n"
+      "valor": "O participante podia escolher quem estaria do outro lado da linha.\n"
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": " Desde diretor convidando pra Hollywood até mãe convidando a voltar para casa."
     },
     {
       "type": "texto",
@@ -39,7 +44,12 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "O segundo ator mais sexy da Vila Madalena (eu estava ocupado) estrelou o filme da campanha. \nCom certeza, ele arrumou encontro no Dia dos Namorados. Com certeza, alguém usou o serviço."
+      "valor": "O segundo ator mais sexy da Vila Madalena (eu estava ocupado) estrelou o filme da campanha. "
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Com certeza, ele arrumou encontro no Dia dos Namorados. Com certeza, alguém usou o serviço."
     }
   ]
 }
