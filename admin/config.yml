@@ -135,31 +135,45 @@ collections:
       - label: "Conteúdo"
         name: "conteudo"
         widget: "list"
-        fields:
-          - name: "tipo"
-            label: "Tipo"
-            widget: "select"
-            options: ["video", "imagem", "texto", "poster", "galeria"]
-            hint: "Escolha os campos que quer preenhcer para o projeto, imagem é para uma imagem única podendo ser grande ou pequena, poster se refere a uma galeria de poster e galeria a uma galeria de imagens."
-          - name: "src"
-            label: "Src (para vídeo/imagem)"
-            widget: "string"
-            required: false
-          - name: "valor"
-            label: "Texto explicativo"
-            widget: "text"
-            required: false
-          - name: "imagens"
-            label: "Lista de imagens"
-            widget: "list"
-            field:
-              label: "Imagem"
-              name: "image"
-              widget: "image"
-            required: false
-          - name: "tamanho"
-            label: "Tamanho da imagem (opcional)"
-            widget: "select"
-            options: ["normal", "pequena"]
-            required: false
-            hint: "Use 'pequena' se quiser que a imagem seja exibida com largura menor."
+        types:
+          - label: "Vídeo"
+            name: "video"
+            widget: "object"
+            fields:
+              - { name: "tipo", widget: "hidden", default: "video" }
+              - { name: "src", label: "URL do vídeo", widget: "string", hint: "Cole o link do YouTube ou Vimeo" }
+
+          - label: "Imagem"
+            name: "imagem"
+            widget: "object"
+            fields:
+              - { name: "tipo", widget: "hidden", default: "imagem" }
+              - { name: "src", label: "Imagem", widget: "image" }
+              - { name: "tamanho", label: "Tamanho", widget: "select", options: ["normal", "pequena"], required: false, hint: "Use 'pequena' se quiser que a imagem seja exibida menor." }
+
+          - label: "Texto"
+            name: "texto"
+            widget: "object"
+            fields:
+              - { name: "tipo", widget: "hidden", default: "texto" }
+              - { name: "valor", label: "Texto explicativo", widget: "text" }
+
+          - label: "Poster"
+            name: "poster"
+            widget: "object"
+            fields:
+              - { name: "tipo", widget: "hidden", default: "poster" }
+              - name: "imagens"
+                label: "Imagens"
+                widget: "list"
+                field: { name: "image", label: "Imagem", widget: "image" }
+
+          - label: "Galeria"
+            name: "galeria"
+            widget: "object"
+            fields:
+              - { name: "tipo", widget: "hidden", default: "galeria" }
+              - name: "imagens"
+                label: "Imagens"
+                widget: "list"
+                field: { name: "image", label: "Imagem", widget: "image" }
