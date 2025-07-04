@@ -18,6 +18,26 @@
         "/images/rexona01.png",
         "/images/rexona05.png"
       ]
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/rexona14.png",
+        "/images/rexona15.png",
+        "/images/rexona13.png",
+        "/images/rexona11.png"
+      ]
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/rexona08.png",
+        "/images/rexona09.png",
+        "/images/rexona06.png",
+        "/images/rexona07.png"
+      ]
     }
   ]
 }
