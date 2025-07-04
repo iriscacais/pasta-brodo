@@ -59,21 +59,22 @@ fetch("/content/projetos/projetos.json")
         container.innerHTML += `
           <div class="poster-grid">${posters}</div>`;
       }
-      else if (bloco.tipo === "galeria-video-horizontal") {
+      else if (bloco.tipo === "galeria-video-horizontal" && Array.isArray(bloco.videos)) {
         const videos = bloco.videos
+          .filter(v => typeof v === "string" && v.length > 0)
           .map(
-            (v) => `
-            <iframe
-              src="${v.src}"
-              frameborder="0"
-              allowfullscreen
-              class="video-horizontal"
-            ></iframe>`
+            (src) => `
+              <iframe
+                src="${src}"
+                frameborder="0"
+                allowfullscreen
+                class="video-horizontal"
+              ></iframe>`
           )
           .join("");
       
         container.innerHTML += `<div class="video-horizontal-grid">${videos}</div>`;
-      }      
+      }           
     });
 
     const navSection = document.createElement("section");
