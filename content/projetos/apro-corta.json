@@ -53,5 +53,6 @@
       "tamanho": "pequena"
     }
   ],
-  "ativo": true
+  "ativo": false,
+  "ordem": 3
 }
