@@ -74,8 +74,8 @@
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/Asset 2@2x-100.jpg",
-        "/images/pina04.gif"
+        "/images/pina04.gif",
+        "/images/Asset 2@2x-100.jpg"
       ]
     },
     {
@@ -91,6 +91,12 @@
       "tipo": "imagem",
       "src": "/images/Pina_Posters03_ooh4_low.png",
       "tamanho": "normal"
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/bueys_cross.jpg",
+      "tamanho": "pequena"
     }
   ]
 }
