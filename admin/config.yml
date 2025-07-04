@@ -185,8 +185,6 @@ collections:
               - name: "videos"
                 label: "Vídeos"
                 widget: "list"
-                field:
-                  label: "URL do vídeo"
-                  name: "src"
-                  widget: "string"
+                field: { label: "URL do vídeo", name: "src", widget: "string" }
+
 
