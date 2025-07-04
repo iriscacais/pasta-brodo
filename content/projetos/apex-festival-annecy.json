@@ -85,14 +85,6 @@
       "tipo": "imagem",
       "src": "/images/apex11.jpg",
       "tamanho": "normal"
-    },
-    {
-      "type": "galeria",
-      "tipo": "galeria",
-      "imagens": [
-        "/images/apex11.jpg",
-        "/images/apex12.png"
-      ]
     }
   ]
 }
