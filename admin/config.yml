@@ -100,7 +100,7 @@ collections:
     create: true
     identifier_field: "slug"
     slug: "{{slug}}"
-    summary: "{{fields.ordem}} - {{fields.titulo}} {{fields.ativo | default(false) | ternary('(visível)', '(oculto)')}}"
+    summary: "{{fields.ordem}} - {{fields.titulo}} - {{fields.ativo | ternary('(visível)', '(oculto)')}}"
     fields:
       - name: "titulo"
         label: "Título"
