@@ -177,3 +177,16 @@ collections:
                 label: "Imagens"
                 widget: "list"
                 field: { name: "image", label: "Imagem", widget: "image" }
+          - label: "Galeria de Vídeos Horizontais"
+            name: "galeria-video-horizontal"
+            widget: "object"
+            fields:
+              - { name: "tipo", widget: "hidden", default: "galeria-video-horizontal" }
+              - name: "videos"
+                label: "Vídeos"
+                widget: "list"
+                field:
+                  label: "URL do vídeo"
+                  name: "src"
+                  widget: "string"
+
