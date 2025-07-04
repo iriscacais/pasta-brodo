@@ -99,10 +99,10 @@
             }
         }
 
-        .poster-grid, .galeria {
+        .poster-grid {
             display: grid;
             gap: 16px;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(2, 1fr); // sempre 2 colunas no desktop
             margin: 40px 0;
           
             img {
@@ -117,10 +117,34 @@
               gap: 12px;
           
               img {
-                max-height: 70vh; // ou outro valor confortável para não estourar a tela
+                max-height: 70vh;
               }
             }
           }
+          
+          .galeria {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // responsiva
+            margin: 40px 0;
+          
+            img {
+              width: 100%;
+              height: auto;
+              object-fit: contain;
+              display: block;
+            }
+          
+            @media (max-width: 768px) {
+              grid-template-columns: 1fr;
+              gap: 12px;
+          
+              img {
+                max-height: 70vh;
+              }
+            }
+          }
+          
           .projeto-imagem {
             width: 100%;
             margin: 40px 0;

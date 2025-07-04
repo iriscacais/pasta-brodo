@@ -67,7 +67,7 @@ fetch("/content/projetos/projetos.json")
     let linksHTML = `<a href="/" class="nav-link">All</a>`;
     
     data.slice().filter(projeto => projeto.ativo !== false)
-    .sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0)).forEach(p => {
+    .sort((a, b) => (b.ordem ?? 0) - (a.ordem ?? 0)).forEach(p => {
       const isActive = p.slug === projeto.slug ? "active" : "";
       linksHTML += `<a href="/projeto.html?slug=${p.slug}" class="nav-link ${isActive}">${p.titulo}</a>`;
     });
