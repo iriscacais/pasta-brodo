@@ -7,12 +7,62 @@
   "thumb": "/images/Thumb_02.jpg",
   "conteudo": [
     {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/Facade_HighRes_0005_newport.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Esta campanha parte da ideia formulada por Joseph Beuys de que todo ser humano é um artista, e coloca sua obra em diálogo com artistas contemporâneos que reformulam e expandem a noção de arte como um campo de conhecimento coletivo, de investigação e experimentação, transformador do mundo."
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Com obras interativa, que estimulam o debate e o surgimento de novas ideias, o mote da campanha foi \"VENHA SE EXPOR\".  O público não era apenas um expectador, mas parte da obra. "
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/Pina_Posters05_ooh_night6_low.jpg",
+      "tamanho": "normal"
+    },
+    {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/Facade_HighRes_0005_newport.jpg",
-        "/images/Flag_outsie_Pina01_low.jpg"
+        "/images/base_jornal_5.jpg",
+        "/images/banner.jpg"
       ]
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/Poster_hor_subway04_low.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/Pins_Pina.jpg",
+        "/images/Pina_Rings.jpg",
+        "/images/Pi=ns_Antonia_Pina.jpg",
+        "/images/Ring_Antonia_Pina.jpg"
+      ]
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/Tote_Pina.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/Thumb_02.jpg",
+      "tamanho": "normal"
     }
   ]
 }
