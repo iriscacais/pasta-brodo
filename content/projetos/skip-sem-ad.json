@@ -1,0 +1,21 @@
+{
+    "titulo": "SKOL | Skip sem ad",
+    "subtitulo": "Anúncios que não precisavam ser pulados porque não eram anúncios.",
+    "slug": "skip-sem-ad",
+    "thumb": "/images/skipsemadthumb.png",
+    "descricao": "Em 2019, a Skol gastou milhões de reais para deixar claro que a sua cerveja puro malte não tinha chegado. Sem produto para anunciar, a Skol convidou o público a não pular seus vídeos sobre assuntos aleatórios, sem nenhuma inserção da suposta Skol Puro Malte, que até hoje não chegou.",
+    "conteudo": [
+        {
+          "tipo": "video",
+          "src": "https://player.vimeo.com/video/355750002?h=468b11e223"
+        },
+        {
+          "tipo": "video",
+          "src": "https://player.vimeo.com/video/355749937?h=26b7622536"
+        },
+        {
+            "tipo": "video",
+            "src": "https://player.vimeo.com/video/355749984?h=d91f24ba81"
+        }
+    ]
+  }

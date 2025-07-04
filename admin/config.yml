@@ -98,30 +98,25 @@ collections:
     extension: "json"
     format: "json"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.slug}}"
     fields:
       - name: "titulo"
         label: "Título"
         widget: "string"
-
       - name: "subtitulo"
         label: "Subtítulo"
         widget: "string"
         required: false
-
       - name: "slug"
         label: "Slug"
         widget: "string"
-
       - name: "thumb"
         label: "Thumbnail"
         widget: "image"
-
       - name: "descricao"
         label: "Descrição"
         widget: "text"
         required: false
-
       - label: "Conteúdo"
         name: "conteudo"
         widget: "list"
@@ -130,17 +125,14 @@ collections:
             label: "Tipo"
             widget: "select"
             options: ["video", "imagem", "texto", "poster", "galeria"]
-
           - name: "src"
             label: "Src (para vídeo/imagem)"
             widget: "string"
             required: false
-
           - name: "valor"
             label: "Texto explicativo"
             widget: "text"
             required: false
-
           - name: "imagens"
             label: "Lista de imagens"
             widget: "list"
@@ -149,3 +141,9 @@ collections:
               name: "image"
               widget: "image"
             required: false
+          - name: "tamanho"
+            label: "Tamanho da imagem (opcional)"
+            widget: "select"
+            options: ["normal", "pequena"]
+            required: false
+            hint: "Use 'pequena' se quiser que a imagem seja exibida com largura menor."
