@@ -1,0 +1,13 @@
+{
+  "titulo": "SKOL | Skip sem ad TESTE",
+  "slug": "skip-sem-ad-teste",
+  "thumb": "/images/skipsemadthumb.png",
+  "descricao": "",
+  "conteudo": [
+    {
+      "tipo": "video",
+      "imagens": [],
+      "src": "https://player.vimeo.com/video/355749984?h=d91f24ba81"
+    }
+  ]
+}
