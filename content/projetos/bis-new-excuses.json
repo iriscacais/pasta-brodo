@@ -1,0 +1,25 @@
+{
+  "ativo": true,
+  "ordem": 11,
+  "titulo": "BIS | New Excuses",
+  "descricao": "We always find an excuse to eat chocolate. But with the increase in types of BIS, you will need to create new excuses to eat them all.",
+  "slug": "bis-new-excuses",
+  "thumb": "/images/thumb-bis.jpg",
+  "conteudo": [
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://www.youtube.com/embed/SFUyNCH7_dM"
+    },
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://www.youtube.com/embed/izO3PJ4wqdE"
+    },
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://www.youtube.com/embed/Se8q8hsGSgU"
+    }
+  ]
+}
