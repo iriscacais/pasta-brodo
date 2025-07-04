@@ -93,10 +93,12 @@
       "tamanho": "normal"
     },
     {
-      "type": "imagem",
-      "tipo": "imagem",
-      "src": "/images/bueys_cross.jpg",
-      "tamanho": "pequena"
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/sm8.jpeg",
+        "/images/pina03.jpg"
+      ]
     }
   ]
 }
