@@ -1,0 +1,98 @@
+{
+  "ativo": true,
+  "ordem": 15,
+  "titulo": "Apex | Festival Annecy",
+  "slug": "apex-festival-annecy",
+  "descricao": "Cem anos da animação brasileira em cem segundos.",
+  "thumb": "/images/apex-thumb.png",
+  "conteudo": [
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "O Brasil foi o país homenageado no Festival de Annecy em 2018 \ne a APEX preparou um tributo à animação brasileira."
+    },
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://player.vimeo.com/video/355749824"
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/apex-01.png",
+        "/images/apex2.png",
+        "/images/apex03.png",
+        "/images/apex-4.png"
+      ]
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "A animação brasileira vive seus momentos de glória."
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Nem o mais otimista dos animadores acreditava que um dia brigaríamos por Oscar\nou colocaríamos os pés em Annecy, no maior festival de animações do mundo."
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Mas esse dia chegou."
+    },
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://player.vimeo.com/video/355749902"
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Convidamos um grupo seleto de animadores para criar colaborativamente\num tributo aos cem anos de animação no Brasil."
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/apex-05.png",
+        "/images/apex06.png",
+        "/images/apex07.png"
+      ]
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/apex8.png",
+        "/images/apex9.png",
+        "/images/apex10.png"
+      ]
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Conduzidos por um aviãozinho de papel, símbolo do festival, cada artista explorou diferentes técnicas e personagens que marcaram a trajetória da nossa animação."
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/apex12.png",
+      "tamanho": "normal"
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/apex11.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/apex11.jpg",
+        "/images/apex12.png"
+      ]
+    }
+  ]
+}
