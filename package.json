@@ -1,0 +1,12 @@
+{
+  "name": "pasta-brodo",
+  "version": "1.0.0",
+  "main": "about.js",
+  "scripts": {
+    "build": "node build-projetos.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
