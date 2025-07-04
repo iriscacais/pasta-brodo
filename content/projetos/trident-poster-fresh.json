@@ -1,0 +1,119 @@
+{
+  "ativo": true,
+  "ordem": 7,
+  "titulo": "TRIDENT| Pôsteres Fresh",
+  "subtitulo": "Campanha criada pela vibe da galera.",
+  "slug": "trident-poster-fresh",
+  "thumb": "/images/trident-fresh01.jpg",
+  "conteudo": [
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/trident-fresh01.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "O posicionamento de Trident Fresh na época era Refresque sua Vibe."
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Notamos que o ponto de encontro das pessoas mais estressadas de São Paulo era os pontos de ônibus da Av. Paulista."
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Foi aí que surgiu a ideia de criar um mural de gelo para geral deixar um recado ou arte good vibe."
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/fresh01.jpg",
+        "/images/fresh02.jpg",
+        "/images/fresh03.jpg",
+        "/images/fresh04.jpg",
+        "/images/fresh05.jpg"
+      ]
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Uma boa parcela só queria ganhar o Trident."
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Mas como os artistas são maioria, rendeu as mais variadas frases e ilustrações no gelo."
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/tridentfreshimage.gif"
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Foi aí que a ideia ficou mais interessante. "
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "E se a gente transformasse essa galeria vibe boa em pôsteres?"
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/trident-fresh-image02.gif",
+      "tamanho": "normal"
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "Bom. Deixo você com os resultados. "
+    },
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "O cachorrinho fui eu que desenhei."
+    },
+    {
+      "type": "galeria",
+      "tipo": "galeria",
+      "imagens": [
+        "/images/POSTER_01-t.jpg",
+        "/images/POSTER_02-t.jpg",
+        "/images/POSTER_05.jpg",
+        "/images/POSTER_07_revisao.jpg",
+        "/images/POSTER_10.jpg",
+        "/images/POSTER_11_revisao.jpg",
+        "/images/POSTER_12.jpg",
+        "/images/POSTER_14_revisao.jpg",
+        "/images/Posters_Phi_1.jpg",
+        "/images/POSTER_15_revisao.jpg",
+        "/images/POSTER_16.jpg",
+        "/images/Posters_Phi_2.jpg",
+        "/images/Posters_Phi_3.jpg",
+        "/images/Posters_Phi_5.jpg",
+        "/images/Posters-Daniel-5.jpg",
+        "/images/Posters_Phi_10.jpg",
+        "/images/Posters_Phi_11.jpg",
+        "/images/Posters_Phi_13.jpg",
+        "/images/Posters_Phi_15.jpg",
+        "/images/Posters_Phi_16.jpg",
+        "/images/Posters-Daniel-3.jpg",
+        "/images/Posters_Phi_17.jpg",
+        "/images/Posters_Phi_21.jpg",
+        "/images/Posters_Phi_22.jpg",
+        "/images/Posters_Phi_23.jpg",
+        "/images/Posters-Daniel-2.jpg",
+        "/images/Posters_Phi_12.jpg",
+        "/images/Posters-Daniel-4.jpg",
+        "/images/POSTER_06.jpg",
+        "/images/POSTER_04_f.jpg"
+      ]
+    }
+  ]
+}
