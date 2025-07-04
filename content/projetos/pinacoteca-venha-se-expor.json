@@ -79,26 +79,10 @@
       ]
     },
     {
-      "type": "galeria",
-      "tipo": "galeria",
-      "imagens": [
-        "/images/Poster_Pina02.jpg",
-        "/images/Poster_Pina01.jpg"
-      ]
-    },
-    {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/Pina_Posters03_ooh4_low.png",
       "tamanho": "normal"
-    },
-    {
-      "type": "galeria",
-      "tipo": "galeria",
-      "imagens": [
-        "/images/sm8.jpeg",
-        "/images/bueys_cross.jpg"
-      ]
     }
   ]
 }
