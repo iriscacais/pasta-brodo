@@ -35,5 +35,6 @@
       "tamanho": "pequena"
     }
   ],
-  "ativo": true
+  "ativo": true,
+  "ordem": 2
 }
