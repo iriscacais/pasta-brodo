@@ -1,0 +1,20 @@
+{
+  "ativo": true,
+  "ordem": 11,
+  "titulo": "Whext | Habemus.mov",
+  "slug": "whext-habemus",
+  "thumb": "/images/whext.jpg",
+  "descricao": "Dois mil e vinte, pandemia, suspensão de filmagens, corte de verbas.\nProduzir filme este ano foi quase um milagre.\nPara divulgar o Whext 2020, lançamos um álbum de cantos gregorianos.",
+  "conteudo": [
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://player.vimeo.com/video/489942763"
+    },
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1177023697&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
+    }
+  ]
+}
