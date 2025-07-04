@@ -23,16 +23,18 @@ collections:
                 name: "type"
                 widget: "select"
                 options: ["image", "embed"]
+                hint: "Para colocar uma imagem/foto, use o seletor de 'image'. Para colocar um vídeo, use o seletor 'embed'."
               - label: "Fonte da Mídia (imagem ou vídeo)"
                 name: "src"
                 widget: "string"
                 required: true
-                hint: "Para tipo 'image', use o seletor de imagem. Para tipo 'embed', cole a URL do vídeo."
+                hint: "Para imagens/fotos é necessário voltar a tela anterior e clicar em 'media' no menu superior, fazer o upload da imagem - selecionar a imagem - clicar em Copy path. Cole o caminho no campo. Para tipo 'video/embed', cole a URL do vídeo."
                 media_library: true
-              - label: "Descrição da Mídia"
+              - label: "Legenda da Mídia"
                 name: "description"
                 widget: "string"
                 required: false
+                hint: "Você pode colocar uma legenda para sua foto ou vídeo."
 
           - name: "title"
             label: "Título"
@@ -59,14 +61,16 @@ collections:
           - name: "experiencia"
             label: "Experiência"
             widget: "list"
+            summary: "{{fields.item}}"
             field:
-              label: "Cargo e Empresa"
+              label: "Empresa"
               name: "item"
               widget: "string"
 
           - name: "formacao"
             label: "Formação"
             widget: "list"
+            summary: "{{fields.item}}"
             field:
               label: "Curso ou Instituição"
               name: "item"
