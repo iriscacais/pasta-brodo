@@ -1,0 +1,29 @@
+{
+  "ativo": true,
+  "ordem": 13,
+  "titulo": "Leica | Fotografia vs Memória",
+  "subtitulo": "Homenagem ao Dia Mundial da Fotografia.",
+  "slug": "leica-fotografia-memoria",
+  "thumb": "/images/leica-thumb.jpg",
+  "descricao": "Campanha de Leica para o Dia Mundial da Fotografia. \nCom André Fuku & Charles Faria. <3",
+  "conteudo": [
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/leica01.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/leica-thumb.jpg",
+      "tamanho": "normal"
+    },
+    {
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/leica03.jpg",
+      "tamanho": "normal"
+    }
+  ]
+}
