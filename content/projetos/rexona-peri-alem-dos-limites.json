@@ -38,6 +38,15 @@
         "/images/rexona06.png",
         "/images/rexona07.png"
       ]
+    },
+    {
+      "type": "galeria-video-horizontal",
+      "tipo": "galeria-video-horizontal",
+      "videos": [
+        "https://player.vimeo.com/video/716034760?h=4ea638c22d&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0",
+        "https://player.vimeo.com/video/716034672?h=f759fe2a7b&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0",
+        "https://player.vimeo.com/video/716034601?h=ef91e894a8&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0"
+      ]
     }
   ]
 }
