@@ -109,9 +109,10 @@ collections:
         widget: "string"
         required: false
       - name: "ativo"
-        label: "Projeto visível no site?"
+        label: "Projeto visível no site."
         widget: "boolean"
         default: true
+        hint: "Marque se quiser que o projeto fique visível no site, desmarque para ocultar."
       - name: "slug"
         label: "Slug"
         widget: "string"

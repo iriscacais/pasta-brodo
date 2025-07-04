@@ -5,7 +5,7 @@ fetch("/content/projetos/projetos.json")
 
     const cardsHTML = data
     .filter(projeto => projeto.ativo !== false)
-    .slice() // cria uma cópia para não modificar o original
+    .sort((a, b) => (a.ordem ?? 0) - (b.ordem ?? 0)) 
     .reverse()
       .map(
         (projeto) => `
