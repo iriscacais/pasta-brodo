@@ -4,8 +4,13 @@
   "titulo": "Burger King | Mission: W.h.o.p.p.e.r.",
   "slug": "mission-whopper-bk",
   "thumb": "/images/thumb-mission.jpg",
-  "descricao": "We challenged gamers to change their nicknames for the Whopper ingredients and finish the game in the right order of a Whopper: Top bun, salad, cheese, pickle, grilled meat and Lil bun. This teamwork gave six free coupons of Whopper to every squad who managed to succeed. They just had to share their scoreboard on Twitter.",
+  "descricao": "",
   "conteudo": [
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "We challenged gamers to change their nicknames for the Whopper ingredients and finish the game in the right order of a Whopper: Top bun, salad, cheese, pickle, grilled meat and Lil bun. This teamwork gave six free coupons of Whopper to every squad who managed to succeed. They just had to share their scoreboard on Twitter."
+    },
     {
       "type": "video",
       "tipo": "video",
