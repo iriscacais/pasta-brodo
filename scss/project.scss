@@ -149,12 +149,12 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 16px;
-            margin: 40px 0;
           
             iframe.video-horizontal {
               width: 100%;
               aspect-ratio: 9 / 16;
               border: none;
+              height: 639px;
             }
           
             @media (max-width: 768px) {
