@@ -1,0 +1,15 @@
+{
+  "ativo": true,
+  "ordem": 17,
+  "titulo": "Burger King | Lu no BK",
+  "slug": "lu-bk",
+  "thumb": "/images/thumb-lu.jpg",
+  "descricao": "Burger King invited Lu, the world's biggest virtual influencer, to announce the promotion of sandwiches without artificial ingredients.",
+  "conteudo": [
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://www.youtube.com/embed/flF4wgpwA-M"
+    }
+  ]
+}
