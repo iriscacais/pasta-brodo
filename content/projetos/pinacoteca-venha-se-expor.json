@@ -67,7 +67,7 @@
     {
       "type": "imagem",
       "tipo": "imagem",
-      "src": "/images/pina01.jpg",
+      "src": "/images/01_0003_Layer Comp 3.jpg",
       "tamanho": "normal"
     },
     {
@@ -75,7 +75,7 @@
       "tipo": "galeria",
       "imagens": [
         "/images/pina04.gif",
-        "/images/01_0003_Layer Comp 3.jpg"
+        "/images/pina01.jpg"
       ]
     },
     {
