@@ -1,3 +1,8 @@
 [build]
   command = "node build-projetos.js"
   publish = "."
+
+[[redirects]]
+  from = "/projetos/:slug"
+  to = "/projeto.html?slug=:slug"
+  status = 200
