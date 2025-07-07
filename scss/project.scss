@@ -29,8 +29,10 @@
         .hero-container {
             display: flex;
             gap: 40px;
+            margin-bottom: 25px;
             @media (max-width: 768px) {
                 flex-direction: column;
+                gap: 30px;
             }
             .title-container {
                 width: 40%;

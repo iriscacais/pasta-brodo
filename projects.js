@@ -54,41 +54,42 @@ fetch("/content/projetos/projetos.json")
           <p class="projeto-texto fade-in">${bloco.valor}</p>`;
       } else if (bloco.tipo === "galeria") {
         const galeriaImgs = bloco.imagens
-          .map((img) => `<img src="${img}" alt="" />`)
+          .map((img, index) => `<img src="${img}" alt="" class="fade-in" style="transition-delay: ${index * 100}ms;" />`)
           .join("");
         container.innerHTML += `
-          <div class="galeria fade-in">${galeriaImgs}</div>`;
+          <div class="galeria">${galeriaImgs}</div>`;
       } else if (bloco.tipo === "poster") {
         const posters = bloco.imagens
-          .map((img) => `<img src="${img}" alt="Poster" />`)
+          .map((img, index) => `<img src="${img}" alt="Poster" class="fade-in" style="transition-delay: ${index * 100}ms;" />`)
           .join("");
         container.innerHTML += `
-          <div class="poster-grid fade-in">${posters}</div>`;
+          <div class="poster-grid">${posters}</div>`;
       } else if (bloco.tipo === "galeria-video-horizontal" && Array.isArray(bloco.videos)) {
         const videos = bloco.videos
           .filter((v) => typeof v === "string" && v.length > 0)
           .map(
-            (src) => `
+            (src, index) => `
               <iframe
                 src="${src}"
                 frameborder="0"
                 allowfullscreen
-                class="video-horizontal"
+                class="video-horizontal fade-in"
+                style="transition-delay: ${index * 100}ms;"
               ></iframe>`
           )
           .join("");
 
-        container.innerHTML += `<div class="video-horizontal-grid fade-in">${videos}</div>`;
+        container.innerHTML += `<div class="video-horizontal-grid">${videos}</div>`;
       } else if (bloco.tipo === "galeria-bloco" && bloco.imagens.length === 3) {
         const [img1, img2, img3] = bloco.imagens;
         container.innerHTML += `
-          <div class="galeria-bloco fade-in">
+          <div class="galeria-bloco">
             <div class="col-esquerda">
-              <img src="${img1}" alt="Imagem principal" />
+              <img src="${img1}" alt="Imagem principal" class="fade-in" style="transition-delay: 0ms;" />
             </div>
             <div class="col-direita">
-              <img src="${img2}" alt="Imagem secundária 1" />
-              <img src="${img3}" alt="Imagem secundária 2" />
+              <img src="${img2}" alt="Imagem secundária 1" class="fade-in" style="transition-delay: 100ms;" />
+              <img src="${img3}" alt="Imagem secundária 2" class="fade-in" style="transition-delay: 200ms;" />
             </div>
           </div>
         `;
@@ -112,21 +113,23 @@ fetch("/content/projetos/projetos.json")
     navSection.innerHTML = linksHTML;
     document.querySelector(".projeto-container").appendChild(navSection);
 
-    const fadeElements = document.querySelectorAll(".fade-in");
+    setTimeout(() => {
+      const fadeElements = document.querySelectorAll(".fade-in");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("reveal");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-      }
-    );
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("reveal");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.4,
+        }
+      );
 
-    fadeElements.forEach((el) => observer.observe(el));
+      fadeElements.forEach((el) => observer.observe(el));
+    }, 100);
   });
