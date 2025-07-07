@@ -4,7 +4,7 @@ if (params.has("slug")) {
   slug = params.get("slug");
 } else {
   const pathParts = window.location.pathname.split("/");
-  slug = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2]; 
+  slug = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
 }
 
 fetch("/content/projetos/projetos.json")
@@ -20,14 +20,14 @@ fetch("/content/projetos/projetos.json")
 
     // Título e descrição
     container.innerHTML = `
-    <section class="hero-container">
-    <div class="title-container">
-    <h1 class="projeto-title">${projeto.titulo}</h1>
-    ${projeto.subtitulo ? `<h2 class="projeto-subtitulo">${projeto.subtitulo}</h2>` : ""}
-    </div>
-    <div class="description-container">
-    ${projeto.descricao ? `<p class="projeto-descricao">${projeto.descricao}</p>` : ""}
-    </div>
+    <section class="hero-container fade-in">
+      <div class="title-container">
+        <h1 class="projeto-title">${projeto.titulo}</h1>
+        ${projeto.subtitulo ? `<h2 class="projeto-subtitulo">${projeto.subtitulo}</h2>` : ""}
+      </div>
+      <div class="description-container">
+        ${projeto.descricao ? `<p class="projeto-descricao">${projeto.descricao}</p>` : ""}
+      </div>
     </section>
   `;
 
@@ -35,7 +35,7 @@ fetch("/content/projetos/projetos.json")
     projeto.conteudo.forEach((bloco) => {
       if (bloco.tipo === "video") {
         container.innerHTML += `
-          <div class="projeto-video">
+          <div class="projeto-video fade-in">
             <iframe
               src="${bloco.src}"
               frameborder="0"
@@ -46,28 +46,27 @@ fetch("/content/projetos/projetos.json")
       } else if (bloco.tipo === "imagem") {
         const tamanhoClasse = bloco.tamanho === "pequena" ? "imagem-pequena" : "";
         container.innerHTML += `
-          <div class="projeto-imagem ${tamanhoClasse}">
+          <div class="projeto-imagem ${tamanhoClasse} fade-in">
             <img src="${bloco.src}" alt="Imagem do projeto" class="media-element" />
           </div>`;
       } else if (bloco.tipo === "texto") {
         container.innerHTML += `
-          <p class="projeto-texto">${bloco.valor}</p>`;
+          <p class="projeto-texto fade-in">${bloco.valor}</p>`;
       } else if (bloco.tipo === "galeria") {
         const galeriaImgs = bloco.imagens
           .map((img) => `<img src="${img}" alt="" />`)
           .join("");
         container.innerHTML += `
-          <div class="galeria">${galeriaImgs}</div>`;
+          <div class="galeria fade-in">${galeriaImgs}</div>`;
       } else if (bloco.tipo === "poster") {
         const posters = bloco.imagens
           .map((img) => `<img src="${img}" alt="Poster" />`)
           .join("");
         container.innerHTML += `
-          <div class="poster-grid">${posters}</div>`;
-      }
-      else if (bloco.tipo === "galeria-video-horizontal" && Array.isArray(bloco.videos)) {
+          <div class="poster-grid fade-in">${posters}</div>`;
+      } else if (bloco.tipo === "galeria-video-horizontal" && Array.isArray(bloco.videos)) {
         const videos = bloco.videos
-          .filter(v => typeof v === "string" && v.length > 0)
+          .filter((v) => typeof v === "string" && v.length > 0)
           .map(
             (src) => `
               <iframe
@@ -78,13 +77,12 @@ fetch("/content/projetos/projetos.json")
               ></iframe>`
           )
           .join("");
-      
-        container.innerHTML += `<div class="video-horizontal-grid">${videos}</div>`;
-      }
-      else if (bloco.tipo === "galeria-bloco" && bloco.imagens.length === 3) {
+
+        container.innerHTML += `<div class="video-horizontal-grid fade-in">${videos}</div>`;
+      } else if (bloco.tipo === "galeria-bloco" && bloco.imagens.length === 3) {
         const [img1, img2, img3] = bloco.imagens;
         container.innerHTML += `
-          <div class="galeria-bloco">
+          <div class="galeria-bloco fade-in">
             <div class="col-esquerda">
               <img src="${img1}" alt="Imagem principal" />
             </div>
@@ -94,22 +92,41 @@ fetch("/content/projetos/projetos.json")
             </div>
           </div>
         `;
-      }      
-             
+      }
     });
 
     const navSection = document.createElement("section");
-    navSection.className = "projeto-nav";
-    
+    navSection.className = "projeto-nav fade-in";
+
     let linksHTML = `<a href="/" class="nav-link">All</a>`;
-    
-    data.slice().filter(projeto => projeto.ativo !== false)
-    .sort((a, b) => (b.ordem ?? 0) - (a.ordem ?? 0)).forEach(p => {
-      const isActive = p.slug === projeto.slug ? "active" : "";
-      linksHTML += `<a href="/projetos/${p.slug}" class="nav-link ${isActive}">${p.titulo}</a>`;
-    });
-    
+
+    data
+      .slice()
+      .filter((projeto) => projeto.ativo !== false)
+      .sort((a, b) => (b.ordem ?? 0) - (a.ordem ?? 0))
+      .forEach((p) => {
+        const isActive = p.slug === projeto.slug ? "active" : "";
+        linksHTML += `<a href="/projetos/${p.slug}" class="nav-link ${isActive}">${p.titulo}</a>`;
+      });
+
     navSection.innerHTML = linksHTML;
     document.querySelector(".projeto-container").appendChild(navSection);
-    
-});
+
+    const fadeElements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    fadeElements.forEach((el) => observer.observe(el));
+  });

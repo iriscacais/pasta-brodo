@@ -68,4 +68,14 @@
 }
 .work-container .project-card:hover .card-overlay {
   opacity: 1;
+}
+
+.project-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.project-card.reveal {
+  opacity: 1;
+  transform: translateY(0);
 }/*# sourceMappingURL=work.css.map */
