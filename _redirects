@@ -1,1 +1,1 @@
-/projetos/*   /projetos/index.html   200
+/projetos/:slug  /projeto.html?slug=:slug  200

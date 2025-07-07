@@ -1,5 +1,11 @@
+let slug;
 const params = new URLSearchParams(window.location.search);
-const slug = params.get("slug");
+if (params.has("slug")) {
+  slug = params.get("slug");
+} else {
+  const pathParts = window.location.pathname.split("/");
+  slug = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2]; 
+}
 
 fetch("/content/projetos/projetos.json")
   .then((res) => res.json())
@@ -100,7 +106,7 @@ fetch("/content/projetos/projetos.json")
     data.slice().filter(projeto => projeto.ativo !== false)
     .sort((a, b) => (b.ordem ?? 0) - (a.ordem ?? 0)).forEach(p => {
       const isActive = p.slug === projeto.slug ? "active" : "";
-      linksHTML += `<a href="/projeto.html?slug=${p.slug}" class="nav-link ${isActive}">${p.titulo}</a>`;
+      linksHTML += `<a href="/projetos/${p.slug}" class="nav-link ${isActive}">${p.titulo}</a>`;
     });
     
     navSection.innerHTML = linksHTML;
