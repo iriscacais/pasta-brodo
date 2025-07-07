@@ -186,14 +186,17 @@ collections:
                 label: "Vídeos"
                 widget: "list"
                 field: { label: "URL do vídeo", name: "src", widget: "string" }
-          - label: "Galeria Masonry"
-            name: "galeria-masonry"
+          - label: "Galeria Assimétrica"
+            name: "galeria-bloco"
             widget: "object"
             fields:
-              - { name: "tipo", widget: "hidden", default: "galeria-masonry" }
+              - { name: "tipo", widget: "hidden", default: "galeria-bloco" }
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
+                min: 3
+                max: 3
                 field: { name: "image", label: "Imagem", widget: "image" }
+
 
 

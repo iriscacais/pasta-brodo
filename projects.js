@@ -75,13 +75,20 @@ fetch("/content/projetos/projetos.json")
       
         container.innerHTML += `<div class="video-horizontal-grid">${videos}</div>`;
       }
-      else if (bloco.tipo === "galeria-masonry") {
-        const masonryImgs = bloco.imagens
-          .map((img) => `<img src="${img}" alt="Imagem da galeria" />`)
-          .join("");
+      else if (bloco.tipo === "galeria-bloco" && bloco.imagens.length === 3) {
+        const [img1, img2, img3] = bloco.imagens;
         container.innerHTML += `
-          <div class="masonry-gallery">${masonryImgs}</div>`;
-      }
+          <div class="galeria-bloco">
+            <div class="col-esquerda">
+              <img src="${img1}" alt="Imagem principal" />
+            </div>
+            <div class="col-direita">
+              <img src="${img2}" alt="Imagem secundária 1" />
+              <img src="${img3}" alt="Imagem secundária 2" />
+            </div>
+          </div>
+        `;
+      }      
              
     });
 

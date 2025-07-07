@@ -67,15 +67,16 @@
     {
       "type": "imagem",
       "tipo": "imagem",
-      "src": "/images/01_0003_Layer Comp 3.jpg",
+      "src": "/images/pina04.gif",
       "tamanho": "normal"
     },
     {
-      "type": "galeria",
-      "tipo": "galeria",
+      "type": "galeria-bloco",
+      "tipo": "galeria-bloco",
       "imagens": [
-        "/images/pina04.gif",
-        "/images/pina01.jpg"
+        "/images/Flag_outsie_Pina01_low.jpg",
+        "/images/pina03.jpg",
+        "/images/BEUYS.jpg"
       ]
     },
     {
@@ -93,13 +94,9 @@
       "tamanho": "normal"
     },
     {
-      "type": "galeria-masonry",
-      "tipo": "galeria-masonry",
-      "imagens": [
-        "/images/Flag_outsie_Pina01_low.jpg",
-        "/images/pina03.jpg",
-        "/images/pina01.jpg"
-      ]
+      "type": "imagem",
+      "tipo": "imagem",
+      "src": "/images/pina01.jpg"
     }
   ]
 }
