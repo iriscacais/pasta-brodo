@@ -11,33 +11,31 @@
 
     <script>
       window.netlifyIdentity = window.netlifyIdentity || {};
-      localStorage.removeItem("netlify-cms-path");
-      // Inicializa o Netlify Identity
-      netlifyIdentity.init();
-
-      // Quando a identidade for inicializada
+    
       netlifyIdentity.on("init", (user) => {
         if (!user) {
-          // Se não estiver logado, escuta o login e redireciona
           netlifyIdentity.on("login", () => {
-            window.location.replace("/admin/#/");
+            // ⚠️ Deixa ele logar normalmente, então depois força a correção
+            setTimeout(() => {
+              // Apaga hash e recarrega a página do CMS "limpa"
+              window.location.href = "/admin/#/";
+              window.location.reload(); // força reconstrução do painel
+            }, 500);
           });
         } else {
-          // Bônus: Mostra no console quem está logado
           console.log("Usuário logado:", user.email);
         }
       });
-
-      // Logout com limpeza correta
+    
       netlifyIdentity.on("logout", () => {
         console.log("Logout detectado. Redirecionando...");
-
-        // O próprio Netlify Identity já limpa storage/cookies/session.
-        // Só redirecionamos após uma pequena pausa.
         setTimeout(() => {
           window.location.href = "/admin/";
         }, 500);
       });
+    
+      netlifyIdentity.init();
     </script>
+    
   </body>
 </html>
