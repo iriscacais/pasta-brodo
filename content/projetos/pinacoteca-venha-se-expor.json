@@ -91,6 +91,15 @@
       "tipo": "imagem",
       "src": "/images/Pina_Posters03_ooh4_low.png",
       "tamanho": "normal"
+    },
+    {
+      "type": "galeria-masonry",
+      "tipo": "galeria-masonry",
+      "imagens": [
+        "/images/Flag_outsie_Pina01_low.jpg",
+        "/images/pina03.jpg",
+        "/images/pina01.jpg"
+      ]
     }
   ]
 }
