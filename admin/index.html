@@ -12,42 +12,32 @@
     <script>
       window.netlifyIdentity = window.netlifyIdentity || {};
 
-      // Ao iniciar, redireciona se o usuário estiver logado
+      // Inicializa o Netlify Identity
+      netlifyIdentity.init();
+
+      // Quando a identidade for inicializada
       netlifyIdentity.on("init", (user) => {
         if (!user) {
+          // Se não estiver logado, escuta o login e redireciona
           netlifyIdentity.on("login", () => {
             window.location.href = "/admin/";
           });
+        } else {
+          // Bônus: Mostra no console quem está logado
+          console.log("Usuário logado:", user.email);
         }
       });
 
-      // Ao fazer logout, limpa tudo e redireciona para o login
+      // Logout com limpeza correta
       netlifyIdentity.on("logout", () => {
-        console.log("Logout detectado, limpando sessão...");
+        console.log("Logout detectado. Redirecionando...");
 
-        // Remove dados do Identity e do CMS
-        localStorage.removeItem("gotrue.user");
-        localStorage.removeItem("netlify-cms-user");
-        localStorage.removeItem("netlify-cms.entries.sort");
-        localStorage.removeItem("netlify-cms.entries.viewStyle")
-        sessionStorage.clear();
-
-        // Limpa cookies da sessão
-        document.cookie
-          .split(";")
-          .forEach((c) => {
-            document.cookie =
-              c.trim().split("=")[0] +
-              "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
-          });
-
-        // Redireciona para /admin com tudo limpo
+        // O próprio Netlify Identity já limpa storage/cookies/session.
+        // Só redirecionamos após uma pequena pausa.
         setTimeout(() => {
           window.location.href = "/admin/";
-        }, 300);
+        }, 500);
       });
-
-      netlifyIdentity.init();
     </script>
   </body>
 </html>
