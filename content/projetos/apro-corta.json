@@ -6,22 +6,27 @@
   "descricao": "",
   "conteudo": [
     {
+      "type": "imagem",
       "tipo": "imagem",
       "src": "/images/logo-animado-copra.gif"
     },
     {
+      "type": "texto",
       "tipo": "texto",
       "valor": "Ações como “Me too”, iniciada em Hollywood, chamaram atenção para escandalos de assédio na indústria do cinema."
     },
     {
+      "type": "texto",
       "tipo": "texto",
       "valor": "No Brasil, a APRO criou e liderou o pacto contra o assédio na Indústria Audiovisual."
     },
     {
+      "type": "texto",
       "tipo": "texto",
       "valor": "Desenvolvemos o nome do movimento e a comunicação de lançamento."
     },
     {
+      "type": "poster",
       "tipo": "poster",
       "imagens": [
         "/images/poster02-copra.jpg",
@@ -37,10 +42,12 @@
       ]
     },
     {
+      "type": "imagem",
       "tipo": "imagem",
       "src": "/images/corta_imagem02.jpg"
     },
     {
+      "type": "galeria",
       "tipo": "galeria",
       "imagens": [
         "/images/corta_Camisetas.jpg",
@@ -48,6 +55,7 @@
       ]
     },
     {
+      "type": "imagem",
       "tipo": "imagem",
       "src": "/images/corta_boca.gif",
       "tamanho": "pequena"
