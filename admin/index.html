@@ -20,7 +20,7 @@
         if (!user) {
           // Se não estiver logado, escuta o login e redireciona
           netlifyIdentity.on("login", () => {
-            window.location.href = "/admin/#/";
+            window.location.replace("/admin/#/");
           });
         } else {
           // Bônus: Mostra no console quem está logado
