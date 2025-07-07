@@ -16,8 +16,8 @@
       "valor": "Além do vídeo, soltamos pôsteres charadas para ajudar a equipe a descobrir quem era o coelho."
     },
     {
-      "type": "poster",
-      "tipo": "poster",
+      "type": "galeria",
+      "tipo": "galeria",
       "imagens": [
         "/images/pascoa01.gif",
         "/images/pascoa02.gif",
