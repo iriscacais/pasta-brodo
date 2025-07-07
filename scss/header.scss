@@ -17,8 +17,12 @@ $background: white;
 
   body.no-scroll {
     overflow: hidden;
-  }  
-  
+  }
+
+  body {
+    padding-top: 50px; /* ajuste esse valor com base na altura do seu menu */
+  }
+
 // HEADER
 .header-container {
   margin-top: 58px;
@@ -41,10 +45,19 @@ $background: white;
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  position: relative;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 80px 0 58px;
+  height: 120px;
   @media (max-width: 768px) {
     padding-left: 20px;
     padding-right: 20px;
+    height: 50px;
+    padding-top: 16px;
   }
 
 }

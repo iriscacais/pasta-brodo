@@ -13,6 +13,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
+body {
+  padding-top: 50px; /* ajuste esse valor com base na altura do seu menu */
+}
+
 .header-container {
   margin-top: 58px;
   margin-bottom: 58px;
@@ -37,12 +41,21 @@ body.no-scroll {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 80px 0 58px;
+  height: 120px;
 }
 @media (max-width: 768px) {
   .navigation-container {
     padding-left: 20px;
     padding-right: 20px;
+    height: 50px;
+    padding-top: 16px;
   }
 }
 
@@ -607,7 +620,7 @@ body.no-scroll {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(2, 1fr);
-  margin: 40px 0;
+  margin: 16px 0;
 }
 .projeto-container .projeto-content .poster-grid img {
   width: 100%;
@@ -628,7 +641,7 @@ body.no-scroll {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin: 40px 0;
+  margin: 16px 0;
 }
 .projeto-container .projeto-content .galeria img {
   width: 100%;
@@ -666,7 +679,7 @@ body.no-scroll {
 }
 .projeto-container .projeto-content .projeto-imagem {
   width: 100%;
-  margin: 40px 0;
+  margin: 16px 0;
 }
 .projeto-container .projeto-content .projeto-imagem img {
   width: 100%;
@@ -685,7 +698,7 @@ body.no-scroll {
 }
 .projeto-container .projeto-content .projeto-imagem.imagem-pequena {
   max-width: 600px;
-  margin: 40px auto;
+  margin: 16px auto;
 }
 .projeto-container .projeto-content .projeto-imagem.imagem-pequena img {
   max-height: 500px;
@@ -725,6 +738,26 @@ body.no-scroll {
   .projeto-container .projeto-nav {
     padding-left: 18px;
     padding-right: 18px;
+  }
+}
+.projeto-container .masonry-gallery {
+  column-count: 1;
+  column-gap: 16px;
+}
+.projeto-container .masonry-gallery img {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  display: block;
+}
+@media (min-width: 600px) {
+  .projeto-container .masonry-gallery {
+    column-count: 2;
+  }
+}
+@media (min-width: 900px) {
+  .projeto-container .masonry-gallery {
+    column-count: 3;
   }
 }
 

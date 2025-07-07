@@ -103,7 +103,7 @@
             display: grid;
             gap: 16px;
             grid-template-columns: repeat(2, 1fr); // sempre 2 colunas no desktop
-            margin: 40px 0;
+            margin: 16px 0;
           
             img {
               width: 100%;
@@ -126,7 +126,7 @@
             display: grid;
             gap: 16px;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // responsiva
-            margin: 40px 0;
+            margin: 16px 0;
           
             img {
               width: 100%;
@@ -168,7 +168,7 @@
           
           .projeto-imagem {
             width: 100%;
-            margin: 40px 0;
+            margin: 16px 0;
           
             img {
               width: 100%;
@@ -187,7 +187,7 @@
             }
             &.imagem-pequena {
                 max-width: 600px;
-                margin: 40px auto;
+                margin: 16px auto;
             
                 img {
                   max-height: 500px;
@@ -228,5 +228,29 @@
             padding-left: 18px;
             padding-right: 18px;
         }
-        }  
+        }
+        .masonry-gallery {
+          column-count: 1;
+          column-gap: 16px;
+        }
+        
+        .masonry-gallery img {
+          width: 100%;
+          margin-bottom: 16px;
+          border-radius: 8px;
+          display: block;
+        }
+        
+        @media (min-width: 600px) {
+          .masonry-gallery {
+            column-count: 2;
+          }
+        }
+        
+        @media (min-width: 900px) {
+          .masonry-gallery {
+            column-count: 3;
+          }
+        }
+        
 }

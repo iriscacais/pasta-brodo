@@ -13,12 +13,17 @@ body.no-scroll {
   overflow: hidden;
 }
 
+body {
+  padding-top: 50px; /* ajuste esse valor com base na altura do seu menu */
+}
+
 .header-container {
   margin-top: 58px;
   margin-bottom: 58px;
   padding-left: 58px;
   padding-right: 80px;
 }
+
 @media (min-width: 769px) {
   .header-container {
     padding-left: 58px;
@@ -32,20 +37,28 @@ body.no-scroll {
     margin: 15px 0;
   }
 }
-
 .navigation-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 80px 0 58px;
+  height: 120px;
 }
+
 @media (max-width: 768px) {
   .navigation-container {
     padding-left: 20px;
     padding-right: 20px;
+    height: 50px;
+    padding-top: 16px;
   }
 }
-
 .logo a {
   text-decoration: none;
   cursor: pointer;
@@ -55,13 +68,13 @@ body.no-scroll {
   font-weight: 500;
   font-size: 14px;
 }
+
 @media (max-width: 768px) {
   .logo a {
     font-size: 20px;
     text-transform: none;
   }
 }
-
 .menu-toggle {
   width: 25px;
   height: 20px;
@@ -73,6 +86,7 @@ body.no-scroll {
   z-index: 20;
   margin-left: auto;
 }
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -87,21 +101,27 @@ body.no-scroll {
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
+
 .menu-toggle .top {
   top: 0;
 }
+
 .menu-toggle .middle {
   top: 8px;
 }
+
 .menu-toggle .bottom {
   top: 16px;
 }
+
 .menu-toggle.active .top {
   transform: translateY(8px) rotate(45deg);
 }
+
 .menu-toggle.active .middle {
   opacity: 0;
 }
+
 .menu-toggle.active .bottom {
   transform: translateY(-8px) rotate(-45deg);
 }
@@ -109,6 +129,7 @@ body.no-scroll {
 .menu-container .menu-itens {
   display: flex;
 }
+
 .menu-container .menu-itens a {
   text-decoration: none;
   cursor: pointer;
@@ -119,9 +140,11 @@ body.no-scroll {
   font-size: 14px;
   margin-left: 20px;
 }
+
 .menu-container .menu-itens a:hover, .menu-container .menu-itens a:focus, .menu-container .menu-itens a.active {
   color: black;
 }
+
 @media (max-width: 768px) {
   .menu-container .menu-itens {
     display: none;
@@ -147,7 +170,6 @@ body.no-scroll {
     font-size: 32px;
   }
 }
-
 @media (max-width: 768px) {
   .menu-itens {
     left: 0;
@@ -156,6 +178,6 @@ body.no-scroll {
     padding-left: 0;
     padding-right: 0;
   }
-}
+} 
 
 /*# sourceMappingURL=header.css.map */

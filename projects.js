@@ -74,7 +74,15 @@ fetch("/content/projetos/projetos.json")
           .join("");
       
         container.innerHTML += `<div class="video-horizontal-grid">${videos}</div>`;
-      }           
+      }
+      else if (bloco.tipo === "galeria-masonry") {
+        const masonryImgs = bloco.imagens
+          .map((img) => `<img src="${img}" alt="Imagem da galeria" />`)
+          .join("");
+        container.innerHTML += `
+          <div class="masonry-gallery">${masonryImgs}</div>`;
+      }
+             
     });
 
     const navSection = document.createElement("section");
