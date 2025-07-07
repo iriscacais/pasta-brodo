@@ -8,36 +8,44 @@
   </head>
   <body>
     <div id="nc-root"></div>
+
     <script>
       window.netlifyIdentity = window.netlifyIdentity || {};
-    
-      // Sempre escuta o login
-      netlifyIdentity.on("login", () => {
-        window.location.href = "/admin/";
+
+      // Ao iniciar, redireciona se o usuário estiver logado
+      netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          netlifyIdentity.on("login", () => {
+            window.location.href = "/admin/";
+          });
+        }
       });
-    
-      // Sempre escuta o logout
+
+      // Ao fazer logout, limpa tudo e redireciona para o login
       netlifyIdentity.on("logout", () => {
         console.log("Logout detectado, limpando sessão...");
-    
+
+        // Remove dados do Identity e do CMS
         localStorage.removeItem("gotrue.user");
         localStorage.removeItem("netlify-cms-user");
         sessionStorage.clear();
-    
-        document.cookie.split(";").forEach((c) => {
-          document.cookie =
-            c.trim().split("=")[0] +
-            "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
-        });
-    
+
+        // Limpa cookies da sessão
+        document.cookie
+          .split(";")
+          .forEach((c) => {
+            document.cookie =
+              c.trim().split("=")[0] +
+              "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/";
+          });
+
+        // Redireciona para /admin com tudo limpo
         setTimeout(() => {
           window.location.href = "/admin/";
         }, 300);
       });
-    
-      // Inicializa
+
       netlifyIdentity.init();
     </script>
-    
   </body>
 </html>
