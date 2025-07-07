@@ -25,15 +25,6 @@
       ]
     },
     {
-      "type": "galeria",
-      "tipo": "galeria",
-      "imagens": [
-        "/images/pascoa01.gif",
-        "/images/pascoa02.gif",
-        "/images/pascoa03.gif"
-      ]
-    },
-    {
       "type": "video",
       "tipo": "video",
       "src": "https://player.vimeo.com/video/353668839?h=8cca7032f1"
