@@ -1,7 +1,9 @@
 backend:
   name: git-gateway
+  repo: iriscacais/pasta-brodo
   branch: main
-  login: true
+  identity_url: https://auth.decapbridge.com/sites/5426f22a-43f6-4e3f-8308-23450b1bf1cb
+  gateway_url: https://gateway.decapbridge.com
 
 media_folder: "images"
 public_folder: "/images"
