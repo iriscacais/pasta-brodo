@@ -1,12 +1,6 @@
 {
-  "ativo": true,
   "ordem": 8,
-  "titulo": "TRIDENT| Pôsteres Fresh",
-  "titulo_tamanho": "media",
-  "subtitulo": "Campanha criada pela vibe da galera.",
-  "subtitulo_tamanho": "media",
   "slug": "trident-poster-fresh",
-  "thumb": "/images/trident-fresh01.jpg",
   "conteudo": [
     {
       "type": "imagem",
@@ -17,17 +11,7 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "O posicionamento de Trident Fresh na época era Refresque sua Vibe."
-    },
-    {
-      "type": "texto",
-      "tipo": "texto",
-      "valor": "Notamos que o ponto de encontro das pessoas mais estressadas de São Paulo era os pontos de ônibus da Av. Paulista."
-    },
-    {
-      "type": "texto",
-      "tipo": "texto",
-      "valor": "Foi aí que surgiu a ideia de criar um mural de gelo para geral deixar um recado ou arte good vibe."
+      "valor": "O posicionamento de Trident Fresh na época era Refresque sua Vibe.\n\nNotamos que o ponto de encontro das pessoas mais estressadas de São Paulo era os pontos de ônibus da Av. Paulista.\n\nFoi aí que surgiu a ideia de criar um mural de gelo para geral deixar um recado ou arte good vibe."
     },
     {
       "type": "galeria",
@@ -42,12 +26,7 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Uma boa parcela só queria ganhar o Trident."
-    },
-    {
-      "type": "texto",
-      "tipo": "texto",
-      "valor": "Mas como os artistas são maioria, rendeu as mais variadas frases e ilustrações no gelo."
+      "valor": "Uma boa parcela só queria ganhar o Trident.\n\nMas como os artistas são maioria, rendeu as mais variadas frases e ilustrações no gelo."
     },
     {
       "type": "imagem",
@@ -58,12 +37,7 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Foi aí que a ideia ficou mais interessante."
-    },
-    {
-      "type": "texto",
-      "tipo": "texto",
-      "valor": "E se a gente transformasse essa galeria vibe boa em pôsteres?"
+      "valor": "Foi aí que a ideia ficou mais interessante.\n\nE se a gente transformasse essa galeria vibe boa em pôsteres?"
     },
     {
       "type": "imagem",
@@ -74,12 +48,7 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Bom. Deixo você com os resultados."
-    },
-    {
-      "type": "texto",
-      "tipo": "texto",
-      "valor": "O cachorrinho fui eu que desenhei."
+      "valor": "Bom. Deixo você com os resultados.\n\nO cachorrinho fui eu que desenhei."
     },
     {
       "type": "galeria",
@@ -115,5 +84,11 @@
         "/images/POSTER_06.jpg"
       ]
     }
-  ]
+  ],
+  "subtitulo_tamanho": "media",
+  "titulo_tamanho": "media",
+  "ativo": true,
+  "thumb": "/images/trident-fresh01.jpg",
+  "subtitulo": "Campanha criada pela vibe da galera.",
+  "titulo": "TRIDENT| Pôsteres Fresh"
 }
