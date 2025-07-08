@@ -79,7 +79,7 @@ collections:
           - name: "experiencia"
             label: "Experiência"
             widget: "list"
-            summary: "{{fields.item}}"
+            
             field:
               label: "Empresa"
               name: "item"
@@ -88,7 +88,7 @@ collections:
           - name: "formacao"
             label: "Formação"
             widget: "list"
-            summary: "{{fields.item}}"
+            
             field:
               label: "Curso ou Instituição"
               name: "item"
