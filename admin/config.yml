@@ -37,18 +37,12 @@ collections:
                 required: false
                 hint: "Selecione uma imagem da biblioteca."
                 media_library: true
-                conditional:
-                  field: "type"
-                  equals: "image"
 
               - label: "URL do vídeo"
                 name: "embed"
                 widget: "string"
                 required: false
                 hint: "Cole o link do vídeo (YouTube, Vimeo, etc.)"
-                conditional:
-                  field: "type"
-                  equals: "video"
 
               - label: "Legenda"
                 name: "description"
@@ -176,42 +170,23 @@ collections:
             name: "video"
             widget: "object"
             fields:
-              - name: "tipo"
-                widget: "hidden"
-                default: "video"
-              - name: "src"
-                label: "URL do vídeo"
-                widget: "string"
-                hint: "Cole o link do YouTube ou Vimeo"
+              - { name: "tipo", widget: "hidden", default: "video" }
+              - { name: "src", label: "URL do vídeo", widget: "string", hint: "Cole o link do YouTube ou Vimeo" }
 
           - label: "Imagem"
             name: "imagem"
             widget: "object"
             fields:
-              - name: "tipo"
-                widget: "hidden"
-                default: "imagem"
-              - name: "src"
-                label: "Imagem"
-                widget: "image"
-              - name: "alt"
-                label: "Descrição da Imagem (alt)"
-                widget: "string"
-                required: false
-              - name: "tamanho"
-                label: "Tamanho"
-                widget: "select"
-                options: ["normal", "pequena"]
-                required: false
-                hint: "Use 'pequena' se quiser que a imagem seja exibida menor."
+              - { name: "tipo", widget: "hidden", default: "imagem" }
+              - { name: "src", label: "Imagem", widget: "image" }
+              - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
+              - { name: "tamanho", label: "Tamanho", widget: "select", options: ["normal", "pequena"], required: false, hint: "Use 'pequena' se quiser que a imagem seja exibida menor." }
 
           - label: "Texto"
             name: "texto"
             widget: "object"
             fields:
-              - name: "tipo"
-                widget: "hidden"
-                default: "texto"
+              - { name: "tipo", widget: "hidden", default: "texto" }
               - name: "valor"
                 label: "Texto explicativo"
                 widget: "markdown"
@@ -230,72 +205,46 @@ collections:
             name: "poster"
             widget: "object"
             fields:
-              - name: "tipo"
-                widget: "hidden"
-                default: "poster"
+              - { name: "tipo", widget: "hidden", default: "poster" }
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
                 fields:
-                  - name: "image"
-                    label: "Imagem"
-                    widget: "image"
-                  - name: "alt"
-                    label: "Descrição da Imagem (alt)"
-                    widget: "string"
-                    required: false
+                  - { name: "image", label: "Imagem", widget: "image" }
+                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
 
           - label: "Galeria"
             name: "galeria"
             widget: "object"
             fields:
-              - name: "tipo"
-                widget: "hidden"
-                default: "galeria"
+              - { name: "tipo", widget: "hidden", default: "galeria" }
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
                 fields:
-                  - name: "image"
-                    label: "Imagem"
-                    widget: "image"
-                  - name: "alt"
-                    label: "Descrição da Imagem (alt)"
-                    widget: "string"
-                    required: false
+                  - { name: "image", label: "Imagem", widget: "image" }
+                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
 
           - label: "Galeria de Vídeos Horizontais"
             name: "galeria-video-horizontal"
             widget: "object"
             fields:
-              - name: "tipo"
-                widget: "hidden"
-                default: "galeria-video-horizontal"
+              - { name: "tipo", widget: "hidden", default: "galeria-video-horizontal" }
               - name: "videos"
                 label: "Vídeos"
                 widget: "list"
-                field:
-                  label: "URL do vídeo"
-                  name: "src"
-                  widget: "string"
+                field: { label: "URL do vídeo", name: "src", widget: "string" }
 
           - label: "Galeria Assimétrica"
             name: "galeria-bloco"
             widget: "object"
             fields:
-              - name: "tipo"
-                widget: "hidden"
-                default: "galeria-bloco"
+              - { name: "tipo", widget: "hidden", default: "galeria-bloco" }
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
                 min: 3
                 max: 3
                 fields:
-                  - name: "image"
-                    label: "Imagem"
-                    widget: "image"
-                  - name: "alt"
-                    label: "Descrição da Imagem (alt)"
-                    widget: "string"
-                    required: false
+                  - { name: "image", label: "Imagem", widget: "image" }
+                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
