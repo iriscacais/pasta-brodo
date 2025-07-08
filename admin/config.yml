@@ -33,13 +33,13 @@ collections:
                 name: "src"
                 widget: "string"
                 required: true
-                hint: "Para imagens/fotos é necessário voltar a tela anterior e clicar em 'media' no menu superior, fazer o upload da imagem - selecionar a imagem - clicar em Copy path. Cole o caminho no campo. Para tipo 'video/embed', cole a URL do vídeo."
+                hint: "Para imagens/fotos, use 'Copy path'. Para vídeos, cole a URL (YouTube, Vimeo etc.)."
                 media_library: true
               - label: "Legenda da Mídia"
                 name: "description"
                 widget: "string"
                 required: false
-                hint: "Você pode colocar uma legenda para sua foto ou vídeo."
+                hint: "Legenda opcional para a imagem ou vídeo."
 
           - name: "title"
             label: "Título"
@@ -119,7 +119,6 @@ collections:
         widget: "string"
         required: false
         hint: "Texto descritivo sobre o projeto - aparece ao lado do título e subtítulo."
-        default: "media"
       - name: "ativo"
         label: "Projeto visível no site."
         widget: "boolean"
@@ -146,22 +145,38 @@ collections:
             name: "video"
             widget: "object"
             fields:
-              - { name: "tipo", widget: "hidden", default: "video" }
-              - { name: "src", label: "URL do vídeo", widget: "string", hint: "Cole o link do YouTube ou Vimeo" }
+              - name: "tipo"
+                widget: "hidden"
+                default: "video"
+              - name: "src"
+                label: "URL do vídeo"
+                widget: "string"
+                hint: "Cole o link do YouTube ou Vimeo"
 
           - label: "Imagem"
             name: "imagem"
             widget: "object"
             fields:
-              - { name: "tipo", widget: "hidden", default: "imagem" }
-              - { name: "src", label: "Imagem", widget: "image" }
-              - { name: "tamanho", label: "Tamanho", widget: "select", options: ["normal", "pequena"], required: false, hint: "Use 'pequena' se quiser que a imagem seja exibida menor." }
+              - name: "tipo"
+                widget: "hidden"
+                default: "imagem"
+              - name: "src"
+                label: "Imagem"
+                widget: "image"
+              - name: "tamanho"
+                label: "Tamanho"
+                widget: "select"
+                options: ["normal", "pequena"]
+                required: false
+                hint: "Use 'pequena' se quiser que a imagem seja exibida menor."
 
           - label: "Texto"
             name: "texto"
             widget: "object"
             fields:
-              - { name: "tipo", widget: "hidden", default: "texto" }
+              - name: "tipo"
+                widget: "hidden"
+                default: "texto"
               - name: "valor"
                 label: "Texto explicativo"
                 widget: "markdown"
@@ -174,45 +189,65 @@ collections:
                   - bulleted-list
                   - numbered-list
                   - link
+
           - label: "Poster"
             name: "poster"
             widget: "object"
             fields:
-              - { name: "tipo", widget: "hidden", default: "poster" }
+              - name: "tipo"
+                widget: "hidden"
+                default: "poster"
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
-                field: { name: "image", label: "Imagem", widget: "image" }
+                field:
+                  name: "image"
+                  label: "Imagem"
+                  widget: "image"
 
           - label: "Galeria"
             name: "galeria"
             widget: "object"
             fields:
-              - { name: "tipo", widget: "hidden", default: "galeria" }
+              - name: "tipo"
+                widget: "hidden"
+                default: "galeria"
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
-                field: { name: "image", label: "Imagem", widget: "image" }
+                field:
+                  name: "image"
+                  label: "Imagem"
+                  widget: "image"
+
           - label: "Galeria de Vídeos Horizontais"
             name: "galeria-video-horizontal"
             widget: "object"
             fields:
-              - { name: "tipo", widget: "hidden", default: "galeria-video-horizontal" }
+              - name: "tipo"
+                widget: "hidden"
+                default: "galeria-video-horizontal"
               - name: "videos"
                 label: "Vídeos"
                 widget: "list"
-                field: { label: "URL do vídeo", name: "src", widget: "string" }
+                field:
+                  label: "URL do vídeo"
+                  name: "src"
+                  widget: "string"
+
           - label: "Galeria Assimétrica"
             name: "galeria-bloco"
             widget: "object"
             fields:
-              - { name: "tipo", widget: "hidden", default: "galeria-bloco" }
+              - name: "tipo"
+                widget: "hidden"
+                default: "galeria-bloco"
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
                 min: 3
                 max: 3
-                field: { name: "image", label: "Imagem", widget: "image" }
-
-
-
+                field:
+                  name: "image"
+                  label: "Imagem"
+                  widget: "image"
