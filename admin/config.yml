@@ -24,22 +24,36 @@ collections:
             name: "media"
             widget: "object"
             fields:
-              - label: "Tipo"
+              - label: "Tipo de Mídia"
                 name: "type"
                 widget: "select"
-                options: ["image", "embed"]
-                hint: "Para colocar uma imagem/foto, use o seletor de 'image'. Para colocar um vídeo, use o seletor 'embed'."
-              - label: "Fonte da Mídia (imagem ou vídeo)"
-                name: "src"
-                widget: "string"
-                required: true
-                hint: "Para imagens/fotos, use 'Copy path'. Para vídeos, cole a URL (YouTube, Vimeo etc.)."
+                options: ["image", "video"]
+                default: "image"
+                hint: "Escolha se será uma imagem ou um vídeo."
+
+              - label: "Imagem"
+                name: "image"
+                widget: "image"
+                required: false
+                hint: "Selecione uma imagem da biblioteca."
                 media_library: true
-              - label: "Legenda da Mídia"
+                conditional:
+                  field: "type"
+                  equals: "image"
+
+              - label: "URL do vídeo"
+                name: "embed"
+                widget: "string"
+                required: false
+                hint: "Cole o link do vídeo (YouTube, Vimeo, etc.)"
+                conditional:
+                  field: "type"
+                  equals: "video"
+
+              - label: "Legenda"
                 name: "description"
                 widget: "string"
                 required: false
-                hint: "Legenda opcional para a imagem ou vídeo."
 
           - name: "title"
             label: "Título"
@@ -47,7 +61,17 @@ collections:
 
           - name: "description"
             label: "Descrição principal"
-            widget: "text"
+            widget: "markdown"
+            buttons:
+              - bold
+              - italic
+              - heading-two
+              - heading-three
+              - quote
+              - bulleted-list
+              - numbered-list
+              - link
+            editor_components: []
 
           - name: "contatos"
             label: "Contatos"
@@ -110,33 +134,40 @@ collections:
       - name: "titulo"
         label: "Título"
         widget: "string"
+
       - name: "subtitulo"
         label: "Subtítulo"
         widget: "string"
         required: false
+
       - name: "descricao"
         label: "Descrição"
         widget: "string"
         required: false
         hint: "Texto descritivo sobre o projeto - aparece ao lado do título e subtítulo."
+
       - name: "ativo"
         label: "Projeto visível no site."
         widget: "boolean"
         default: true
         hint: "Marque se quiser que o projeto fique visível no site, desmarque para ocultar."
+
       - name: "ordem"
         label: "Ordem de exibição"
         widget: "number"
         default: 0
         hint: "Projetos com número menor aparecem antes."
+
       - name: "slug"
         label: "Slug"
         widget: "string"
         hint: "slug é o nome que vai aparecer na url quando o projeto for adicionado, preencha algo simples ex. skip-sem-ad."
+
       - name: "thumb"
         label: "Thumbnail"
         widget: "image"
         hint: "Imagem de capa."
+
       - label: "Conteúdo"
         name: "conteudo"
         widget: "list"
@@ -163,6 +194,10 @@ collections:
               - name: "src"
                 label: "Imagem"
                 widget: "image"
+              - name: "alt"
+                label: "Descrição da Imagem (alt)"
+                widget: "string"
+                required: false
               - name: "tamanho"
                 label: "Tamanho"
                 widget: "select"
@@ -189,6 +224,7 @@ collections:
                   - bulleted-list
                   - numbered-list
                   - link
+                editor_components: []
 
           - label: "Poster"
             name: "poster"
@@ -200,10 +236,14 @@ collections:
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
-                field:
-                  name: "image"
-                  label: "Imagem"
-                  widget: "image"
+                fields:
+                  - name: "image"
+                    label: "Imagem"
+                    widget: "image"
+                  - name: "alt"
+                    label: "Descrição da Imagem (alt)"
+                    widget: "string"
+                    required: false
 
           - label: "Galeria"
             name: "galeria"
@@ -215,10 +255,14 @@ collections:
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
-                field:
-                  name: "image"
-                  label: "Imagem"
-                  widget: "image"
+                fields:
+                  - name: "image"
+                    label: "Imagem"
+                    widget: "image"
+                  - name: "alt"
+                    label: "Descrição da Imagem (alt)"
+                    widget: "string"
+                    required: false
 
           - label: "Galeria de Vídeos Horizontais"
             name: "galeria-video-horizontal"
@@ -247,7 +291,11 @@ collections:
                 widget: "list"
                 min: 3
                 max: 3
-                field:
-                  name: "image"
-                  label: "Imagem"
-                  widget: "image"
+                fields:
+                  - name: "image"
+                    label: "Imagem"
+                    widget: "image"
+                  - name: "alt"
+                    label: "Descrição da Imagem (alt)"
+                    widget: "string"
+                    required: false

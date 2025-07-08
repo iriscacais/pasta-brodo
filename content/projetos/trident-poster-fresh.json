@@ -6,7 +6,8 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/trident-fresh01.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Cartaz da campanha Trident Fresh colado em ponto de ônibus"
     },
     {
       "type": "texto",
@@ -17,10 +18,10 @@
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/fresh01.jpg",
-        "/images/fresh03.jpg",
-        "/images/fresh04.jpg",
-        "/images/fresh05.jpg"
+        { "image": "/images/fresh01.jpg", "alt": "Mural de gelo com frase desenhada com o dedo" },
+        { "image": "/images/fresh03.jpg", "alt": "Pessoa interagindo com o mural Trident Fresh" },
+        { "image": "/images/fresh04.jpg", "alt": "Frase desenhada no gelo: vibe boa" },
+        { "image": "/images/fresh05.jpg", "alt": "Pessoas participando da ação Trident Fresh" }
       ]
     },
     {
@@ -32,7 +33,8 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/tridentfreshimage.gif",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "GIF mostrando o mural Trident Fresh sendo desenhado"
     },
     {
       "type": "texto",
@@ -43,7 +45,8 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/trident-fresh-image02.gif",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "GIF com compilado de pôsteres da campanha Trident Fresh"
     },
     {
       "type": "texto",
@@ -54,41 +57,39 @@
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/POSTER_01-t.jpg",
-        "/images/POSTER_02-t.jpg",
-        "/images/POSTER_05.jpg",
-        "/images/POSTER_07_revisao.jpg",
-        "/images/POSTER_10.jpg",
-        "/images/POSTER_11_revisao.jpg",
-        "/images/POSTER_12.jpg",
-        "/images/POSTER_14_revisao.jpg",
-        "/images/Posters_Phi_1.jpg",
-        "/images/POSTER_15_revisao.jpg",
-        "/images/POSTER_16.jpg",
-        "/images/Posters_Phi_2.jpg",
-        "/images/Posters_Phi_3.jpg",
-        "/images/Posters_Phi_5.jpg",
-        "/images/Posters-Daniel-5.jpg",
-        "/images/Posters_Phi_10.jpg",
-        "/images/Posters_Phi_11.jpg",
-        "/images/Posters_Phi_13.jpg",
-        "/images/Posters_Phi_15.jpg",
-        "/images/Posters_Phi_16.jpg",
-        "/images/Posters-Daniel-3.jpg",
-        "/images/Posters_Phi_17.jpg",
-        "/images/Posters_Phi_21.jpg",
-        "/images/Posters_Phi_22.jpg",
-        "/images/Posters_Phi_23.jpg",
-        "/images/Posters-Daniel-2.jpg",
-        "/images/Posters-Daniel-4.jpg",
-        "/images/POSTER_06.jpg"
+        { "image": "/images/POSTER_01-t.jpg", "alt": "Pôster Trident Fresh 01" },
+        { "image": "/images/POSTER_02-t.jpg", "alt": "Pôster Trident Fresh 02" },
+        { "image": "/images/POSTER_05.jpg", "alt": "Pôster Trident Fresh 05" },
+        { "image": "/images/POSTER_07_revisao.jpg", "alt": "Pôster Trident Fresh 07" },
+        { "image": "/images/POSTER_10.jpg", "alt": "Pôster Trident Fresh 10" },
+        { "image": "/images/POSTER_11_revisao.jpg", "alt": "Pôster Trident Fresh 11" },
+        { "image": "/images/POSTER_12.jpg", "alt": "Pôster Trident Fresh 12" },
+        { "image": "/images/POSTER_14_revisao.jpg", "alt": "Pôster Trident Fresh 14" },
+        { "image": "/images/Posters_Phi_1.jpg", "alt": "Pôster Trident Fresh - autor Phi 1" },
+        { "image": "/images/POSTER_15_revisao.jpg", "alt": "Pôster Trident Fresh 15" },
+        { "image": "/images/POSTER_16.jpg", "alt": "Pôster Trident Fresh 16" },
+        { "image": "/images/Posters_Phi_2.jpg", "alt": "Pôster Trident Fresh - autor Phi 2" },
+        { "image": "/images/Posters_Phi_3.jpg", "alt": "Pôster Trident Fresh - autor Phi 3" },
+        { "image": "/images/Posters_Phi_5.jpg", "alt": "Pôster Trident Fresh - autor Phi 5" },
+        { "image": "/images/Posters-Daniel-5.jpg", "alt": "Pôster Trident Fresh - Daniel 5" },
+        { "image": "/images/Posters_Phi_10.jpg", "alt": "Pôster Trident Fresh - autor Phi 10" },
+        { "image": "/images/Posters_Phi_11.jpg", "alt": "Pôster Trident Fresh - autor Phi 11" },
+        { "image": "/images/Posters_Phi_13.jpg", "alt": "Pôster Trident Fresh - autor Phi 13" },
+        { "image": "/images/Posters_Phi_15.jpg", "alt": "Pôster Trident Fresh - autor Phi 15" },
+        { "image": "/images/Posters_Phi_16.jpg", "alt": "Pôster Trident Fresh - autor Phi 16" },
+        { "image": "/images/Posters-Daniel-3.jpg", "alt": "Pôster Trident Fresh - Daniel 3" },
+        { "image": "/images/Posters_Phi_17.jpg", "alt": "Pôster Trident Fresh - autor Phi 17" },
+        { "image": "/images/Posters_Phi_21.jpg", "alt": "Pôster Trident Fresh - autor Phi 21" },
+        { "image": "/images/Posters_Phi_22.jpg", "alt": "Pôster Trident Fresh - autor Phi 22" },
+        { "image": "/images/Posters_Phi_23.jpg", "alt": "Pôster Trident Fresh - autor Phi 23" },
+        { "image": "/images/Posters-Daniel-2.jpg", "alt": "Pôster Trident Fresh - Daniel 2" },
+        { "image": "/images/Posters-Daniel-4.jpg", "alt": "Pôster Trident Fresh - Daniel 4" },
+        { "image": "/images/POSTER_06.jpg", "alt": "Pôster Trident Fresh 06" }
       ]
     }
   ],
-  "subtitulo_tamanho": "media",
-  "titulo_tamanho": "media",
   "ativo": true,
   "thumb": "/images/trident-fresh01.jpg",
-  "subtitulo": "Campanha criada pela vibe da galera.",
-  "titulo": "TRIDENT| Pôsteres Fresh"
+  "titulo": "TRIDENT| Pôsteres Fresh",
+  "subtitulo": "Campanha criada pela vibe da galera."
 }

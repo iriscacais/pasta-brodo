@@ -10,6 +10,7 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/Facade_HighRes_0005_newport.jpg",
+      "alt": "Fachada da Pinacoteca com banner da exposição Somos Muit+s",
       "tamanho": "normal"
     },
     {
@@ -21,77 +22,83 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/Pina_Posters05_ooh_night6_low.jpg",
+      "alt": "Poster da campanha Venha se Expor à noite",
       "tamanho": "normal"
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/base_jornal_5.jpg",
-        "/images/banner.jpg"
+        { "image": "/images/base_jornal_5.jpg", "alt": "Jornal com base da campanha coletiva" },
+        { "image": "/images/banner.jpg", "alt": "Banner vertical da exposição Somos Muit+s" }
       ]
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/Poster_hor_subway04_low.jpg",
+      "alt": "Poster horizontal na estação de metrô com arte da exposição",
       "tamanho": "normal"
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/Pins_Pina.jpg",
-        "/images/Pina_Rings.jpg"
+        { "image": "/images/Pins_Pina.jpg", "alt": "Pins da Pinacoteca com frases da exposição" },
+        { "image": "/images/Pina_Rings.jpg", "alt": "Anéis com inscrição da campanha Venha se Expor" }
       ]
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/Pi=ns_Antonia_Pina.jpg",
-        "/images/Ring_Antonia_Pina.jpg"
+        { "image": "/images/Pi=ns_Antonia_Pina.jpg", "alt": "Pins usados por Antonia na exposição" },
+        { "image": "/images/Ring_Antonia_Pina.jpg", "alt": "Anel usado por Antonia com arte da exposição" }
       ]
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/Tote_Pina.jpg",
+      "alt": "Ecobag da Pinacoteca com identidade da exposição",
       "tamanho": "normal"
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/pina04.gif",
+      "alt": "GIF animado de arte da campanha",
       "tamanho": "normal"
     },
     {
       "type": "galeria-bloco",
       "tipo": "galeria-bloco",
       "imagens": [
-        "/images/Flag_outsie_Pina01_low.jpg",
-        "/images/pina03.jpg",
-        "/images/BEUYS.jpg"
+        { "image": "/images/Flag_outsie_Pina01_low.jpg", "alt": "Bandeira da exposição na entrada da Pinacoteca" },
+        { "image": "/images/pina03.jpg", "alt": "Visitantes interagindo com obra coletiva" },
+        { "image": "/images/BEUYS.jpg", "alt": "Referência a Joseph Beuys na campanha" }
       ]
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/pina02.jpg",
-        "/images/Poster_Pina01.jpg"
+        { "image": "/images/pina02.jpg", "alt": "Detalhe de cartaz artístico da exposição" },
+        { "image": "/images/Poster_Pina01.jpg", "alt": "Poster colorido da campanha Venha se Expor" }
       ]
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/Pina_Posters03_ooh4_low.png",
+      "alt": "Cartaz urbano da exposição Somos Muit+s",
       "tamanho": "normal"
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/pina01.jpg",
+      "alt": "Entrada principal da Pinacoteca com o nome da exposição",
       "tamanho": "normal"
     }
   ]

@@ -15,28 +15,28 @@
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/rexona01.png",
-        "/images/rexona05.png"
+        { "image": "/images/rexona01.png", "alt": "Jovens do Peri participando de ação da Rexona" },
+        { "image": "/images/rexona05.png", "alt": "Intervenção urbana da campanha Rexona no Peri" }
       ]
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/rexona14.png",
-        "/images/rexona15.png",
-        "/images/rexona13.png",
-        "/images/rexona11.png"
+        { "image": "/images/rexona14.png", "alt": "Trecho do vídeo com Gabriel Jesus no Peri" },
+        { "image": "/images/rexona15.png", "alt": "Detalhe da comunidade do Peri na campanha" },
+        { "image": "/images/rexona13.png", "alt": "Retrato de jovem participante da ação" },
+        { "image": "/images/rexona11.png", "alt": "Apresentação da campanha com Racionais MC's" }
       ]
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/rexona08.png",
-        "/images/rexona09.png",
-        "/images/rexona06.png",
-        "/images/rexona07.png"
+        { "image": "/images/rexona08.png", "alt": "Arte visual com frase inspiradora da campanha" },
+        { "image": "/images/rexona09.png", "alt": "Atleta local participando da ação Rexona" },
+        { "image": "/images/rexona06.png", "alt": "Bastidores da campanha com a juventude do Peri" },
+        { "image": "/images/rexona07.png", "alt": "Cenas motivacionais da campanha Rexona" }
       ]
     },
     {

@@ -19,9 +19,9 @@
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/pascoa01.gif",
-        "/images/pascoa02.gif",
-        "/images/pascoa03.gif"
+        { "image": "/images/pascoa01.gif", "alt": "Pôster charada 1 da campanha de páscoa F/Nazca" },
+        { "image": "/images/pascoa02.gif", "alt": "Pôster charada 2 da campanha de páscoa F/Nazca" },
+        { "image": "/images/pascoa03.gif", "alt": "Pôster charada 3 da campanha de páscoa F/Nazca" }
       ]
     },
     {
@@ -38,7 +38,8 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/premiofabio.png",
-      "tamanho": "pequena"
+      "tamanho": "pequena",
+      "alt": "Imagem do prêmio dado por Fábio Fernandes"
     }
   ],
   "ativo": true,

@@ -16,19 +16,22 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/leica01.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Imagem do projeto Leica - Fotografia vs Memória 01"
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/leica-thumb.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Imagem do projeto Leica - Fotografia vs Memória 02"
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/leica03.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Imagem do projeto Leica - Fotografia vs Memória 03"
     }
   ]
 }

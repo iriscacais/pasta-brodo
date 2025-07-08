@@ -6,19 +6,22 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/shellanuncios01.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Anúncio do Shell Box com destaque visual na paisagem"
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/shellanuncios02.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Anúncio do Shell Box com elementos de milhagem aérea"
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/shellanuncios03.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Anúncio Shell Box destacando premiação de posto mais bonito"
     },
     {
       "type": "texto",
@@ -29,7 +32,8 @@
       "type": "imagem",
       "tipo": "imagem",
       "tamanho": "normal",
-      "src": "/images/shellanuncios04.png"
+      "src": "/images/shellanuncios04.png",
+      "alt": "Último anúncio da série Shell Box em revista de bordo"
     }
   ],
   "titulo": "Shell | Anúncios",

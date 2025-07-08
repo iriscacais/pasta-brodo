@@ -5,6 +5,7 @@
   "slug": "apex-festival-annecy",
   "descricao": "",
   "thumb": "/images/apex-thumb.png",
+  "subtitulo": "Cem anos da animação brasileira em cem segundos.",
   "conteudo": [
     {
       "type": "texto",
@@ -20,10 +21,10 @@
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/apex-01.png",
-        "/images/apex2.png",
-        "/images/apex03.png",
-        "/images/apex-4.png"
+        { "image": "/images/apex-01.png", "alt": "Frame da animação APEX Annecy 01" },
+        { "image": "/images/apex2.png", "alt": "Frame da animação APEX Annecy 02" },
+        { "image": "/images/apex03.png", "alt": "Frame da animação APEX Annecy 03" },
+        { "image": "/images/apex-4.png", "alt": "Frame da animação APEX Annecy 04" }
       ]
     },
     {
@@ -34,8 +35,7 @@
     {
       "type": "video",
       "tipo": "video",
-      "src": "https://player.vimeo.com/video/355749902",
-      "valor": ""
+      "src": "https://player.vimeo.com/video/355749902"
     },
     {
       "type": "texto",
@@ -46,18 +46,18 @@
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/apex-05.png",
-        "/images/apex06.png",
-        "/images/apex07.png"
+        { "image": "/images/apex-05.png", "alt": "Cenário da animação brasileira 05" },
+        { "image": "/images/apex06.png", "alt": "Cenário da animação brasileira 06" },
+        { "image": "/images/apex07.png", "alt": "Cenário da animação brasileira 07" }
       ]
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/apex8.png",
-        "/images/apex9.png",
-        "/images/apex10.png"
+        { "image": "/images/apex8.png", "alt": "Cena final da animação Apex 08" },
+        { "image": "/images/apex9.png", "alt": "Cena final da animação Apex 09" },
+        { "image": "/images/apex10.png", "alt": "Cena final da animação Apex 10" }
       ]
     },
     {
@@ -69,14 +69,15 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/apex12.png",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Aviãozinho símbolo do Festival de Annecy"
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/apex11.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "alt": "Cartaz de homenagem à animação brasileira"
     }
-  ],
-  "subtitulo": "Cem anos da animação brasileira em cem segundos."
+  ]
 }

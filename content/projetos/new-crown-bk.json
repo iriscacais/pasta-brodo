@@ -4,13 +4,8 @@
   "titulo": "Burger King | New Crown",
   "slug": "new-crown-bk",
   "thumb": "/images/thumb-crown.jpg",
-  "descricao": "",
+  "descricao": "For over 50 years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it always had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new version of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.",
   "conteudo": [
-    {
-      "type": "texto",
-      "tipo": "texto",
-      "valor": "For over 50 years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it always had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new version of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.For over 50 years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it always had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new version of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil."
-    },
     {
       "type": "video",
       "tipo": "video",
@@ -20,17 +15,32 @@
       "type": "poster",
       "tipo": "poster",
       "imagens": [
-        "/images/poster-2.png",
-        "/images/poster-1_3.png"
+        {
+          "image": "/images/poster-2.png",
+          "alt": "Poster da nova coroa inclusiva do Burger King - versão 2"
+        },
+        {
+          "image": "/images/poster-1_3.png",
+          "alt": "Poster da nova coroa inclusiva do Burger King - versão 1"
+        }
       ]
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/posters-finais_6.png",
-        "/images/posters-finais_5.png",
-        "/images/posters-finais_4.png"
+        {
+          "image": "/images/posters-finais_6.png",
+          "alt": "Foto da campanha com modelo usando a nova coroa afro"
+        },
+        {
+          "image": "/images/posters-finais_5.png",
+          "alt": "Modelo em destaque com a nova coroa do Burger King"
+        },
+        {
+          "image": "/images/posters-finais_4.png",
+          "alt": "Detalhe lateral da nova coroa adaptada para cabelos afro"
+        }
       ]
     },
     {
@@ -42,8 +52,8 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/apoio_crown_3.jpg",
-      "tamanho": "normal",
-      "valor": "For over **50** years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it *always* had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new version of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.For over 50 years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it always had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new [version](www.google.com.br) of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.\n\n1. 4r34r\n\n## oi\n\n* 1\n* 3\n\n> olha quanta coisa boa - iris"
+      "alt": "Foto de apoio institucional à nova coroa do Burger King",
+      "tamanho": "normal"
     }
   ]
 }

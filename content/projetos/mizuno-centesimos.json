@@ -7,7 +7,8 @@
     {
       "type": "imagem",
       "tipo": "imagem",
-      "src": "/images/mizuno.jpg"
+      "src": "/images/mizuno.jpg",
+      "alt": "Imagem do projeto Mizuno | Centésimos Decisivos"
     }
   ],
   "ativo": true,

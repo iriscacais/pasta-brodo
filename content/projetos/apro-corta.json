@@ -7,7 +7,8 @@
     {
       "type": "imagem",
       "tipo": "imagem",
-      "src": "/images/logo-animado-copra.gif"
+      "src": "/images/logo-animado-copra.gif",
+      "alt": "Logo animado da campanha CORTA!"
     },
     {
       "type": "texto",
@@ -18,36 +19,38 @@
       "type": "poster",
       "tipo": "poster",
       "imagens": [
-        "/images/poster02-copra.jpg",
-        "/images/poster04-copra.jpg",
-        "/images/poster05-copra.jpg",
-        "/images/poster06-copra.jpg",
-        "/images/poster07-copra.jpg",
-        "/images/poster08-copra.jpg",
-        "/images/poster09-copra.jpg",
-        "/images/poster10-copra.jpg",
-        "/images/poster01-copra.jpg",
-        "/images/poster03-copra.jpg"
+        { "image": "/images/poster02-copra.jpg", "alt": "Pôster da campanha CORTA! 02" },
+        { "image": "/images/poster04-copra.jpg", "alt": "Pôster da campanha CORTA! 04" },
+        { "image": "/images/poster05-copra.jpg", "alt": "Pôster da campanha CORTA! 05" },
+        { "image": "/images/poster06-copra.jpg", "alt": "Pôster da campanha CORTA! 06" },
+        { "image": "/images/poster07-copra.jpg", "alt": "Pôster da campanha CORTA! 07" },
+        { "image": "/images/poster08-copra.jpg", "alt": "Pôster da campanha CORTA! 08" },
+        { "image": "/images/poster09-copra.jpg", "alt": "Pôster da campanha CORTA! 09" },
+        { "image": "/images/poster10-copra.jpg", "alt": "Pôster da campanha CORTA! 10" },
+        { "image": "/images/poster01-copra.jpg", "alt": "Pôster da campanha CORTA! 01" },
+        { "image": "/images/poster03-copra.jpg", "alt": "Pôster da campanha CORTA! 03" }
       ]
     },
     {
       "type": "imagem",
       "tipo": "imagem",
-      "src": "/images/corta_imagem02.jpg"
+      "src": "/images/corta_imagem02.jpg",
+      "alt": "Peça visual da campanha CORTA!"
     },
     {
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        "/images/corta_Camisetas.jpg",
-        "/images/corta_faixa.gif"
+        { "image": "/images/corta_Camisetas.jpg", "alt": "Camisetas da campanha CORTA!" },
+        { "image": "/images/corta_faixa.gif", "alt": "Faixa visual da campanha CORTA!" }
       ]
     },
     {
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/corta_boca.gif",
-      "tamanho": "pequena"
+      "tamanho": "pequena",
+      "alt": "Imagem da boca silenciada da campanha CORTA!"
     }
   ],
   "ativo": true,
