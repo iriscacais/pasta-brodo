@@ -1,8 +1,9 @@
 {
-  "media_type": "image",
-  "media_image": "/images/foto-brodo.jpg",
-  "media_video": "",
-  "media_description": "",
+  "media": {
+    "type": "image",
+    "src": "/images/foto-brodo.jpg",
+    "description": ""
+  },
   "title": "Sou o Brodo, de Brodowski. Redator publicitário, santista e fifeiro.",
   "description": "Atualmente, moro em São Paulo, com minha namorada Íris, meus pets Doutor, Pandora e Bichento.",
   "experiencia": [

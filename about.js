@@ -3,24 +3,23 @@ fetch("/content/sobre/sobre.json")
   .then(data => {
     const mediaContainer = document.getElementById("about-media");
 
-    if (data.media_type === "video" && data.media_video) {
+    if (data.media.type === "embed") {
       mediaContainer.innerHTML = `
         <div class="media-wrapper tipo-video">
           <iframe
-            src="${data.media_video}"
+            src="${data.media.src}"
             frameborder="0"
             allowfullscreen
             class="media-element"
-            title="Vídeo de apresentação de Luiz Brodo"
           ></iframe>
-          ${data.media_description ? `<p class="media-description">${data.media_description}</p>` : ""}
+          <p class="media-description">${data.media.description}</p>
         </div>
       `;
-    } else if (data.media_type === "image" && data.media_image) {
+    } else if (data.media.type === "image") {
       mediaContainer.innerHTML = `
         <div class="media-wrapper tipo-imagem">
-          <img src="${data.media_image}" alt="${data.media_description || 'Foto de Luiz Brodo'}" class="media-element" />
-          ${data.media_description ? `<p class="media-description">${data.media_description}</p>` : ""}
+          <img src="${data.media.src}" alt="${data.media.description || 'Foto de Luiz Brodo'}" class="media-element" />
+          <p class="media-description">${data.media.description}</p>
         </div>
       `;
     } else {
@@ -31,17 +30,17 @@ fetch("/content/sobre/sobre.json")
     const textContainer = document.getElementById("about-text");
     textContainer.innerHTML = `
       <h1 class="about-title">${data.title}</h1>
-      <div class="about-description">${marked.parse(data.description || "")}</div>
+      <p class="about-description">${data.description}</p>
       <div class="about-contatos">
-          <a href="mailto:${data.contatos.email}" class="contato-link" title="Enviar e-mail para Luiz Brodo" aria-label="Enviar e-mail para Luiz Brodo">
-              <img src="/images/e-mail.svg" alt="Ícone de e-mail"/>
-          </a>
-          <a href="${data.contatos.linkedin}" target="_blank" rel="noopener noreferrer" class="contato-link" title="LinkedIn de Luiz Brodo" aria-label="LinkedIn de Luiz Brodo">
-              <img src="/images/in.svg" alt="Ícone de LinkedIn" />
-          </a>
-          <a href="https://wa.me/${data.contatos.celular.replace(/\D/g, '')}" target="_blank" class="contato-link" title="Whatsapp de Luiz Brodo" aria-label="WhatsApp de Luiz Brodo">
-              <img src="/images/whatsapp.svg" alt="Ícone de Whatsapp" />
-          </a>
+        <a href="mailto:${data.contatos.email}" class="contato-link" title="Enviar e-mail para Luiz Brodo" aria-label="Enviar e-mail para Luiz Brodo">
+          <img src="/images/e-mail.svg" alt="Ícone de e-mail"/>
+        </a>
+        <a href="${data.contatos.linkedin}" target="_blank" rel="noopener noreferrer" class="contato-link" title="LinkedIn de Luiz Brodo" aria-label="LinkedIn de Luiz Brodo">
+          <img src="/images/in.svg" alt="Ícone de LinkedIn" />
+        </a>
+        <a href="https://wa.me/${data.contatos.celular.replace(/\D/g, '')}" target="_blank" class="contato-link" title="Whatsapp de Luiz Brodo" aria-label="WhatsApp de Luiz Brodo">
+          <img src="/images/whatsapp.svg" alt="Ícone de Whatsapp" />
+        </a>
       </div>
     `;
 
@@ -66,6 +65,7 @@ fetch("/content/sobre/sobre.json")
     // PRÊMIOS
     const prizesContainer = document.getElementById("prizes-list");
     let premiosHTML = `<h2 class="subtitle-about">Mimos</h2>`;
+
     data.premios.forEach(premio => {
       premiosHTML += `
         <div class="premio-bloco">
@@ -76,5 +76,6 @@ fetch("/content/sobre/sobre.json")
         </div>
       `;
     });
+
     prizesContainer.innerHTML = premiosHTML;
   });
