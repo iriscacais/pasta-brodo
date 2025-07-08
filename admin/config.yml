@@ -102,7 +102,7 @@ collections:
           - name: "premios"
             label: "Prêmios"
             widget: "list"
-            fields:
+            field:
               - name: "titulo"
                 label: "Nome da Premiação"
                 widget: "string"
