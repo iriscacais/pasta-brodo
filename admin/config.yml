@@ -165,7 +165,15 @@ collections:
               - name: "valor"
                 label: "Texto explicativo"
                 widget: "markdown"
-                buttons: ["bold", "italic", "heading-two", "quote", "unordered-list", "ordered-list", "link"]
+                buttons:
+                  - bold
+                  - italic
+                  - heading-two
+                  - heading-three
+                  - quote
+                  - bulleted-list
+                  - numbered-list
+                  - link
           - label: "Poster"
             name: "poster"
             widget: "object"
