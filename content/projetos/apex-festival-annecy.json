@@ -2,17 +2,14 @@
   "ativo": true,
   "ordem": 15,
   "titulo": "Apex | Festival Annecy",
-  "titulo_tamanho": "media",
   "slug": "apex-festival-annecy",
   "descricao": "Cem anos da animação brasileira em cem segundos.",
-  "descricao_tamanho": "media",
   "thumb": "/images/apex-thumb.png",
   "conteudo": [
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "O Brasil foi o país homenageado no Festival de Annecy em 2018 \ne a APEX preparou um tributo à animação brasileira.",
-      "tamanho": "media"
+      "valor": "O Brasil foi o país homenageado no Festival de Annecy em 2018 \ne a APEX preparou um tributo à animação brasileira."
     },
     {
       "type": "video",
@@ -32,20 +29,17 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "A animação brasileira vive seus momentos de glória.",
-      "tamanho": "media"
+      "valor": "A animação brasileira vive seus momentos de glória."
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Nem o mais otimista dos animadores acreditava que um dia brigaríamos por Oscar\nou colocaríamos os pés em Annecy, no maior festival de animações do mundo.",
-      "tamanho": "media"
+      "valor": "Nem o mais otimista dos animadores acreditava que um dia brigaríamos por Oscar\nou colocaríamos os pés em Annecy, no maior festival de animações do mundo."
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Mas esse dia chegou.",
-      "tamanho": "media"
+      "valor": "Mas esse dia chegou."
     },
     {
       "type": "video",
@@ -55,8 +49,7 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Convidamos um grupo seleto de animadores para criar colaborativamente\num tributo aos cem anos de animação no Brasil.",
-      "tamanho": "media"
+      "valor": "Convidamos um grupo seleto de animadores para criar colaborativamente\num tributo aos cem anos de animação no Brasil."
     },
     {
       "type": "galeria",
@@ -79,8 +72,7 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Conduzidos por um aviãozinho de papel, símbolo do festival, cada artista explorou diferentes técnicas e personagens que marcaram a trajetória da nossa animação.",
-      "tamanho": "media"
+      "valor": "Conduzidos por um aviãozinho de papel, símbolo do festival, cada artista explorou diferentes técnicas e personagens que marcaram a trajetória da nossa animação."
     },
     {
       "type": "imagem",

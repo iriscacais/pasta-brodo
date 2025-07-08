@@ -2,10 +2,8 @@
   "ativo": true,
   "ordem": 16,
   "titulo": "Burger King | Chama Acesa",
-  "titulo_tamanho": "media",
   "slug": "chama-acesa-bk",
   "descricao": "If there's fire, there's much more flavor. That's what the elderly couple recommends to keep the flame alive.",
-  "descricao_tamanho": "media",
   "thumb": "/images/thumb-chama-acesa.jpg",
   "conteudo": [
     {

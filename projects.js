@@ -18,24 +18,18 @@ fetch("/content/projetos/projetos.json")
       return;
     }
 
-    // Título, subtítulo e descrição com markdown + classe de tamanho
     const tituloHtml = marked.parse(projeto.titulo || "");
-    const tituloTamanho = projeto.titulo_tamanho || "media";
-
     const subtituloHtml = marked.parse(projeto.subtitulo || "");
-    const subtituloTamanho = projeto.subtitulo_tamanho || "media";
-
     const descricaoHtml = marked.parse(projeto.descricao || "");
-    const descricaoTamanho = projeto.descricao_tamanho || "media";
 
     container.innerHTML = `
       <section class="hero-container fade-in">
         <div class="title-container">
-          <div class="projeto-title tamanho-${tituloTamanho}">${tituloHtml}</div>
-          ${projeto.subtitulo ? `<div class="projeto-subtitulo tamanho-${subtituloTamanho}">${subtituloHtml}</div>` : ""}
+          <h1 class="projeto-title">${tituloHtml}</h1>
+          ${projeto.subtitulo ? `<div class="projeto-subtitulo">${subtituloHtml}</div>` : ""}
         </div>
         <div class="description-container">
-          ${projeto.descricao ? `<div class="projeto-descricao tamanho-${descricaoTamanho}">${descricaoHtml}</div>` : ""}
+          ${projeto.descricao ? `<div class="projeto-descricao">${descricaoHtml}</div>` : ""}
         </div>
       </section>
     `;
@@ -60,9 +54,8 @@ fetch("/content/projetos/projetos.json")
           </div>`;
       } else if (bloco.tipo === "texto") {
         const textoHtml = marked.parse(bloco.valor || "");
-        const textoTamanho = bloco.tamanho || "media";
         container.innerHTML += `
-          <div class="projeto-texto tamanho-${textoTamanho} fade-in">
+          <div class="projeto-texto fade-in">
             ${textoHtml}
           </div>`;
       } else if (bloco.tipo === "galeria") {

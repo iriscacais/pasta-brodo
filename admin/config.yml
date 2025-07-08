@@ -5,6 +5,9 @@ backend:
   identity_url: https://auth.decapbridge.com/sites/5426f22a-43f6-4e3f-8308-23450b1bf1cb
   gateway_url: https://gateway.decapbridge.com
 
+editor:
+  preview: false
+
 media_folder: "images"
 public_folder: "/images"
 
@@ -106,39 +109,16 @@ collections:
     fields:
       - name: "titulo"
         label: "Título"
-        widget: "markdown"
-      - name: "titulo_tamanho"
-        label: "Tamanho do título"
-        widget: "select"
-        options:
-          - { label: "Pequeno", value: "pequena" }
-          - { label: "Médio (padrão)", value: "media" }
-          - { label: "Grande", value: "grande" }
-        default: "media"
+        widget: "string"
       - name: "subtitulo"
         label: "Subtítulo"
-        widget: "markdown"
+        widget: "string"
         required: false
-      - name: "subtitulo_tamanho"
-        label: "Tamanho do Subtítulo"
-        widget: "select"
-        options:
-          - { label: "Pequeno", value: "pequena" }
-          - { label: "Médio (padrão)", value: "media" }
-          - { label: "Grande", value: "grande" }
-        default: "media"
       - name: "descricao"
         label: "Descrição"
-        widget: "markdown"
+        widget: "string"
         required: false
         hint: "Texto descritivo sobre o projeto - aparece ao lado do título e subtítulo."
-      - name: "descricao_tamanho"
-        label: "Tamanho da Descrição"
-        widget: "select"
-        options:
-          - { label: "Pequeno", value: "pequena" }
-          - { label: "Médio (padrão)", value: "media" }
-          - { label: "Grande", value: "grande" }
         default: "media"
       - name: "ativo"
         label: "Projeto visível no site."
@@ -182,15 +162,10 @@ collections:
             widget: "object"
             fields:
               - { name: "tipo", widget: "hidden", default: "texto" }
-              - { name: "valor", label: "Texto explicativo", widget: "markdown" }
-          - name: "tamanho"
-            label: "Tamanho do Texto"
-            widget: "select"
-            options:
-              - { label: "Pequeno", value: "pequena" }
-              - { label: "Médio (padrão)", value: "media" }
-              - { label: "Grande", value: "grande" }
-            default: "media"
+              - name: "valor"
+                label: "Texto explicativo"
+                widget: "markdown"
+                buttons: ["bold", "italic", "heading-two", "heading-three", "quote", "unordered-list", "ordered-list", "link"]
           - label: "Poster"
             name: "poster"
             widget: "object"

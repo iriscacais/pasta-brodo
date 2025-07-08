@@ -2,11 +2,9 @@
   "ativo": true,
   "ordem": 4,
   "titulo": "Promo Guaraná Antarctica",
-  "titulo_tamanho": "media",
   "slug": "promo-guarana-antartica",
   "thumb": "/images/guaranapromothumb.png",
   "descricao": "Guaraná Antarctica sorteou um milhão de reais. O prêmio era grande, mas não tão grande quanto ao nome da promoção: Guaraná Antarctica - Patrimônio do Brasil. Os segundos do filme só davam para falar o nome da promo e o brief. Fizemos uma versão de 15” seca e essa incrementada para o digital.",
-  "descricao_tamanho": "media",
   "conteudo": [
     {
       "type": "video",
@@ -16,14 +14,12 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Só ganha quem participa. Parece óbvio, mas muitos esquecem ou deixam de se cadastrar.",
-      "tamanho": "media"
+      "valor": "Só ganha quem participa. Parece óbvio, mas muitos esquecem ou deixam de se cadastrar."
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Fizemos um passo-a-passo lembrando que é fácil se cadastrar em qualquer ocasião.",
-      "tamanho": "media"
+      "valor": "Fizemos um passo-a-passo lembrando que é fácil se cadastrar em qualquer ocasião."
     },
     {
       "type": "poster",

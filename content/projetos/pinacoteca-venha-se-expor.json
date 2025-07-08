@@ -2,9 +2,7 @@
   "ativo": true,
   "ordem": 9,
   "titulo": "PINACOTECA | VENHA SE EXPOR",
-  "titulo_tamanho": "media",
   "subtitulo": "Exposição Somos Muit+s: experimento sobre coletividade.",
-  "subtitulo_tamanho": "media",
   "slug": "pinacoteca-venha-se-expor",
   "thumb": "/images/Thumb_02.jpg",
   "conteudo": [
@@ -17,14 +15,12 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Esta campanha parte da ideia formulada por Joseph Beuys de que todo ser humano é um artista, e coloca sua obra em diálogo com artistas contemporâneos que reformulam e expandem a noção de arte como um campo de conhecimento coletivo, de investigação e experimentação, transformador do mundo.",
-      "tamanho": "media"
+      "valor": "Esta campanha parte da ideia formulada por Joseph Beuys de que todo ser humano é um artista, e coloca sua obra em diálogo com artistas contemporâneos que reformulam e expandem a noção de arte como um campo de conhecimento coletivo, de investigação e experimentação, transformador do mundo."
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Com obras interativa, que estimulam o debate e o surgimento de novas ideias, o mote da campanha foi \"VENHA SE EXPOR\".  O público não era apenas um expectador, mas parte da obra. ",
-      "tamanho": "media"
+      "valor": "Com obras interativa, que estimulam o debate e o surgimento de novas ideias, o mote da campanha foi \"VENHA SE EXPOR\".  O público não era apenas um expectador, mas parte da obra. "
     },
     {
       "type": "imagem",
