@@ -4,8 +4,13 @@
   "titulo": "Burger King | New Crown",
   "slug": "new-crown-bk",
   "thumb": "/images/thumb-crown.jpg",
-  "descricao": "For over 50 years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it always had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new version of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.",
+  "descricao": "",
   "conteudo": [
+    {
+      "type": "texto",
+      "tipo": "texto",
+      "valor": "For over **50** years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it *always* had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new version of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.For over 50 years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it always had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new [version](<>) of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.\n\n1. 4r34r\n\n## oi\n\n* 1\n* 3\n\n> olha quanta coisa boa - iris"
+    },
     {
       "type": "video",
       "tipo": "video",
@@ -37,7 +42,8 @@
       "type": "imagem",
       "tipo": "imagem",
       "src": "/images/apoio_crown_3.jpg",
-      "tamanho": "normal"
+      "tamanho": "normal",
+      "valor": "For over **50** years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it *always* had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new version of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.For over 50 years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it always had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new [version](www.google.com.br) of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.\n\n1. 4r34r\n\n## oi\n\n* 1\n* 3\n\n> olha quanta coisa boa - iris"
     }
   ]
 }
