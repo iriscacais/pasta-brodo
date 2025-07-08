@@ -2,7 +2,9 @@
   "ativo": true,
   "ordem": 8,
   "titulo": "TRIDENT| Pôsteres Fresh",
+  "titulo_tamanho": "media",
   "subtitulo": "Campanha criada pela vibe da galera.",
+  "subtitulo_tamanho": "media",
   "slug": "trident-poster-fresh",
   "thumb": "/images/trident-fresh01.jpg",
   "conteudo": [
@@ -15,17 +17,20 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "O posicionamento de Trident Fresh na época era Refresque sua Vibe."
+      "valor": "O posicionamento de Trident Fresh na época era Refresque sua Vibe.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Notamos que o ponto de encontro das pessoas mais estressadas de São Paulo era os pontos de ônibus da Av. Paulista."
+      "valor": "Notamos que o ponto de encontro das pessoas mais estressadas de São Paulo era os pontos de ônibus da Av. Paulista.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Foi aí que surgiu a ideia de criar um mural de gelo para geral deixar um recado ou arte good vibe."
+      "valor": "Foi aí que surgiu a ideia de criar um mural de gelo para geral deixar um recado ou arte good vibe.",
+      "tamanho": "media"
     },
     {
       "type": "galeria",
@@ -40,27 +45,32 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Uma boa parcela só queria ganhar o Trident."
+      "valor": "Uma boa parcela só queria ganhar o Trident.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Mas como os artistas são maioria, rendeu as mais variadas frases e ilustrações no gelo."
+      "valor": "Mas como os artistas são maioria, rendeu as mais variadas frases e ilustrações no gelo.",
+      "tamanho": "media"
     },
     {
       "type": "imagem",
       "tipo": "imagem",
-      "src": "/images/tridentfreshimage.gif"
+      "src": "/images/tridentfreshimage.gif",
+      "tamanho": "normal"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Foi aí que a ideia ficou mais interessante. "
+      "valor": "Foi aí que a ideia ficou mais interessante.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "E se a gente transformasse essa galeria vibe boa em pôsteres?"
+      "valor": "E se a gente transformasse essa galeria vibe boa em pôsteres?",
+      "tamanho": "media"
     },
     {
       "type": "imagem",
@@ -71,12 +81,14 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Bom. Deixo você com os resultados. "
+      "valor": "Bom. Deixo você com os resultados.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "O cachorrinho fui eu que desenhei."
+      "valor": "O cachorrinho fui eu que desenhei.",
+      "tamanho": "media"
     },
     {
       "type": "galeria",

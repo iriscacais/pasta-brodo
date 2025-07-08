@@ -2,9 +2,11 @@
   "ativo": true,
   "ordem": 18,
   "titulo": "Burger King | New Crown",
+  "titulo_tamanho": "media",
   "slug": "new-crown-bk",
   "thumb": "/images/thumb-crown.jpg",
   "descricao": "For over 50 years, the crown has been Burger King's main icon. A symbol that everyone is treated like a king. But it always had a problem: it didn’t fit in all kinds of hair. After decades, Burger King has launched a new version of its classic crown. Designed to fit the most authentic afro hairstyles in Brazil.",
+  "descricao_tamanho": "media",
   "conteudo": [
     {
       "type": "video",
@@ -31,7 +33,7 @@
     {
       "type": "video",
       "tipo": "video",
-      "src": "https://www.youtube.com/embed/GA4udD-u_QU\" title=\"New Crown Film"
+      "src": "https://www.youtube.com/embed/GA4udD-u_QU"
     },
     {
       "type": "imagem",

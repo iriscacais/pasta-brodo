@@ -119,7 +119,7 @@ collections:
         label: "Subtítulo"
         widget: "markdown"
         required: false
-      - name: "subtitulo-tamanho"
+      - name: "subtitulo_tamanho"
         label: "Tamanho do Subtítulo"
         widget: "select"
         options:

@@ -23,7 +23,8 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Sim, existe uma competição que premia o posto mais bonito do Brasil."
+      "valor": "Sim, existe uma competição que premia o posto mais bonito do Brasil.",
+      "tamanho": "media"
     },
     {
       "type": "imagem",
@@ -33,7 +34,9 @@
     }
   ],
   "titulo": "Shell | Anúncios",
+  "titulo_tamanho": "media",
   "slug": "shell-anuncios",
   "thumb": "/images/shellanuncios04.png",
-  "descricao": "Anúncios em revistas de bordo para promoção de milhas do Shell Box."
+  "descricao": "Anúncios em revistas de bordo para promoção de milhas do Shell Box.",
+  "descricao_tamanho": "media"
 }

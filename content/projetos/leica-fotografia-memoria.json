@@ -2,10 +2,13 @@
   "ativo": true,
   "ordem": 13,
   "titulo": "Leica | Fotografia vs Memória",
+  "titulo_tamanho": "media",
   "subtitulo": "Homenagem ao Dia Mundial da Fotografia.",
+  "subtitulo_tamanho": "media",
   "slug": "leica-fotografia-memoria",
   "thumb": "/images/leicathumb-cópia.jpg",
   "descricao": "Campanha de Leica para o Dia Mundial da Fotografia. \nCom André Fuku & Charles Faria. <3",
+  "descricao_tamanho": "media",
   "conteudo": [
     {
       "type": "video",

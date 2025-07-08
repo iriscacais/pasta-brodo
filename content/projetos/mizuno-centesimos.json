@@ -1,9 +1,12 @@
 {
   "titulo": "MIZUNO | Centésimos Decisivos",
+  "titulo_tamanho": "media",
   "subtitulo": "",
+  "subtitulo_tamanho": "media",
   "slug": "mizuno-centesimos",
   "thumb": "/images/mizuno.jpg",
   "descricao": "Tenho um imenso carinho por esse projeto. Fiz com o Mica assim quando cheguei em São Paulo. Nosso orientador foi o Gatti pela Escola Cuca. Ganhamos ouro na categoria estudantil do Clube de Criação. Além da estrela, ganhamos um estágio na F/Nazca.",
+  "descricao_tamanho": "media",
   "conteudo": [
     {
       "type": "imagem",

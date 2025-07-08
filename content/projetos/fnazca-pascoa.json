@@ -1,9 +1,12 @@
 {
   "titulo": "F/NAZCA | PÁSCOA",
+  "titulo_tamanho": "media",
   "subtitulo": "Descubra quem é o coelho e ganhe um day off.",
+  "subtitulo_tamanho": "media",
   "slug": "fnazca-pascoa",
   "thumb": "/images/fnazcapascoa.png",
   "descricao": "Para celebrar a páscoa na F/Nazca, criamos uma dinâmica para juntar a equipe. O prêmio tinha que ser algo que todos almejassem, do diretor de criação ao estagiário de atendimento. E o único prêmio o'concur, com valor inestimável, é um dia de folga.",
+  "descricao_tamanho": "media",
   "conteudo": [
     {
       "type": "video",
@@ -13,7 +16,8 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Além do vídeo, soltamos pôsteres charadas para ajudar a equipe a descobrir quem era o coelho."
+      "valor": "Além do vídeo, soltamos pôsteres charadas para ajudar a equipe a descobrir quem era o coelho.",
+      "tamanho": "media"
     },
     {
       "type": "galeria",
@@ -32,7 +36,8 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Este projeto foi um dos que eu mais me diverti. Todo mundo participou. E ainda ganhamos um prêmio do Fábio Fernandes:"
+      "valor": "Este projeto foi um dos que eu mais me diverti. Todo mundo participou. E ainda ganhamos um prêmio do Fábio Fernandes:",
+      "tamanho": "media"
     },
     {
       "type": "imagem",

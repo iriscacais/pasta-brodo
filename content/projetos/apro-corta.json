@@ -1,9 +1,12 @@
 {
   "titulo": "APRO | CORTA!",
+  "titulo_tamanho": "media",
   "subtitulo": "Um movimento contra o assédio na Indústria do Audiovisual.",
+  "subtitulo_tamanho": "media",
   "slug": "apro-corta",
   "thumb": "/images/aprocortathumb.jpg",
   "descricao": "",
+  "descricao_tamanho": "media",
   "conteudo": [
     {
       "type": "imagem",
@@ -13,17 +16,20 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Ações como “Me too”, iniciada em Hollywood, chamaram atenção para escandalos de assédio na indústria do cinema."
+      "valor": "Ações como “Me too”, iniciada em Hollywood, chamaram atenção para escandalos de assédio na indústria do cinema.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "No Brasil, a APRO criou e liderou o pacto contra o assédio na Indústria Audiovisual."
+      "valor": "No Brasil, a APRO criou e liderou o pacto contra o assédio na Indústria Audiovisual.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Desenvolvemos o nome do movimento e a comunicação de lançamento."
+      "valor": "Desenvolvemos o nome do movimento e a comunicação de lançamento.",
+      "tamanho": "media"
     },
     {
       "type": "poster",

@@ -2,7 +2,9 @@
   "ativo": true,
   "ordem": 14,
   "titulo": "BIS | New Excuses",
+  "titulo_tamanho": "media",
   "descricao": "We always find an excuse to eat chocolate. But with the increase in types of BIS, you will need to create new excuses to eat them all.",
+  "descricao_tamanho": "media",
   "slug": "bis-new-excuses",
   "thumb": "/images/thumb-bis.jpg",
   "conteudo": [

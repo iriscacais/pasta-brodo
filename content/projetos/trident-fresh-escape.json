@@ -2,39 +2,46 @@
   "ativo": false,
   "ordem": 3,
   "titulo": "Trident | Fresh Escape",
+  "titulo_tamanho": "media",
   "slug": "trident-fresh-escape",
   "thumb": "/images/trident-fresh-escape.png",
   "descricao": "Serviço de ligações fakes com desculpas perfeitas para fugir de encontros não tão perfeitos.",
+  "descricao_tamanho": "media",
   "conteudo": [
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Como é da natureza humana gostar de sofrer, existe uma parcela dos solteiros que topa qualquer\n encontro para não passar o Dia dos Namorados sozinha, em casa, de boa."
+      "valor": "Como é da natureza humana gostar de sofrer, existe uma parcela dos solteiros que topa qualquer\n encontro para não passar o Dia dos Namorados sozinha, em casa, de boa.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Pensando nesses solteiromasoquistas, Trident e Cabify criaram Fresh Escape."
+      "valor": "Pensando nesses solteiromasoquistas, Trident e Cabify criaram Fresh Escape.",
+      "tamanho": "media"
     },
     {
       "type": "video",
       "tipo": "video",
-      "src": "https://player.vimeo.com/video/355895026\""
+      "src": "https://player.vimeo.com/video/355895026"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "O participante podia escolher quem estaria do outro lado da linha.\n"
+      "valor": "O participante podia escolher quem estaria do outro lado da linha.\n",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": " Desde diretor convidando pra Hollywood até mãe convidando a voltar para casa."
+      "valor": " Desde diretor convidando pra Hollywood até mãe convidando a voltar para casa.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Assim que a ligação acabava, chegava o cupom de desconto do Cabify."
+      "valor": "Assim que a ligação acabava, chegava o cupom de desconto do Cabify.",
+      "tamanho": "media"
     },
     {
       "type": "video",
@@ -44,12 +51,14 @@
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "O segundo ator mais sexy da Vila Madalena (eu estava ocupado) estrelou o filme da campanha. "
+      "valor": "O segundo ator mais sexy da Vila Madalena (eu estava ocupado) estrelou o filme da campanha.",
+      "tamanho": "media"
     },
     {
       "type": "texto",
       "tipo": "texto",
-      "valor": "Com certeza, ele arrumou encontro no Dia dos Namorados. Com certeza, alguém usou o serviço."
+      "valor": "Com certeza, ele arrumou encontro no Dia dos Namorados. Com certeza, alguém usou o serviço.",
+      "tamanho": "media"
     }
   ]
 }
