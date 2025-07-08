@@ -59,11 +59,9 @@
                    
                 }
                 .projeto-descricao {
-                  .projeto-descricao {
                     font-family: $font;
                     color: #333;
-                    font-weight: 400;
-                  }                  
+                    font-weight: 400;               
                 }
             }
         }
@@ -276,13 +274,13 @@
 }
 
 .tamanho-pequena {
-  font-size: 0.9rem;
-}
-
-.tamanho-media {
   font-size: 1rem;
 }
 
-.tamanho-grande {
+.tamanho-media {
   font-size: 1.25rem;
+}
+
+.tamanho-grande {
+  font-size: 2rem;
 }

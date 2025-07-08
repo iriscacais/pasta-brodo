@@ -582,7 +582,7 @@ body {
     width: 100%;
   }
 }
-.projeto-container .projeto-content .hero-container .description-container .projeto-descricao .projeto-descricao {
+.projeto-container .projeto-content .hero-container .description-container .projeto-descricao {
   font-family: "Montserrat", sans-serif;
   color: #333;
   font-weight: 400;
@@ -776,15 +776,15 @@ body {
 }
 
 .tamanho-pequena {
-  font-size: 0.9rem;
-}
-
-.tamanho-media {
   font-size: 1rem;
 }
 
-.tamanho-grande {
+.tamanho-media {
   font-size: 1.25rem;
+}
+
+.tamanho-grande {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
