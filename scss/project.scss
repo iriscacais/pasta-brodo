@@ -32,7 +32,8 @@
             margin-bottom: 25px;
             @media (max-width: 768px) {
                 flex-direction: column;
-                gap: 30px;
+                gap: 25px;
+                margin-bottom: 0;
             }
             .title-container {
                 width: 40%;
@@ -51,6 +52,7 @@
                   font-size: 1.25rem;
                   color: #333;
                   font-weight: 500;
+                  margin-top: 3px;
                 }
              }
             
@@ -71,7 +73,6 @@
         .projeto-video {
             width: 100%;
             margin: 32px 0;
-
             iframe.media-element {
                 width: 100%;
                 max-width: 100%;
@@ -87,6 +88,7 @@
           color: #333;
           font-weight: 400;
           padding-top: 10px;
+          padding-bottom: 10px;
           h2, h3 {
             font-family: $font;
             color: #333;
@@ -108,7 +110,7 @@
             font-weight: 500;
           }
           p {
-            margin: 1rem 0;
+            margin: 10px 0;
             line-height: 1.6;
           }
           blockquote {

@@ -46,7 +46,8 @@
 @media (max-width: 768px) {
   .projeto-container .projeto-content .hero-container {
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
+    margin-bottom: 0;
   }
 }
 .projeto-container .projeto-content .hero-container .title-container {
@@ -69,6 +70,7 @@
   font-size: 1.25rem;
   color: #333;
   font-weight: 500;
+  margin-top: 3px;
 }
 .projeto-container .projeto-content .hero-container .description-container {
   width: 60%;
@@ -101,6 +103,7 @@
   color: #333;
   font-weight: 400;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .projeto-container .projeto-content .projeto-texto h2, .projeto-container .projeto-content .projeto-texto h3 {
   font-family: "Montserrat", sans-serif;
@@ -122,7 +125,7 @@
   font-weight: 500;
 }
 .projeto-container .projeto-content .projeto-texto p {
-  margin: 1rem 0;
+  margin: 10px 0;
   line-height: 1.6;
 }
 .projeto-container .projeto-content .projeto-texto blockquote {
