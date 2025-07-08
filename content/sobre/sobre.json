@@ -1,103 +1,99 @@
 {
-  "media": {
-    "type": "image",
-    "image": "/images/foto-brodo.jpg",
-    "embed": "",
-    "description": ""
+  "media_type": "image",
+  "media_image": "/images/foto-brodo.jpg",
+  "media_video": "",
+  "media_description": "",
+  "title": "Sou o Brodo, de Brodowski. Redator publicitário, santista e fifeiro.",
+  "description": "Atualmente, moro em São Paulo, com minha namorada Íris, meus pets Doutor, Pandora e Bichento.",
+  "experiencia": [
+    "22-hj | DAVID SP",
+    "21-22 | Energy BBDO",
+    "19-21  |  Leo Burnett",
+    "16-19 | F/Nazca Saatchi & Saatchi",
+    "15-16 | VMP8",
+    "14-15 | Strauss",
+    "12-14 | Doisnovemeia (UnB)"
+  ],
+  "formacao": [
+    "Comunicação Social - Universidade de Brasília (2016)",
+    "Roger Hatchuel Academy - Cannes Lions School",
+    "Curso de Criação Publicitária - Escola Cuca"
+  ],
+  "contatos": {
+    "email": "lcbrodo@gmail.com",
+    "celular": "+55 11 9777-47851",
+    "linkedin": "https://www.linkedin.com/in/luiz-brodo/"
   },
-    "title": "Sou o Brodo, de Brodowski. Redator publicitário, santista e fifeiro.",
-    "description": "Atualmente, moro em São Paulo, com minha namorada Íris, meus pets Doutor, Pandora e Bichento.",
-    "experiencia": [
-        "22-hj | DAVID SP",
-        "21-22 | Energy BBDO",
-        "19-21  |  Leo Burnett",
-        "16-19 | F/Nazca Saatchi & Saatchi",
-        "15-16 | VMP8",
-        "14-15 | Strauss",
-        "12-14 | Doisnovemeia (UnB)"
-
-    ],
-    "formacao": [
-        "Comunicação Social - Universidade de Brasília (2016)",
-        "Roger Hatchuel Academy - Cannes Lions School",
-        "Curso de Criação Publicitária - Escola Cuca"
-    ],
-    "contatos": {
-      "email": "lcbrodo@gmail.com",
-      "celular": "+55 11 9777-47851",
-      "linkedin": "https://www.linkedin.com/in/luiz-brodo/"
-    },   
-    "premios": [
-        {
-          "titulo": "CANNES",
-          "itens": [
-            "Silver - Social & Influencer - 2023",
-            "Bronze - Entertainment for Gaming - 2023",
-            "Shortlist - Social & Influencer - 2023"
-          ]
-        },
-        {
-          "titulo": "D&AD",
-          "itens": [
-            "Wood - Digital & Social - 2024",
-            "Wood - Products & Services - 2024",
-            "Shortlist - Gaming - 2024",
-            "Shortlist - Direct - 2024",
-            "Wood Pencil - Art Direction - 2018",
-            "Wood Pencil - Press Advertising - 2018"
-          ]
-        },
-        {
-          "titulo": "CLIO AWARDS",
-          "itens": [
-            "Gold - Branded Entertainment - 2024",
-            "Silver - Digital - 2024",
-            "Silver - Direct - 2024",
-            "Silver - Use of Fashion & Beauty - 2024",
-            "Bronze - Use of Talent - 2024",
-            "Shortlist - Branded Entertainment - 2024"
-          ]
-        },
-        {
-          "titulo": "ONE SHOW",
-          "itens": [
-            "Bronze - Direct - 2024",
-            "Merit - Direct - 2024",
-            "Merit - Gaming - 2024",
-            "Merit - Social Media - 2024",
-            "Merit - Social Media - 2024",
-            "Merit - Craft / Writing - 2018",
-            "Merit - Craft / Art Direction - 2018"
-          ]
-        },
-        {
-          "titulo": "LIA AWARDS",
-          "itens": [
-            "Gold - Brandend Content - 2023",
-            "Silver - Creativity In PR- 2023",
-            "Silver - Creativity In PR - 2023",
-            "Bronze - Social & Influencer - 2023",
-            "Finalist - Non-Traditional Gaming - 2023",
-            "Finalist - Non-Traditional Retail - 2023"
-          ]
-        },
-        {
-          "titulo": "CLUBE DE CRIAÇÃO",
-          "itens": [
-            "Gold - Integrated Campaign - 2019",
-            "Gold - Craft / Writing - 2017",
-            "Gold - Student Award - 2016",
-            "2x Silver - Film - 2019",
-            "Silver - Copywriting Craft - 2017",
-            "Bronze - Film - 2018"
-          ]
-        },
-        {
-          "titulo": "ART DIRECTORS CLUB",
-          "itens": [
-            "Bronze - Gaming - 2024"
-          ]
-        }
-      ]      
-  }
-  
+  "premios": [
+    {
+      "titulo": "CANNES",
+      "itens": [
+        "Silver - Social & Influencer - 2023",
+        "Bronze - Entertainment for Gaming - 2023",
+        "Shortlist - Social & Influencer - 2023"
+      ]
+    },
+    {
+      "titulo": "D&AD",
+      "itens": [
+        "Wood - Digital & Social - 2024",
+        "Wood - Products & Services - 2024",
+        "Shortlist - Gaming - 2024",
+        "Shortlist - Direct - 2024",
+        "Wood Pencil - Art Direction - 2018",
+        "Wood Pencil - Press Advertising - 2018"
+      ]
+    },
+    {
+      "titulo": "CLIO AWARDS",
+      "itens": [
+        "Gold - Branded Entertainment - 2024",
+        "Silver - Digital - 2024",
+        "Silver - Direct - 2024",
+        "Silver - Use of Fashion & Beauty - 2024",
+        "Bronze - Use of Talent - 2024",
+        "Shortlist - Branded Entertainment - 2024"
+      ]
+    },
+    {
+      "titulo": "ONE SHOW",
+      "itens": [
+        "Bronze - Direct - 2024",
+        "Merit - Direct - 2024",
+        "Merit - Gaming - 2024",
+        "Merit - Social Media - 2024",
+        "Merit - Social Media - 2024",
+        "Merit - Craft / Writing - 2018",
+        "Merit - Craft / Art Direction - 2018"
+      ]
+    },
+    {
+      "titulo": "LIA AWARDS",
+      "itens": [
+        "Gold - Brandend Content - 2023",
+        "Silver - Creativity In PR- 2023",
+        "Silver - Creativity In PR - 2023",
+        "Bronze - Social & Influencer - 2023",
+        "Finalist - Non-Traditional Gaming - 2023",
+        "Finalist - Non-Traditional Retail - 2023"
+      ]
+    },
+    {
+      "titulo": "CLUBE DE CRIAÇÃO",
+      "itens": [
+        "Gold - Integrated Campaign - 2019",
+        "Gold - Craft / Writing - 2017",
+        "Gold - Student Award - 2016",
+        "2x Silver - Film - 2019",
+        "Silver - Copywriting Craft - 2017",
+        "Bronze - Film - 2018"
+      ]
+    },
+    {
+      "titulo": "ART DIRECTORS CLUB",
+      "itens": [
+        "Bronze - Gaming - 2024"
+      ]
+    }
+  ]
+}

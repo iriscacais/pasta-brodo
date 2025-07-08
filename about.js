@@ -3,24 +3,24 @@ fetch("/content/sobre/sobre.json")
   .then(data => {
     const mediaContainer = document.getElementById("about-media");
 
-    if (data.media.type === "video" && data.media.embed) {
+    if (data.media_type === "video" && data.media_video) {
       mediaContainer.innerHTML = `
         <div class="media-wrapper tipo-video">
           <iframe
-            src="${data.media.embed}"
+            src="${data.media_video}"
             frameborder="0"
             allowfullscreen
             class="media-element"
             title="Vídeo de apresentação de Luiz Brodo"
           ></iframe>
-          ${data.media.description ? `<p class="media-description">${data.media.description}</p>` : ""}
+          ${data.media_description ? `<p class="media-description">${data.media_description}</p>` : ""}
         </div>
       `;
-    } else if (data.media.type === "image" && data.media.image) {
+    } else if (data.media_type === "image" && data.media_image) {
       mediaContainer.innerHTML = `
         <div class="media-wrapper tipo-imagem">
-          <img src="${data.media.image}" alt="${data.media.description || 'Foto de Luiz Brodo'}" class="media-element" />
-          ${data.media.description ? `<p class="media-description">${data.media.description}</p>` : ""}
+          <img src="${data.media_image}" alt="${data.media_description || 'Foto de Luiz Brodo'}" class="media-element" />
+          ${data.media_description ? `<p class="media-description">${data.media_description}</p>` : ""}
         </div>
       `;
     } else {
