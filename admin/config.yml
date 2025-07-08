@@ -106,11 +106,40 @@ collections:
     fields:
       - name: "titulo"
         label: "Título"
-        widget: "string"
+        widget: "markdown"
+      - name: "titulo_tamanho"
+        label: "Tamanho do título"
+        widget: "select"
+        options:
+          - { label: "Pequeno", value: "pequena" }
+          - { label: "Médio (padrão)", value: "media" }
+          - { label: "Grande", value: "grande" }
+        default: "media"
       - name: "subtitulo"
         label: "Subtítulo"
-        widget: "string"
+        widget: "markdown"
         required: false
+      - name: "subtitulo-tamanho"
+        label: "Tamanho do Subtítulo"
+        widget: "select"
+        options:
+          - { label: "Pequeno", value: "pequena" }
+          - { label: "Médio (padrão)", value: "media" }
+          - { label: "Grande", value: "grande" }
+        default: "media"
+      - name: "descricao"
+        label: "Descrição"
+        widget: "markdown"
+        required: false
+        hint: "Texto descritivo sobre o projeto - aparece ao lado do título e subtítulo."
+      - name: "descricao_tamanho"
+        label: "Tamanho da Descrição"
+        widget: "select"
+        options:
+          - { label: "Pequeno", value: "pequena" }
+          - { label: "Médio (padrão)", value: "media" }
+          - { label: "Grande", value: "grande" }
+        default: "media"
       - name: "ativo"
         label: "Projeto visível no site."
         widget: "boolean"
@@ -129,11 +158,6 @@ collections:
         label: "Thumbnail"
         widget: "image"
         hint: "Imagem de capa."
-      - name: "descricao"
-        label: "Descrição"
-        widget: "text"
-        required: false
-        hint: "Texto descritivo sobre o projeto - aparece ao lado do título e subtítulo."
       - label: "Conteúdo"
         name: "conteudo"
         widget: "list"
@@ -158,8 +182,15 @@ collections:
             widget: "object"
             fields:
               - { name: "tipo", widget: "hidden", default: "texto" }
-              - { name: "valor", label: "Texto explicativo", widget: "text" }
-
+              - { name: "valor", label: "Texto explicativo", widget: "markdown" }
+          - name: "tamanho"
+            label: "Tamanho do Texto"
+            widget: "select"
+            options:
+              - { label: "Pequeno", value: "pequena" }
+              - { label: "Médio (padrão)", value: "media" }
+              - { label: "Grande", value: "grande" }
+            default: "media"
           - label: "Poster"
             name: "poster"
             widget: "object"

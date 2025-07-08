@@ -41,22 +41,14 @@
                     margin-top: 20px;
                 }
                 .projeto-title {
-                    font-family: $font;
-                    color: #333;
-                    font-size: 38px;
-                    font-weight: 500;
-                    @media (max-width: 768px) {
-                        font-size: 26px;
-                    }
+                  font-family: $font;
+                  color: #333;
+                  font-weight: 500;
                 }
                 .projeto-subtitulo {
-                    font-family: $font;
-                    color: #333;
-                    font-size: 20px;
-                    font-weight: 500;
-                    @media (max-width: 768px) {
-                        font-size: 20px;
-                    }
+                  font-family: $font;
+                  color: #333;
+                  font-weight: 500;
                 }
              }
             
@@ -67,13 +59,11 @@
                    
                 }
                 .projeto-descricao {
+                  .projeto-descricao {
                     font-family: $font;
                     color: #333;
-                    font-size: 32px;
                     font-weight: 400;
-                    @media (max-width: 768px) {
-                        font-size: 24px;
-                    }
+                  }                  
                 }
             }
         }
@@ -91,14 +81,10 @@
         }
        
         .projeto-texto {
-            font-family: $font;
-            color: #333;
-            font-size: 20px;
-            font-weight: 400;
-            padding-top: 10px;
-            @media (max-width: 768px) {
-                font-size: 16px;
-            }
+          font-family: $font;
+          color: #333;
+          font-weight: 400;
+          padding-top: 10px;
         }
 
         .poster-grid {
@@ -287,4 +273,16 @@
 .fade-in.reveal {
   opacity: 1;
   transform: translateY(0);
+}
+
+.tamanho-pequena {
+  font-size: 0.9rem;
+}
+
+.tamanho-media {
+  font-size: 1rem;
+}
+
+.tamanho-grande {
+  font-size: 1.25rem;
 }

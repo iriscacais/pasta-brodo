@@ -18,20 +18,29 @@ fetch("/content/projetos/projetos.json")
       return;
     }
 
-    // Título e descrição
-    container.innerHTML = `
-    <section class="hero-container fade-in">
-      <div class="title-container">
-        <h1 class="projeto-title">${projeto.titulo}</h1>
-        ${projeto.subtitulo ? `<h2 class="projeto-subtitulo">${projeto.subtitulo}</h2>` : ""}
-      </div>
-      <div class="description-container">
-        ${projeto.descricao ? `<p class="projeto-descricao">${projeto.descricao}</p>` : ""}
-      </div>
-    </section>
-  `;
+    // Título, subtítulo e descrição com markdown + classe de tamanho
+    const tituloHtml = marked.parse(projeto.titulo || "");
+    const tituloTamanho = projeto.titulo_tamanho || "media";
 
-    // Renderizar blocos de conteudo
+    const subtituloHtml = marked.parse(projeto.subtitulo || "");
+    const subtituloTamanho = projeto.subtitulo_tamanho || "media";
+
+    const descricaoHtml = marked.parse(projeto.descricao || "");
+    const descricaoTamanho = projeto.descricao_tamanho || "media";
+
+    container.innerHTML = `
+      <section class="hero-container fade-in">
+        <div class="title-container">
+          <div class="projeto-title tamanho-${tituloTamanho}">${tituloHtml}</div>
+          ${projeto.subtitulo ? `<div class="projeto-subtitulo tamanho-${subtituloTamanho}">${subtituloHtml}</div>` : ""}
+        </div>
+        <div class="description-container">
+          ${projeto.descricao ? `<div class="projeto-descricao tamanho-${descricaoTamanho}">${descricaoHtml}</div>` : ""}
+        </div>
+      </section>
+    `;
+
+    // Renderizar blocos de conteúdo
     projeto.conteudo.forEach((bloco) => {
       if (bloco.tipo === "video") {
         container.innerHTML += `
@@ -50,20 +59,22 @@ fetch("/content/projetos/projetos.json")
             <img src="${bloco.src}" alt="Imagem do projeto" class="media-element" />
           </div>`;
       } else if (bloco.tipo === "texto") {
+        const textoHtml = marked.parse(bloco.valor || "");
+        const textoTamanho = bloco.tamanho || "media";
         container.innerHTML += `
-          <p class="projeto-texto fade-in">${bloco.valor}</p>`;
+          <div class="projeto-texto tamanho-${textoTamanho} fade-in">
+            ${textoHtml}
+          </div>`;
       } else if (bloco.tipo === "galeria") {
         const galeriaImgs = bloco.imagens
           .map((img, index) => `<img src="${img}" alt="" class="fade-in" style="transition-delay: ${index * 100}ms;" />`)
           .join("");
-        container.innerHTML += `
-          <div class="galeria">${galeriaImgs}</div>`;
+        container.innerHTML += `<div class="galeria">${galeriaImgs}</div>`;
       } else if (bloco.tipo === "poster") {
         const posters = bloco.imagens
           .map((img, index) => `<img src="${img}" alt="Poster" class="fade-in" style="transition-delay: ${index * 100}ms;" />`)
           .join("");
-        container.innerHTML += `
-          <div class="poster-grid">${posters}</div>`;
+        container.innerHTML += `<div class="poster-grid">${posters}</div>`;
       } else if (bloco.tipo === "galeria-video-horizontal" && Array.isArray(bloco.videos)) {
         const videos = bloco.videos
           .filter((v) => typeof v === "string" && v.length > 0)
@@ -96,6 +107,7 @@ fetch("/content/projetos/projetos.json")
       }
     });
 
+    // Navegação entre projetos
     const navSection = document.createElement("section");
     navSection.className = "projeto-nav fade-in";
 
@@ -113,6 +125,7 @@ fetch("/content/projetos/projetos.json")
     navSection.innerHTML = linksHTML;
     document.querySelector(".projeto-container").appendChild(navSection);
 
+    // Animações
     setTimeout(() => {
       const fadeElements = document.querySelectorAll(".fade-in");
 
@@ -125,9 +138,7 @@ fetch("/content/projetos/projetos.json")
             }
           });
         },
-        {
-          threshold: 0.1,
-        }
+        { threshold: 0.1 }
       );
 
       fadeElements.forEach((el) => observer.observe(el));
