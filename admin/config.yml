@@ -13,97 +13,97 @@ public_folder: "/images"
 
 collections:
   - name: "sobre"
-      label: "Sobre"
-      files:
-        - file: "content/sobre/sobre.json"
-          label: "Conteúdo Sobre"
-          name: "sobre"
-          format: "json"
-          fields:
-            - label: "Tipo de Mídia"
-              name: "media_type"
-              widget: "select"
-              options: ["image", "video"]
-              default: "image"
-              hint: "Escolha se será uma imagem ou um vídeo."
+    label: "Sobre"
+    files:
+      - file: "content/sobre/sobre.json"
+        label: "Conteúdo Sobre"
+        name: "sobre"
+        format: "json"
+        fields:
+          - label: "Tipo de Mídia"
+            name: "media_type"
+            widget: "select"
+            options: ["image", "video"]
+            default: "image"
+            hint: "Escolha se será uma imagem ou um vídeo."
 
-            - label: "Imagem"
-              name: "media_image"
-              widget: "image"
-              required: false
-              media_library: true
-              conditional:
-                field: "media_type"
-                equals: "image"
+          - label: "Imagem"
+            name: "media_image"
+            widget: "image"
+            required: false
+            media_library: true
+            conditional:
+              field: "media_type"
+              equals: "image"
 
-            - label: "URL do vídeo"
-              name: "media_video"
+          - label: "URL do vídeo"
+            name: "media_video"
+            widget: "string"
+            required: false
+            hint: "Cole o link do vídeo (YouTube, Vimeo, etc.)"
+            conditional:
+              field: "media_type"
+              equals: "video"
+
+          - label: "Legenda da Mídia"
+            name: "media_description"
+            widget: "string"
+            required: false
+
+          - name: "title"
+            label: "Título"
+            widget: "string"
+
+          - name: "description"
+            label: "Descrição principal"
+            widget: "markdown"
+            buttons:
+              - bold
+              - italic
+              - heading-two
+              - heading-three
+              - quote
+              - bulleted-list
+              - numbered-list
+              - link
+            editor_components: []
+
+          - name: "contatos"
+            label: "Contatos"
+            widget: "object"
+            fields:
+              - { name: "email", label: "Email", widget: "string" }
+              - { name: "linkedin", label: "LinkedIn", widget: "string" }
+              - { name: "celular", label: "Celular", widget: "string" }
+
+          - name: "experiencia"
+            label: "Experiência"
+            widget: "list"
+            summary: "{{fields.item}}"
+            field:
+              label: "Empresa"
+              name: "item"
               widget: "string"
-              required: false
-              hint: "Cole o link do vídeo (YouTube, Vimeo, etc.)"
-              conditional:
-                field: "media_type"
-                equals: "video"
 
-            - label: "Legenda da Mídia"
-              name: "media_description"
-              widget: "string"
-              required: false
-
-            - name: "title"
-              label: "Título"
+          - name: "formacao"
+            label: "Formação"
+            widget: "list"
+            summary: "{{fields.item}}"
+            field:
+              label: "Curso ou Instituição"
+              name: "item"
               widget: "string"
 
-            - name: "description"
-              label: "Descrição principal"
-              widget: "markdown"
-              buttons:
-                - bold
-                - italic
-                - heading-two
-                - heading-three
-                - quote
-                - bulleted-list
-                - numbered-list
-                - link
-              editor_components: []
+          - name: "premios"
+            label: "Prêmios"
+            widget: "list"
+            fields:
+              - { name: "titulo", label: "Nome da Premiação", widget: "string" }
+              - name: "itens"
+                label: "Conquistas"
+                widget: "list"
+                field: { name: "premio", label: "Prêmio", widget: "string" }
 
-            - name: "contatos"
-              label: "Contatos"
-              widget: "object"
-              fields:
-                - { name: "email", label: "Email", widget: "string" }
-                - { name: "linkedin", label: "LinkedIn", widget: "string" }
-                - { name: "celular", label: "Celular", widget: "string" }
-
-            - name: "experiencia"
-              label: "Experiência"
-              widget: "list"
-              summary: "{{fields.item}}"
-              field:
-                label: "Empresa"
-                name: "item"
-                widget: "string"
-
-            - name: "formacao"
-              label: "Formação"
-              widget: "list"
-              summary: "{{fields.item}}"
-              field:
-                label: "Curso ou Instituição"
-                name: "item"
-                widget: "string"
-
-            - name: "premios"
-              label: "Prêmios"
-              widget: "list"
-              fields:
-                - { name: "titulo", label: "Nome da Premiação", widget: "string" }
-                - name: "itens"
-                  label: "Conquistas"
-                  widget: "list"
-                  field: { name: "premio", label: "Prêmio", widget: "string" }
-                  
   - name: "projetos"
     label: "Projetos"
     label_singular: "Projeto"
