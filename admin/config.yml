@@ -22,47 +22,26 @@ collections:
         fields:
           - label: "Mídia"
             name: "media"
-            widget: "object"
-            fields:
-              - label: "Tipo"
-                name: "type"
-                widget: "select"
-                options: ["image", "embed"]
-                hint: "Escolha entre imagem (foto) ou vídeo embed (YouTube, Vimeo etc.)"
-
+            widget: "list"
+            max: 1
+            min: 1
+            summary: "{{fields.tipo}}"
+            types:
               - label: "Imagem"
-                name: "src_image"
-                widget: "image"
-                required: false
-                hint: "Selecione uma imagem"
-                hidden: true
-                conditions:
-                  - field: "type"
-                    pattern: "image"
-                    value: "image"
-                    negate: false
-                    then:
-                      hidden: false
+                name: "imagem"
+                widget: "object"
+                fields:
+                  - { name: "tipo", widget: "hidden", default: "imagem" }
+                  - { name: "src", label: "Imagem", widget: "image", hint: "Selecione uma imagem" }
+                  - { name: "description", label: "Legenda da Mídia (opcional)", widget: "string", required: false }
 
               - label: "Vídeo"
-                name: "src_embed"
-                widget: "string"
-                required: false
-                hint: "Cole a URL do vídeo (YouTube, Vimeo etc.)"
-                hidden: true
-                conditions:
-                  - field: "type"
-                    pattern: "embed"
-                    value: "embed"
-                    negate: false
-                    then:
-                      hidden: false
-
-              - label: "Legenda da Mídia"
-                name: "description"
-                widget: "string"
-                required: false
-                hint: "Legenda opcional para imagens ou vídeos."
+                name: "video"
+                widget: "object"
+                fields:
+                  - { name: "tipo", widget: "hidden", default: "video" }
+                  - { name: "src", label: "URL do vídeo", widget: "string", hint: "Cole a URL do vídeo (YouTube, Vimeo etc.)" }
+                  - { name: "description", label: "Legenda da Mídia (opcional)", widget: "string", required: false }
 
           - name: "title"
             label: "Título"

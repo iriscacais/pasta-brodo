@@ -3,11 +3,11 @@ fetch("/content/sobre/sobre.json")
   .then(data => {
     const mediaContainer = document.getElementById("about-media");
 
-    // Seleciona a fonte da mídia de acordo com o tipo
-    const mediaSrc = data.media.type === "embed" ? data.media.src_embed : data.media.src_image;
-    const mediaDescription = data.media.description || "";
+    const media = data.media?.[0]; // garante que media exista e seja acessível
+    const mediaSrc = media?.src || "";
+    const mediaDescription = media?.description || "";
 
-    if (data.media.type === "embed") {
+    if (media?.tipo === "video") {
       mediaContainer.innerHTML = `
         <div class="media-wrapper tipo-video">
           <iframe
@@ -19,7 +19,7 @@ fetch("/content/sobre/sobre.json")
           <p class="media-description">${mediaDescription}</p>
         </div>
       `;
-    } else if (data.media.type === "image") {
+    } else if (media?.tipo === "imagem") {
       mediaContainer.innerHTML = `
         <div class="media-wrapper tipo-imagem">
           <img src="${mediaSrc}" alt="${mediaDescription || 'Foto de Luiz Brodo'}" class="media-element" />
