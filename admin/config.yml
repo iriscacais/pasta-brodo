@@ -26,6 +26,7 @@ collections:
             max: 1
             min: 1
             summary: "{{fields.tipo}}"
+            hint: "Você pode adicionar uma imagem ou um vídeo para esse campo."
             types:
               - label: "Imagem"
                 name: "imagem"
