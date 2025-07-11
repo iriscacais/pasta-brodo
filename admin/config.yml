@@ -21,7 +21,7 @@ collections:
       disable: true
     files:
       - file: "content/ajuda/instrucoes.json"
-        label: "Como usar o CMS"
+        label: "Como usar o painel"
         name: "instrucoes"
         format: "json"
         delete: false
@@ -29,6 +29,7 @@ collections:
           - label: "Texto explicativo"
             name: "texto"
             widget: "markdown"
+            readonly: true
             default: |
               ## Bem-vindo ao painel de edição do site!
 
@@ -48,10 +49,7 @@ collections:
               - Aqui ficam **todas as imagens** do site, inclusive imagens de menu, ícones e projetos.
               - Você pode **excluir, fazer upload ou download** de imagens.
               - **Atenção:** imagens essenciais como o menu hambúrguer ou ícones de contato **não devem ser excluídas**.
-              - Caso deseje trocar um ícone, **use o mesmo nome do arquivo** para substituí-lo corretamente.
-
-              ---
-              Para instruções específicas de cada campo, acesse as abas “Sobre” ou “Projetos”, cada campo tem uma breve explicação.  
+              - Caso deseje trocar um ícone, **use o mesmo nome do arquivo** para substituí-lo corretamente.  
 
   - name: "sobre"
     label: "Sobre"
@@ -67,7 +65,7 @@ collections:
             max: 1
             min: 1
             summary: "{{fields.tipo}}"
-            hint: "Você pode escolher uma foto ou um vídeo..."
+            hint: "Você pode escolher uma foto ou um vídeo. Caso selecione imagem você verá um link para escolher uma imagem, você pode escolher uma imagem da sua galeria Media ou fazer o upload de nova imagem. Se escolher vídeo basta colar a url no campo disponível(YouTube ou Vimeo). Opcionalmente você pode adicionar uma legenda para a sua foto/ vídeo. IMPORTANTE: você só poderá escolher uma imagem ou um vídeo."
             types:
               - label: "Imagem"
                 name: "imagem"
@@ -94,12 +92,12 @@ collections:
             widget: "markdown"
             buttons: [bold, italic, heading-two, heading-three, quote, bulleted-list, numbered-list, link]
             editor_components: []
-            hint: "Aqui você pode contar mais sobre você..."
+            hint: "Aqui você pode contar mais sobre você. Adicionar quotes, criar listas, adicionar links ou simplesmente escrever um texto."
 
           - name: "contatos"
             label: "Contatos"
             widget: "object"
-            hint: "Se precisar editar suas informações de contato..."
+            hint: "Se precisar editar suas informações de contato, você pode fazer isso aqui."
             fields:
               - { name: "email", label: "Email", widget: "string" }
               - { name: "linkedin", label: "LinkedIn", widget: "string" }
@@ -109,7 +107,7 @@ collections:
             label: "Experiência"
             widget: "list"
             summary: "{{fields.item}}"
-            hint: "Sessão para adicionar ou atualizar o que aparece em ‘Por onde passei’..."
+            hint: "Sessão para adicionar ou atualizar o que aparece em ‘Por onde passei’ no site. Clique em 'Adicionar item' para incluir uma nova experiência. O novo campo aparece no final. Para editar um existente, clique na seta > do conteúdo. Você pode alterar a ordem de exibição arrastando o botão = e pode excluir clicando no X."
             field:
               label: "Empresa"
               name: "item"
@@ -119,7 +117,7 @@ collections:
             label: "Formação"
             widget: "list"
             summary: "{{fields.item}}"
-            hint: "Sessão para adicionar ou atualizar o que aparece em ‘Formação’..."
+            hint: "Sessão para adicionar ou atualizar o que aparece em ‘Formação’ no site. Clique em 'Adicionar item' para incluir uma nova formação. O novo campo aparece no final. Para editar um existente, clique na seta > do conteúdo. Você pode alterar a ordem de exibição arrastando o botão = e pode excluir clicando no X."
             field:
               label: "Curso ou Instituição"
               name: "item"
@@ -128,7 +126,7 @@ collections:
           - name: "premios"
             label: "Prêmios"
             widget: "list"
-            hint: "Sessão para adicionar ou atualizar Prêmios..."
+            hint: "Sessão para adicionar ou atualizar Prêmios. Aqui você pode adicionar novas premiações e adicionar conquistas às premiações existentes. Para adicionar uma conquista, abra o nome da premiação clicando na seta > e clique em 'Adicionar item'. Para adicionar novas premiações clique em 'Adicionar prêmios'. Você pode excluir e alterar a ordem de exibição também."
             fields:
               - { name: "titulo", label: "Nome da Premiação", widget: "string" }
               - name: "itens"
@@ -148,11 +146,11 @@ collections:
     summary: "{{fields.ordem}} - {{fields.titulo}} - {{fields.ativo | ternary('(visível)', '(oculto)')}}"
     fields:
       - { name: "titulo", label: "Título", widget: "string", hint: "Título do seu projeto." }
-      - { name: "subtitulo", label: "Subtítulo", widget: "string", required: false, hint: "Subtítulo (opcional)..." }
-      - { name: "descricao", label: "Descrição", widget: "string", required: false, hint: "Texto descritivo..." }
-      - { name: "ativo", label: "Projeto visível no site.", widget: "boolean", default: true, hint: "Marque se quiser que..." }
-      - { name: "ordem", label: "Ordem de exibição", widget: "number", default: 0, hint: "Projetos com número menor..." }
-      - { name: "slug", label: "Slug", widget: "string", hint: "slug é o texto que aparecerá..." }
+      - { name: "subtitulo", label: "Subtítulo", widget: "string", required: false, hint: "Subtítulo (opcional), aparece logo abaixo do título principal." }
+      - { name: "descricao", label: "Descrição", widget: "string", required: false, hint: "Texto descritivo sobre o projeto (opcional), aparece ao lado do título e subtítulo." }
+      - { name: "ativo", label: "Projeto visível no site.", widget: "boolean", default: true, hint: "Marque se quiser que o projeto fique visível no site, desmarque para ocultar." }
+      - { name: "ordem", label: "Ordem de exibição", widget: "number", default: 0, hint: "Projetos com número menor aparecem antes na visualização de cards do site." }
+      - { name: "slug", label: "Slug", widget: "string", hint: "slug é o texto que aparecerá no final da url (ex: nome-do-projeto)" }
       - { name: "thumb", label: "Thumbnail", widget: "image", hint: "Imagem de capa do projeto." }
 
       - label: "Conteúdo"
@@ -192,7 +190,7 @@ collections:
           - label: "Poster"
             name: "poster"
             widget: "object"
-            hint: "Você pode adicionar imagens do tipo poster aqui..."
+            hint: "Você pode adicionar imagens do tipo poster aqui. Aparecem de 2 em 2 em formato grande. Se quiser que tenham um tamanho menor você pode escolher a opção galeria no lugar de poster e adicionar mais imagens lado a lado."
             fields:
               - { name: "tipo", widget: "hidden", default: "poster" }
               - name: "imagens"
@@ -205,7 +203,7 @@ collections:
           - label: "Galeria"
             name: "galeria"
             widget: "object"
-            hint: "Você pode fazer uma galeria de imagem..."
+            hint: "Você pode fazer uma galeria de imagem, quando você adiciona varias imagens elas aparecerão lado ao lado. Se você quiser que apareçam em blocos (ex. 3 em cima e 3 embaixo) adicione 2 galerias com 3 imagens em cada."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria" }
               - name: "imagens"
@@ -218,7 +216,7 @@ collections:
           - label: "Galeria de Vídeos Horizontais"
             name: "galeria-video-horizontal"
             widget: "object"
-            hint: "Se você tiver vídeos horizontais e quiser que apareçam lado a lado..."
+            hint: "Se você tiver vídeos horizontais e quiser que apareçam lado a lado você pode criar uma galeria com eles aqui."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria-video-horizontal" }
               - name: "videos"
@@ -229,7 +227,7 @@ collections:
           - label: "Galeria Assimétrica"
             name: "galeria-bloco"
             widget: "object"
-            hint: "Ideal para imagens com proporções diferentes..."
+            hint: "Este tipo de galeria é ideal para imagens com proporções muito diferentes. A primeira imagem define o layout, e as demais se adaptam ao lado dela."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria-bloco" }
               - name: "imagens"
