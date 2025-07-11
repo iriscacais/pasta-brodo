@@ -2,6 +2,7 @@
   "media": [
     {
       "tipo": "imagem",
+      "type": "imagem",
       "src": "/images/foto-brodo.jpg",
       "description": ""
     }
