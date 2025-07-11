@@ -28,14 +28,21 @@ collections:
                 name: "type"
                 widget: "select"
                 options: ["image", "embed"]
-                hint: "Para colocar uma imagem/foto, use o seletor de 'image'. Para colocar um vídeo, use o seletor 'embed'."
+                hint: "Escolha entre imagem (foto) ou vídeo embed (YouTube, Vimeo etc.)"
 
-              - label: "Fonte da Mídia (imagem ou vídeo)"
-                name: "src"
+              - label: "Imagem"
+                name: "src_image"
+                widget: "image"
+                required: false
+                hint: "Selecione uma imagem"
+                pattern: ['^image$', 'media.type']
+
+              - label: "Vídeo"
+                name: "src_embed"
                 widget: "string"
-                required: true
-                hint: "Para imagens/fotos, use 'Copy path'. Para vídeos, cole a URL (YouTube, Vimeo etc.)."
-                media_library: true
+                required: false
+                hint: "Cole a URL do vídeo (YouTube, Vimeo etc.)"
+                pattern: ['^embed$', 'media.type']
 
               - label: "Legenda da Mídia"
                 name: "description"

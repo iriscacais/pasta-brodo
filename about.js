@@ -3,23 +3,27 @@ fetch("/content/sobre/sobre.json")
   .then(data => {
     const mediaContainer = document.getElementById("about-media");
 
+    // Seleciona a fonte da mídia de acordo com o tipo
+    const mediaSrc = data.media.type === "embed" ? data.media.src_embed : data.media.src_image;
+    const mediaDescription = data.media.description || "";
+
     if (data.media.type === "embed") {
       mediaContainer.innerHTML = `
         <div class="media-wrapper tipo-video">
           <iframe
-            src="${data.media.src}"
+            src="${mediaSrc}"
             frameborder="0"
             allowfullscreen
             class="media-element"
           ></iframe>
-          <p class="media-description">${data.media.description}</p>
+          <p class="media-description">${mediaDescription}</p>
         </div>
       `;
     } else if (data.media.type === "image") {
       mediaContainer.innerHTML = `
         <div class="media-wrapper tipo-imagem">
-          <img src="${data.media.src}" alt="${data.media.description || 'Foto de Luiz Brodo'}" class="media-element" />
-          <p class="media-description">${data.media.description}</p>
+          <img src="${mediaSrc}" alt="${mediaDescription || 'Foto de Luiz Brodo'}" class="media-element" />
+          <p class="media-description">${mediaDescription}</p>
         </div>
       `;
     } else {
