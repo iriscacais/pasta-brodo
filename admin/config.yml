@@ -35,14 +35,28 @@ collections:
                 widget: "image"
                 required: false
                 hint: "Selecione uma imagem"
-                pattern: ['^image$', 'media.type']
+                hidden: true
+                conditions:
+                  - field: "type"
+                    pattern: "image"
+                    value: "image"
+                    negate: false
+                    then:
+                      hidden: false
 
               - label: "Vídeo"
                 name: "src_embed"
                 widget: "string"
                 required: false
                 hint: "Cole a URL do vídeo (YouTube, Vimeo etc.)"
-                pattern: ['^embed$', 'media.type']
+                hidden: true
+                conditions:
+                  - field: "type"
+                    pattern: "embed"
+                    value: "embed"
+                    negate: false
+                    then:
+                      hidden: false
 
               - label: "Legenda da Mídia"
                 name: "description"
