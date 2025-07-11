@@ -4,7 +4,8 @@ backend:
   branch: main
   identity_url: https://auth.decapbridge.com/sites/5426f22a-43f6-4e3f-8308-23450b1bf1cb
   gateway_url: https://gateway.decapbridge.com
-
+  
+logo_url: /images/brodo.png
 editor:
   preview: false
 
@@ -12,6 +13,46 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
+  - name: "instrucoes"
+    label: "Instruções"
+    delete: false
+    editor:
+      preview: false
+      disable: true
+    files:
+      - file: "content/ajuda/instrucoes.json"
+        label: "Como usar o CMS"
+        name: "instrucoes"
+        format: "json"
+        delete: false
+        fields:
+          - label: "Texto explicativo"
+            name: "texto"
+            widget: "markdown"
+            default: |
+              ## Bem-vindo ao painel de edição do site!
+
+              Na parte inicial do seu projeto você pode:
+              - Editar a sessão **Sobre**
+              - Adicionar ou editar projetos
+
+              ### IMPORTANTE SOBRE PROJETOS:
+              - Para editar um projeto, basta **clicar no card correspondente**.
+              - Para adicionar um novo projeto, clique em **“New Project”** no canto superior direito.
+              - **A ordem dos cards não representa a ordem em que aparecem no site.**
+              - Cada card mostra:
+                - Um número (campo “ordem”): **quanto maior o número, mais acima no site ele aparece**
+                - Um status de visibilidade: `visível` ou `oculto`
+
+              ### Sobre o botão **Media** (menu lateral):
+              - Aqui ficam **todas as imagens** do site, inclusive imagens de menu, ícones e projetos.
+              - Você pode **excluir, fazer upload ou download** de imagens.
+              - **Atenção:** imagens essenciais como o menu hambúrguer ou ícones de contato **não devem ser excluídas**.
+              - Caso deseje trocar um ícone, **use o mesmo nome do arquivo** para substituí-lo corretamente.
+
+              ---
+              Para instruções específicas de cada campo, acesse as abas “Sobre” ou “Projetos”, cada campo tem uma breve explicação.  
+
   - name: "sobre"
     label: "Sobre"
     files:
@@ -26,7 +67,7 @@ collections:
             max: 1
             min: 1
             summary: "{{fields.tipo}}"
-            hint: "Você pode adicionar uma imagem ou um vídeo para esse campo."
+            hint: "Você pode escolher uma foto ou um vídeo..."
             types:
               - label: "Imagem"
                 name: "imagem"
@@ -35,7 +76,6 @@ collections:
                   - { name: "tipo", widget: "hidden", default: "imagem" }
                   - { name: "src", label: "Imagem", widget: "image", hint: "Selecione uma imagem" }
                   - { name: "description", label: "Legenda da Mídia (opcional)", widget: "string", required: false }
-
               - label: "Vídeo"
                 name: "video"
                 widget: "object"
@@ -47,24 +87,19 @@ collections:
           - name: "title"
             label: "Título"
             widget: "string"
+            hint: "O texto de maior destaque da sessão sobre do site!"
 
           - name: "description"
             label: "Descrição principal"
             widget: "markdown"
-            buttons:
-              - bold
-              - italic
-              - heading-two
-              - heading-three
-              - quote
-              - bulleted-list
-              - numbered-list
-              - link
+            buttons: [bold, italic, heading-two, heading-three, quote, bulleted-list, numbered-list, link]
             editor_components: []
+            hint: "Aqui você pode contar mais sobre você..."
 
           - name: "contatos"
             label: "Contatos"
             widget: "object"
+            hint: "Se precisar editar suas informações de contato..."
             fields:
               - { name: "email", label: "Email", widget: "string" }
               - { name: "linkedin", label: "LinkedIn", widget: "string" }
@@ -74,6 +109,7 @@ collections:
             label: "Experiência"
             widget: "list"
             summary: "{{fields.item}}"
+            hint: "Sessão para adicionar ou atualizar o que aparece em ‘Por onde passei’..."
             field:
               label: "Empresa"
               name: "item"
@@ -83,6 +119,7 @@ collections:
             label: "Formação"
             widget: "list"
             summary: "{{fields.item}}"
+            hint: "Sessão para adicionar ou atualizar o que aparece em ‘Formação’..."
             field:
               label: "Curso ou Instituição"
               name: "item"
@@ -91,6 +128,7 @@ collections:
           - name: "premios"
             label: "Prêmios"
             widget: "list"
+            hint: "Sessão para adicionar ou atualizar Prêmios..."
             fields:
               - { name: "titulo", label: "Nome da Premiação", widget: "string" }
               - name: "itens"
@@ -109,42 +147,13 @@ collections:
     slug: "{{slug}}"
     summary: "{{fields.ordem}} - {{fields.titulo}} - {{fields.ativo | ternary('(visível)', '(oculto)')}}"
     fields:
-      - name: "titulo"
-        label: "Título"
-        widget: "string"
-
-      - name: "subtitulo"
-        label: "Subtítulo"
-        widget: "string"
-        required: false
-
-      - name: "descricao"
-        label: "Descrição"
-        widget: "string"
-        required: false
-        hint: "Texto descritivo sobre o projeto - aparece ao lado do título e subtítulo."
-
-      - name: "ativo"
-        label: "Projeto visível no site."
-        widget: "boolean"
-        default: true
-        hint: "Marque se quiser que o projeto fique visível no site, desmarque para ocultar."
-
-      - name: "ordem"
-        label: "Ordem de exibição"
-        widget: "number"
-        default: 0
-        hint: "Projetos com número menor aparecem antes."
-
-      - name: "slug"
-        label: "Slug"
-        widget: "string"
-        hint: "slug é o nome que vai aparecer na url quando o projeto for adicionado, preencha algo simples ex. skip-sem-ad."
-
-      - name: "thumb"
-        label: "Thumbnail"
-        widget: "image"
-        hint: "Imagem de capa."
+      - { name: "titulo", label: "Título", widget: "string", hint: "Título do seu projeto." }
+      - { name: "subtitulo", label: "Subtítulo", widget: "string", required: false, hint: "Subtítulo (opcional)..." }
+      - { name: "descricao", label: "Descrição", widget: "string", required: false, hint: "Texto descritivo..." }
+      - { name: "ativo", label: "Projeto visível no site.", widget: "boolean", default: true, hint: "Marque se quiser que..." }
+      - { name: "ordem", label: "Ordem de exibição", widget: "number", default: 0, hint: "Projetos com número menor..." }
+      - { name: "slug", label: "Slug", widget: "string", hint: "slug é o texto que aparecerá..." }
+      - { name: "thumb", label: "Thumbnail", widget: "image", hint: "Imagem de capa do projeto." }
 
       - label: "Conteúdo"
         name: "conteudo"
@@ -153,6 +162,7 @@ collections:
           - label: "Vídeo"
             name: "video"
             widget: "object"
+            hint: "Adicionar um vídeo em formato horizontal."
             fields:
               - { name: "tipo", widget: "hidden", default: "video" }
               - { name: "src", label: "URL do vídeo", widget: "string", hint: "Cole o link do YouTube ou Vimeo" }
@@ -160,34 +170,29 @@ collections:
           - label: "Imagem"
             name: "imagem"
             widget: "object"
+            hint: "Adicionar uma imagem única no site."
             fields:
               - { name: "tipo", widget: "hidden", default: "imagem" }
               - { name: "src", label: "Imagem", widget: "image" }
               - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
-              - { name: "tamanho", label: "Tamanho", widget: "select", options: ["normal", "pequena"], required: false, hint: "Use 'pequena' se quiser que a imagem seja exibida menor." }
+              - { name: "tamanho", label: "Tamanho", widget: "select", options: ["normal", "pequena"], required: false }
 
           - label: "Texto"
             name: "texto"
             widget: "object"
+            hint: "Adicionar quotes, listas, links ou um texto."
             fields:
               - { name: "tipo", widget: "hidden", default: "texto" }
               - name: "valor"
                 label: "Texto explicativo"
                 widget: "markdown"
-                buttons:
-                  - bold
-                  - italic
-                  - heading-two
-                  - heading-three
-                  - quote
-                  - bulleted-list
-                  - numbered-list
-                  - link
+                buttons: [bold, italic, heading-two, heading-three, quote, bulleted-list, numbered-list, link]
                 editor_components: []
 
           - label: "Poster"
             name: "poster"
             widget: "object"
+            hint: "Você pode adicionar imagens do tipo poster aqui..."
             fields:
               - { name: "tipo", widget: "hidden", default: "poster" }
               - name: "imagens"
@@ -200,6 +205,7 @@ collections:
           - label: "Galeria"
             name: "galeria"
             widget: "object"
+            hint: "Você pode fazer uma galeria de imagem..."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria" }
               - name: "imagens"
@@ -212,6 +218,7 @@ collections:
           - label: "Galeria de Vídeos Horizontais"
             name: "galeria-video-horizontal"
             widget: "object"
+            hint: "Se você tiver vídeos horizontais e quiser que apareçam lado a lado..."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria-video-horizontal" }
               - name: "videos"
@@ -222,6 +229,7 @@ collections:
           - label: "Galeria Assimétrica"
             name: "galeria-bloco"
             widget: "object"
+            hint: "Ideal para imagens com proporções diferentes..."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria-bloco" }
               - name: "imagens"
