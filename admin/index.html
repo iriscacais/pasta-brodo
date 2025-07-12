@@ -5,8 +5,62 @@
     <title>Admin - Luiz Brodo</title>
     <link rel="icon" href="/images/brodo.ico" />
     <script src="https://unpkg.com/decap-cms@latest/dist/decap-cms.js" defer></script>
+    <style>
+      .painel-instrucoes {
+        background: #fff8e1;
+        border: 1px solid #ffe082;
+        padding: 24px;
+        margin: 24px auto;
+        max-width: 800px;
+        font-family: sans-serif;
+        color: #5d4037;
+        border-radius: 8px;
+      }
+      .painel-instrucoes h2,
+      .painel-instrucoes h3 {
+        margin-top: 1.2em;
+        margin-bottom: 0.5em;
+      }
+      .painel-instrucoes ul {
+        padding-left: 20px;
+      }
+    </style>
   </head>
   <body>
+    <div class="painel-instrucoes">
+      <h2>Bem-vindo ao painel de edição do site!</h2>
+      <p>Na parte inicial do seu projeto você pode:</p>
+      <ul>
+        <li>Editar a sessão <strong>Sobre</strong></li>
+        <li>Adicionar ou editar <strong>Projetos</strong></li>
+      </ul>
+
+      <h3>IMPORTANTE SOBRE PROJETOS:</h3>
+      <ul>
+        <li>Para editar um projeto, basta clicar no card correspondente.</li>
+        <li>Para adicionar um novo projeto, clique em <em>"New Project"</em> no canto superior direito.</li>
+        <li>A ordem dos cards não representa a ordem em que aparecem no site.</li>
+        <li>Cada card mostra:
+          <ul>
+            <li>Um número (campo <em>"ordem"</em>): quanto maior o número, mais acima no site ele aparece</li>
+            <li>Um status de visibilidade: <code>visível</code> ou <code>oculto</code></li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Sobre o botão <strong>Media</strong> (menu lateral):</h3>
+      <ul>
+        <li>Aqui ficam todas as imagens do site, inclusive imagens de menu, ícones e projetos.</li>
+        <li>Você pode excluir, fazer upload ou download de imagens.</li>
+        <li><strong>Atenção:</strong> imagens essenciais como o menu hambúrguer ou ícones de contato <strong>não devem ser excluídas</strong>.</li>
+        <li>Caso deseje trocar um ícone, <strong>use o mesmo nome do arquivo</strong> para substituí-lo corretamente.</li>
+      </ul>
+
+      <hr style="margin: 2em 0; border: none; border-top: 1px solid #d7ccc8;" />
+
+      <p>Para instruções específicas de cada campo, acesse as abas <strong>"Sobre"</strong> ou <strong>"Projetos"</strong>. Cada campo tem uma breve explicação.</p>
+    </div>
+
     <div id="nc-root"></div>
   </body>
 </html>

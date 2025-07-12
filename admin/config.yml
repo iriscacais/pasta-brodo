@@ -12,25 +12,7 @@ editor:
 media_folder: "images"
 public_folder: "/images"
 
-collections:
-  - name: "instrucoes"
-    label: "Instruções"
-    delete: false
-    editor:
-      preview: false
-      disable: true
-    files:
-      - file: "content/ajuda/instrucoes.json"
-        label: "Como usar o painel"
-        name: "instrucoes"
-        format: "json"
-        delete: false
-        fields:
-          - label: "Texto explicativo"
-            name: "texto"
-            widget: "text"
-            readonly: true
-            
+collections:     
   - name: "sobre"
     label: "Sobre"
     files:
