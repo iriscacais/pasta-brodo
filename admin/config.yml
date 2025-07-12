@@ -104,7 +104,7 @@ collections:
     format: "json"
     create: true
     identifier_field: "slug"
-    slug: "{{slug}}"
+    slug: "{{fields.slug_com_ordem}}" 
     summary: "{{fields.ordem}} - {{fields.titulo}} - {{fields.ativo | ternary('(visível)', '(oculto)')}}"
     fields:
       - { name: "titulo", label: "Título", widget: "string", hint: "Título do seu projeto." }
@@ -114,7 +114,7 @@ collections:
       - { name: "ordem", label: "Ordem de exibição", widget: "number", default: 0, hint: "Projetos com número menor aparecem antes na visualização de cards do site." }
       - { name: "slug", label: "Slug", widget: "string", hint: "slug é o texto que aparecerá no final da url (ex: nome-do-projeto)" }
       - { name: "thumb", label: "Thumbnail", widget: "image", hint: "Imagem de capa do projeto." }
-
+      - { name: "slug_com_ordem", widget: "hidden", default: "{{fields.ordem}}-{{fields.slug}}" }
       - label: "Conteúdo"
         name: "conteudo"
         widget: "list"
