@@ -28,12 +28,12 @@
   </head>
   <body>
     <div id="nc-root"></div>
-    <div class="painel-instrucoes">
+    <div id="painel-instrucoes" style="display:none;" class="painel-instrucoes">
       <h2>Bem-vindo ao painel de edição do site!</h2>
       <p>Na parte inicial do seu projeto você pode:</p>
       <ul>
         <li>Editar a sessão <strong>Sobre</strong></li>
-        <li>Adicionar ou editar <strong>Projetos</strong></li>
+        <li>Adicionar ou editar projetos</li>
       </ul>
 
       <h3>IMPORTANTE SOBRE PROJETOS:</h3>
@@ -61,5 +61,19 @@
       <p>Para instruções específicas de cada campo, acesse as abas <strong>"Sobre"</strong> ou <strong>"Projetos"</strong>. Cada campo tem uma breve explicação.</p>
     </div>
 
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        // só mostra a div se o usuário estiver logado (Decap CMS carregado)
+        const checkAuth = () => {
+          const app = document.querySelector("#nc-root");
+          if (app && app.innerHTML.length > 0) {
+            document.getElementById("painel-instrucoes").style.display = "block";
+          } else {
+            setTimeout(checkAuth, 300); // tenta de novo até carregar
+          }
+        };
+        checkAuth();
+      });
+    </script>    
   </body>
 </html>
