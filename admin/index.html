@@ -39,19 +39,19 @@
       <h3>IMPORTANTE SOBRE PROJETOS:</h3>
       <ul>
         <li>Para editar um projeto, basta clicar no card correspondente.</li>
-        <li>Para adicionar um novo projeto, clique em <em>"New Project"</em> no canto superior direito.</li>
+        <li>Para adicionar um novo projeto, clique em <em>"New Project"</em>.</li>
         <li>A ordem dos cards não representa a ordem em que aparecem no site.</li>
         <li>Cada card mostra:
           <ul>
-            <li>Um número (campo <em>"ordem"</em>): quanto maior o número, mais acima no site ele aparece</li>
-            <li>Um status de visibilidade: <code>visível</code> ou <code>oculto</code></li>
+            <li>Um número (campo <em>"ordem"</em>): quanto maior o número, mais acima no site ele aparece. Você pode alterar a ordem ao editar um projeto.</li>
+            <li>Um status de visibilidade: visível ou oculto. Você pode alterar a visibilidade ao editar um projeto.</li>
           </ul>
         </li>
       </ul>
 
-      <h3>Sobre o botão <strong>Media</strong> (menu lateral):</h3>
+      <h3>Sobre o botão <strong>Media</strong>:</h3>
       <ul>
-        <li>Aqui ficam todas as imagens do site, inclusive imagens de menu, ícones e projetos.</li>
+        <li>É onde ficam todas as imagens do seu site, inclusive imagens de menu, ícones e projetos.</li>
         <li>Você pode excluir, fazer upload ou download de imagens.</li>
         <li><strong>Atenção:</strong> imagens essenciais como o menu hambúrguer ou ícones de contato <strong>não devem ser excluídas</strong>. Caso deseje trocar um ícone, <strong>use o mesmo nome do arquivo</strong> para substituí-lo corretamente.</li>
       </ul>
@@ -63,13 +63,13 @@
 
     <script>
       window.addEventListener("DOMContentLoaded", function () {
-        // só mostra a div se o usuário estiver logado (Decap CMS carregado)
+       
         const checkAuth = () => {
           const app = document.querySelector("#nc-root");
           if (app && app.innerHTML.length > 0) {
             document.getElementById("painel-instrucoes").style.display = "block";
           } else {
-            setTimeout(checkAuth, 300); // tenta de novo até carregar
+            setTimeout(checkAuth, 300);
           }
         };
         checkAuth();
