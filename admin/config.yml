@@ -28,29 +28,9 @@ collections:
         fields:
           - label: "Texto explicativo"
             name: "texto"
-            widget: "markdown"
+            widget: "text"
             readonly: true
-            default: |
-              ## Bem-vindo ao painel de edição do site!
-
-              Na parte inicial do seu projeto você pode:
-              - Editar a sessão **Sobre**
-              - Adicionar ou editar projetos
-
-              ### IMPORTANTE SOBRE PROJETOS:
-              - Para editar um projeto, basta **clicar no card correspondente**.
-              - Para adicionar um novo projeto, clique em **“New Project”** no canto superior direito.
-              - **A ordem dos cards não representa a ordem em que aparecem no site.**
-              - Cada card mostra:
-                - Um número (campo “ordem”): **quanto maior o número, mais acima no site ele aparece**
-                - Um status de visibilidade: `visível` ou `oculto`
-
-              ### Sobre o botão **Media** (menu lateral):
-              - Aqui ficam **todas as imagens** do site, inclusive imagens de menu, ícones e projetos.
-              - Você pode **excluir, fazer upload ou download** de imagens.
-              - **Atenção:** imagens essenciais como o menu hambúrguer ou ícones de contato **não devem ser excluídas**.
-              - Caso deseje trocar um ícone, **use o mesmo nome do arquivo** para substituí-lo corretamente.  
-
+            
   - name: "sobre"
     label: "Sobre"
     files:
@@ -160,29 +140,27 @@ collections:
           - label: "Vídeo"
             name: "video"
             widget: "object"
-            hint: "Adicionar um vídeo em formato horizontal."
             fields:
               - { name: "tipo", widget: "hidden", default: "video" }
-              - { name: "src", label: "URL do vídeo", widget: "string", hint: "Cole o link do YouTube ou Vimeo" }
+              - { name: "src", label: "URL do vídeo", widget: "string", hint: "Adicionar um vídeo em formato horizontal. Cole o link do YouTube ou Vimeo" }
 
           - label: "Imagem"
             name: "imagem"
             widget: "object"
-            hint: "Adicionar uma imagem única no site."
             fields:
               - { name: "tipo", widget: "hidden", default: "imagem" }
-              - { name: "src", label: "Imagem", widget: "image" }
-              - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
+              - { name: "src", label: "Imagem", widget: "image", hint: "Adicionar uma imagem única no site." }
+              - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false, hint: "Texto alternativo da imagem. É exibido se a imagem não carregar e também contribui para acessibilidade e SEO." }
               - { name: "tamanho", label: "Tamanho", widget: "select", options: ["normal", "pequena"], required: false }
 
           - label: "Texto"
             name: "texto"
             widget: "object"
-            hint: "Adicionar quotes, listas, links ou um texto."
             fields:
               - { name: "tipo", widget: "hidden", default: "texto" }
               - name: "valor"
                 label: "Texto explicativo"
+                hint: "Adicionar quotes, listas, links ou um texto."
                 widget: "markdown"
                 buttons: [bold, italic, heading-two, heading-three, quote, bulleted-list, numbered-list, link]
                 editor_components: []
@@ -190,44 +168,40 @@ collections:
           - label: "Poster"
             name: "poster"
             widget: "object"
-            hint: "Você pode adicionar imagens do tipo poster aqui. Aparecem de 2 em 2 em formato grande. Se quiser que tenham um tamanho menor você pode escolher a opção galeria no lugar de poster e adicionar mais imagens lado a lado."
             fields:
               - { name: "tipo", widget: "hidden", default: "poster" }
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
                 fields:
-                  - { name: "image", label: "Imagem", widget: "image" }
-                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
+                  - { name: "image", label: "Imagem", widget: "image", hint: "Você pode adicionar imagens do tipo poster aqui. Aparecem de 2 em 2 em formato grande. Se quiser que tenham um tamanho menor você pode escolher a opção galeria no lugar de poster e adicionar mais imagens lado a lado." }
+                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false, hint: "Texto alternativo da imagem. É exibido se a imagem não carregar e também contribui para acessibilidade e SEO." }
 
           - label: "Galeria"
             name: "galeria"
             widget: "object"
-            hint: "Você pode fazer uma galeria de imagem, quando você adiciona varias imagens elas aparecerão lado ao lado. Se você quiser que apareçam em blocos (ex. 3 em cima e 3 embaixo) adicione 2 galerias com 3 imagens em cada."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria" }
               - name: "imagens"
                 label: "Imagens"
                 widget: "list"
                 fields:
-                  - { name: "image", label: "Imagem", widget: "image" }
-                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
+                  - { name: "image", label: "Imagem", widget: "image", hint: "Você pode fazer uma galeria de imagem, quando você adiciona varias imagens elas aparecerão lado ao lado. Se você quiser que apareçam em blocos (ex. 3 em cima e 3 embaixo) adicione 2 galerias com 3 imagens em cada." }
+                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false, hint: "Texto alternativo da imagem. É exibido se a imagem não carregar e também contribui para acessibilidade e SEO." }
 
           - label: "Galeria de Vídeos Horizontais"
             name: "galeria-video-horizontal"
             widget: "object"
-            hint: "Se você tiver vídeos horizontais e quiser que apareçam lado a lado você pode criar uma galeria com eles aqui."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria-video-horizontal" }
               - name: "videos"
                 label: "Vídeos"
                 widget: "list"
-                field: { label: "URL do vídeo", name: "src", widget: "string" }
+                field: { label: "URL do vídeo", name: "src", widget: "string",  hint: "Se você tiver vídeos horizontais e quiser que apareçam lado a lado você pode criar uma galeria com eles aqui." }
 
           - label: "Galeria Assimétrica"
             name: "galeria-bloco"
             widget: "object"
-            hint: "Este tipo de galeria é ideal para imagens com proporções muito diferentes. A primeira imagem define o layout, e as demais se adaptam ao lado dela."
             fields:
               - { name: "tipo", widget: "hidden", default: "galeria-bloco" }
               - name: "imagens"
@@ -236,5 +210,5 @@ collections:
                 min: 3
                 max: 3
                 fields:
-                  - { name: "image", label: "Imagem", widget: "image" }
-                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false }
+                  - { name: "image", label: "Imagem", widget: "image",   hint: "Este tipo de galeria é ideal para imagens com proporções muito diferentes. A primeira imagem define o layout, e as demais se adaptam ao lado dela." }
+                  - { name: "alt", label: "Descrição da Imagem (alt)", widget: "string", required: false, hint: "Texto alternativo da imagem. É exibido se a imagem não carregar e também contribui para acessibilidade e SEO." }
