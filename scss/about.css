@@ -149,6 +149,7 @@
 .about-container .about-text .about-contatos .contato-link {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 .about-container .about-text .about-contatos .contato-link img {
   width: 100%;
