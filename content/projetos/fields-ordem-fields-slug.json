@@ -1,5 +1,5 @@
 {
-  "ativo": false,
+  "ativo": true,
   "ordem": 21,
   "slug_com_ordem": "{{fields.ordem}}-{{fields.slug}}",
   "titulo": "BK | We Buy Your Vote",
