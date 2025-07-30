@@ -19,16 +19,46 @@
       "type": "poster",
       "tipo": "poster",
       "imagens": [
-        { "image": "/images/poster02-copra.jpg", "alt": "Pôster da campanha CORTA! 02" },
-        { "image": "/images/poster04-copra.jpg", "alt": "Pôster da campanha CORTA! 04" },
-        { "image": "/images/poster05-copra.jpg", "alt": "Pôster da campanha CORTA! 05" },
-        { "image": "/images/poster06-copra.jpg", "alt": "Pôster da campanha CORTA! 06" },
-        { "image": "/images/poster07-copra.jpg", "alt": "Pôster da campanha CORTA! 07" },
-        { "image": "/images/poster08-copra.jpg", "alt": "Pôster da campanha CORTA! 08" },
-        { "image": "/images/poster09-copra.jpg", "alt": "Pôster da campanha CORTA! 09" },
-        { "image": "/images/poster10-copra.jpg", "alt": "Pôster da campanha CORTA! 10" },
-        { "image": "/images/poster01-copra.jpg", "alt": "Pôster da campanha CORTA! 01" },
-        { "image": "/images/poster03-copra.jpg", "alt": "Pôster da campanha CORTA! 03" }
+        {
+          "image": "/images/poster02-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 02"
+        },
+        {
+          "image": "/images/poster04-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 04"
+        },
+        {
+          "image": "/images/poster05-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 05"
+        },
+        {
+          "image": "/images/poster06-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 06"
+        },
+        {
+          "image": "/images/poster07-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 07"
+        },
+        {
+          "image": "/images/poster08-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 08"
+        },
+        {
+          "image": "/images/poster09-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 09"
+        },
+        {
+          "image": "/images/poster10-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 10"
+        },
+        {
+          "image": "/images/poster01-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 01"
+        },
+        {
+          "image": "/images/poster03-copra.jpg",
+          "alt": "Pôster da campanha CORTA! 03"
+        }
       ]
     },
     {
@@ -41,8 +71,14 @@
       "type": "galeria",
       "tipo": "galeria",
       "imagens": [
-        { "image": "/images/corta_Camisetas.jpg", "alt": "Camisetas da campanha CORTA!" },
-        { "image": "/images/corta_faixa.gif", "alt": "Faixa visual da campanha CORTA!" }
+        {
+          "image": "/images/corta_Camisetas.jpg",
+          "alt": "Camisetas da campanha CORTA!"
+        },
+        {
+          "image": "/images/corta_faixa.gif",
+          "alt": "Faixa visual da campanha CORTA!"
+        }
       ]
     },
     {
@@ -53,6 +89,6 @@
       "alt": "Imagem da boca silenciada da campanha CORTA!"
     }
   ],
-  "ativo": true,
+  "ativo": false,
   "ordem": 7
 }
