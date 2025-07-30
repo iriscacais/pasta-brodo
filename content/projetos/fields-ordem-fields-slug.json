@@ -1,10 +1,6 @@
 {
-  "ativo": true,
+  "descricao": "Vote buying during elections is a serious threat to Brazilian democracy. However, in Brazil, there's another factor that's even more detrimental to democracy: a high level of voter abstention, the highest in recent decades. To encourage people to vote in the municipal elections, we decided to turn this major election crime into our strongest ally. ",
   "ordem": 21,
-  "slug_com_ordem": "{{fields.ordem}}-{{fields.slug}}",
-  "titulo": "BK | We Buy Your Vote",
-  "subtitulo": "Vote buying during elections is a serious threat to Brazilian democracy. However, in Brazil, there's another factor that's even more detrimental to democracy: a high level of voter abstention, the highest in recent decades. To encourage people to vote in the municipal elections, we decided to turn this major election crime into our strongest ally. ",
-  "thumb": "/images/bk_compradevotos_4.png",
   "slug": "we-buy-your-vote",
   "conteudo": [
     {
@@ -32,5 +28,10 @@
         }
       ]
     }
-  ]
+  ],
+  "ativo": true,
+  "thumb": "/images/bk_compradevotos_4.png",
+  "slug_com_ordem": "{{fields.ordem}}-{{fields.slug}}",
+  "subtitulo": "",
+  "titulo": "BK | We Buy Your Vote"
 }
