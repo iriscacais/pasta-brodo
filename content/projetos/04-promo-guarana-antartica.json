@@ -1,5 +1,5 @@
 {
-  "ativo": true,
+  "ativo": false,
   "ordem": 4,
   "titulo": "Promo Guaraná Antarctica",
   "slug": "promo-guarana-antartica",
@@ -20,12 +20,30 @@
       "type": "poster",
       "tipo": "poster",
       "imagens": [
-        { "image": "/images/guaranapromo01.gif", "alt": "Passo 1 para participar da promoção Guaraná Antarctica" },
-        { "image": "/images/guaranapromo02.gif", "alt": "Passo 2 para participar da promoção Guaraná Antarctica" },
-        { "image": "/images/guaranapromo03.gif", "alt": "Passo 3 para participar da promoção Guaraná Antarctica" },
-        { "image": "/images/guaranapromo04.gif", "alt": "Passo 4 para participar da promoção Guaraná Antarctica" },
-        { "image": "/images/guaranapromo05.gif", "alt": "Passo 5 para participar da promoção Guaraná Antarctica" },
-        { "image": "/images/guaranapromo06.gif", "alt": "Passo 6 para participar da promoção Guaraná Antarctica" }
+        {
+          "image": "/images/guaranapromo01.gif",
+          "alt": "Passo 1 para participar da promoção Guaraná Antarctica"
+        },
+        {
+          "image": "/images/guaranapromo02.gif",
+          "alt": "Passo 2 para participar da promoção Guaraná Antarctica"
+        },
+        {
+          "image": "/images/guaranapromo03.gif",
+          "alt": "Passo 3 para participar da promoção Guaraná Antarctica"
+        },
+        {
+          "image": "/images/guaranapromo04.gif",
+          "alt": "Passo 4 para participar da promoção Guaraná Antarctica"
+        },
+        {
+          "image": "/images/guaranapromo05.gif",
+          "alt": "Passo 5 para participar da promoção Guaraná Antarctica"
+        },
+        {
+          "image": "/images/guaranapromo06.gif",
+          "alt": "Passo 6 para participar da promoção Guaraná Antarctica"
+        }
       ]
     }
   ]
