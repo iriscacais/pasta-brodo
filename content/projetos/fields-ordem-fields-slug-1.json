@@ -1,0 +1,16 @@
+{
+  "ativo": true,
+  "ordem": 51,
+  "slug_com_ordem": "{{fields.ordem}}-{{fields.slug}}",
+  "titulo": "NOTMILK | NOTMAMMALS",
+  "descricao": "In the 1990s, Parmalat created one of the most iconic ads in Brazilian history: a campaign featuring cute baby mammals drinking milk. Well, those babies grew up and found out that animal milk can cause a series of discomforts like stomach aches, diarrhea, bloating, and more. That’s where NotMilk comes in. The solution for those who don’t want to give up the taste and texture of milk, but could definitely do without the side effects.",
+  "slug": "not-mammals",
+  "thumb": "/images/screenshot-2025-07-30-at-15.56.18.png",
+  "conteudo": [
+    {
+      "type": "video",
+      "tipo": "video",
+      "src": "https://www.youtube.com/yrp8B4bAykA"
+    }
+  ]
+}
