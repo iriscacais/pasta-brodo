@@ -1,3 +1,2 @@
 /projetos/:slug  /projeto.html?slug=:slug  200
-
 https://brodo.netlify.app/*  https://brodo.work/:splat  301!
